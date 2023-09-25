@@ -1,0 +1,808 @@
+.popUpBtn {
+    font-size: 1.5rem !important;
+}
+
+.fullScreenToggle {
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+    margin: auto !important;
+    font-size: 4em !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.clock {
+    position: relative;
+    margin-right: 10px;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 3px solid #ffffff;
+}
+
+.clock .top {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: #ffffff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.clock .right {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: #ffffff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+
+.clock .bottom {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: #ffffff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.clock .left {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+
+.clock .center {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 100%;
+}
+
+.clock .shadow {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    transform: rotate(135deg);
+}
+
+.clock .hour {
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 60s infinite linear;
+}
+
+.clock .hour:before {
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    height: 45px;
+    width: 3px;
+    top: 30px;
+}
+
+.clock .minute {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 30s infinite linear;
+}
+
+.clock .minute:before {
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    height: 45px;
+    width: 1px;
+    top: 35px;
+}
+
+.clock .second {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 15s infinite linear;
+}
+
+.clock .second:before {
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    height: 35px;
+    width: 2px;
+    top: 45px;
+}
+
+.clockOrange {
+    position: relative;
+    margin-right: 10px;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 3px solid #fe7f37;
+}
+
+.clockOrange .top {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.clockOrange .right {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+
+.clockOrange .bottom {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.clockOrange .left {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+
+.clockOrange .center {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    border-radius: 100%;
+}
+
+.clockOrange .shadow {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    transform: rotate(135deg);
+}
+
+.clockOrange .hour {
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 60s infinite linear;
+}
+
+.clockOrange .hour:before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    height: 45px;
+    width: 3px;
+    top: 30px;
+}
+
+.clockOrange .minute {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 30s infinite linear;
+}
+
+.clockOrange .minute:before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    height: 45px;
+    width: 1px;
+    top: 35px;
+}
+
+.clockOrange .second {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 15s infinite linear;
+}
+
+.clockOrange .second:before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    height: 35px;
+    width: 2px;
+    top: 45px;
+}
+
+@keyframes time {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.timeText{
+    font-size: 22px;
+    font-family: PoppinsBold;
+}
+
+.defaultStyle{
+    color: white;
+}
+
+.orangeStyle{
+    background: linear-gradient(119.36deg, #fe7f37 28.25%, #ff4b4b 79.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    --text-fill-color: transparent;
+}
+@media screen and (max-width: 2560px) {
+    .clock {
+        height: 36px;
+        width: 36px;
+    }
+
+    .clock .hour:before {
+        height: 8px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clock .right,
+    .clock .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clock .top,
+    .clock .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clock .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .second:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .shadow {
+        height: 14px;
+        width: 14px;
+    }
+    /* clockOrange */
+    .clockOrange {
+        height: 36px;
+        width: 36px;
+    }
+
+    .clockOrange .hour:before {
+        height: 8px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clockOrange .right,
+    .clockOrange .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clockOrange .top,
+    .clockOrange .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clockOrange .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .second:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .shadow {
+        height: 14px;
+        width: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 1920px) {
+    .clock {
+        height: 36px;
+        width: 36px;
+    }
+
+    .clock .hour:before {
+        height: 8px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clock .right,
+    .clock .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clock .top,
+    .clock .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clock .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .second:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .shadow {
+        height: 14px;
+        width: 14px;
+    }
+    /* clockOrange */
+    .clockOrange {
+        height: 36px;
+        width: 36px;
+    }
+
+    .clockOrange .hour:before {
+        height: 8px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clockOrange .right,
+    .clockOrange .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clockOrange .top,
+    .clockOrange .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clockOrange .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .second:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .shadow {
+        height: 14px;
+        width: 14px;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .clock {
+        height: 36px;
+        width: 36px;
+    }
+
+    .clock .hour:before {
+        height: 8px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clock .right,
+    .clock .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clock .top,
+    .clock .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clock .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .second:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .shadow {
+        height: 14px;
+        width: 14px;
+    }
+
+    /* clockOrange */
+    .clockOrange {
+        height: 36px;
+        width: 36px;
+    }
+
+    .clockOrange .hour:before {
+        height: 8px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clockOrange .right,
+    .clockOrange .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clockOrange .top,
+    .clockOrange .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clockOrange .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .second:before {
+        height: 11px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .shadow {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .clock {
+        height: 30px;
+        width: 30px;
+    }
+
+    .clock .hour:before {
+        height: 6px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clock .right,
+    .clock .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clock .top,
+    .clock .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clock .minute:before {
+        height: 6px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .second:before {
+        height: 6px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .shadow {
+        height: 14px;
+        width: 14px;
+    }
+
+    /* clockOrange */
+    .clockOrange {
+        height: 30px;
+        width: 30px;
+    }
+
+    .clockOrange .hour:before {
+        height: 6px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clockOrange .right,
+    .clockOrange .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clockOrange .top,
+    .clockOrange .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clockOrange .minute:before {
+        height: 6px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .second:before {
+        height: 6px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .shadow {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .clock {
+        height: 26px;
+        width: 26px;
+    }
+
+    .clock .hour:before {
+        height: 6px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clock .right,
+    .clock .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clock .top,
+    .clock .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clock .minute:before {
+        height: 4px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .second:before {
+        height: 4px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clock .shadow {
+        height: 14px;
+        width: 14px;
+    }
+
+    /* clockOrange */
+    .clockOrange {
+        height: 26px;
+        width: 26px;
+    }
+
+    .clockOrange .hour:before {
+        height: 4px;
+        width: 2px;
+        top: 18px;
+    }
+
+    .clockOrange .right,
+    .clockOrange .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clockOrange .top,
+    .clockOrange .bottom {
+        width: 2px;
+        height: 5px;
+    }
+
+    .clockOrange .minute:before {
+        height: 4px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .second:before {
+        height: 4px;
+        width: 1px;
+        top: 17px;
+    }
+
+    .clockOrange .shadow {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .clock {
+        height: 30px;
+        width: 30px;
+    }
+
+    .clock .hour:before {
+        height: 6px;
+        width: 2px;
+        top: 14px;
+    }
+
+    .clock .right,
+    .clock .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clock .top,
+    .clock .bottom {
+        width: 2px;
+        height: 4px;
+    }
+
+    .clock .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 12px;
+    }
+
+    .clock .second:before {
+        height: 11px;
+        width: 1px;
+        top: 14px;
+    }
+
+    .clock .shadow {
+        height: 10px;
+        width: 10px;
+    }
+
+    /* clockOrange */
+    .clockOrange {
+        height: 30px;
+        width: 30px;
+    }
+
+    .clockOrange .hour:before {
+        height: 6px;
+        width: 2px;
+        top: 14px;
+    }
+
+    .clockOrange .right,
+    .clockOrange .left {
+        width: 5px;
+        height: 2px;
+    }
+
+    .clockOrange .top,
+    .clockOrange .bottom {
+        width: 2px;
+        height: 4px;
+    }
+
+    .clockOrange .minute:before {
+        height: 11px;
+        width: 1px;
+        top: 12px;
+    }
+
+    .clockOrange .second:before {
+        height: 11px;
+        width: 1px;
+        top: 14px;
+    }
+
+    .clockOrange .shadow {
+        height: 10px;
+        width: 10px;
+    }
+}

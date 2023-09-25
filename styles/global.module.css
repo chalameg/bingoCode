@@ -1,0 +1,72 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.messages {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+}
+.reorder-wrapper-item {
+  position: relative;
+  transition: top 1s ease-in;
+}
+
+.my-facebook-button-class {
+  font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 13px 30px 15px 44px;
+  background: #3a5a97;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 20, 0.4);
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+  border-radius: 5px;
+  display: flex !important;
+  width: fit-content;
+}
+.my-facebook-button-class:before {
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+label {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.ElementApp {
+  background-color: white;
+}
+
+.customToast {
+  /* background: linear-gradient(#404dae, rgba(135, 126, 205)) !important; */
+  background: #404dae !important;
+
+  color: #40e0d0 !important;
+  border: #7244e9 !important;
+}
+
+.blinkerText {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,829 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.wrapper {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 60px;
+}
+
+.timerText {
+  margin-top: 6%;
+  margin-left: -119%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  font-size: 80px;
+  color: white;
+  font-family: LuckiestGuy; 
+}
+
+.timerContainer {
+  width: 100%;
+  z-index: 2;
+}
+
+.countdownContainer {
+  width: 100%;
+  margin-left: -100%;
+  z-index: 1;
+}
+
+.backgroundContainer {
+  width: 150px;
+  height: 150px;
+  margin: 14px 0 0 20px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  animation-name: countdown;
+  animation-timing-function: linear;
+  animation-duration: 12s;
+  animation-iteration-count: 12;
+  box-sizing: border-box;
+}
+
+@keyframes countdown {
+  9% {
+    background-color: transparent;
+    background-image: linear-gradient(-144deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(180deg, #FF4B4B 50%, transparent 50%);
+  }
+  18% { 
+    background-color: transparent;
+    background-image: linear-gradient(-108deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(180deg, #FF4B4B 50%, transparent 50%);
+  }
+  27% {
+    background-color: transparent;
+    background-image: linear-gradient(-72deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(180deg, #FF4B4B 50%, transparent 50%);
+  }
+  36% {
+    background-color: transparent;
+    background-image: linear-gradient(-36deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(180deg, #FF4B4B 50%, transparent 50%);
+  }
+
+  45% {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(0deg, #FF4B4B 50%, transparent 50%);
+  }
+  54% {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(36deg, #FF4B4B 50%, transparent 50%);
+  }
+  63% {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(72deg, #FF4B4B 50%, transparent 50%);
+  }
+  72% {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(108deg, #FF4B4B 50%, transparent 50%);
+  }
+  81% {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(144deg, #FF4B4B 50%, transparent 50%);
+  }
+  90% {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 50%, #FF4B4B 50%, #FE7F37),
+      linear-gradient(180deg, #FF4B4B 50%, transparent 50%);
+  }
+  100% {
+  }
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-family: RalewayBold;
+    font-weight: 900;
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.subTitle{
+    color: white;
+    font-size: 28px;
+    font-family: RalewayBold;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+  .timerContainer > svg{
+    height: 375px;
+    width: 375px;
+  }
+  
+  .container{
+    flex-direction: row;
+    width: 50%;
+    margin: -3% 0 0 6%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 460px;
+    height: 460px;
+  }
+
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+
+  .backgroundContainer{
+    height: 280px;
+    width: 280px;
+    margin: 30px 0 0 40px;
+  }
+  .title{
+    font-size: 50px;
+    margin-right: -10%;
+    margin-top: 23%;
+  }
+
+  .subTitle{
+    font-size: 40px;
+  }
+
+  .timerText{
+    font-size: 70px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -111%;
+  }
+
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) {
+  .timerContainer > svg{
+    height: 375px;
+    width: 375px;
+  }
+  
+  .container{
+    flex-direction: row;
+    width: 50%;
+    margin: -3% 0 0 6%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 460px;
+    height: 460px;
+  }
+
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+
+  .backgroundContainer{
+    height: 280px;
+    width: 280px;
+    margin: 30px 0 0 40px;
+  }
+  .title{
+    font-size: 50px;
+    margin-right: -10%;
+    margin-top: 23%;
+  }
+
+  .subTitle{
+    font-size: 40px;
+  }
+
+  .timerText{
+    font-size: 70px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -111%;
+  }
+
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+  .timerContainer > svg{
+    height: 335px;
+    width: 335px;
+  }
+  
+  .container{
+    flex-direction: row;
+    width: 50%;
+    margin: 0 2% 0 4%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 460px;
+    height: 460px;
+  }
+
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+
+  .backgroundContainer{
+    height: 250px;
+    width: 250px;
+    margin: 20px 0 0 32px;
+  }
+  .title{
+    font-size: 40px;
+    margin-top: 25%;
+  }
+
+  .subTitle{
+    font-size: 34px;
+  }
+
+  .timerText{
+    font-size: 60px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -115%;
+  }
+
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) and (max-height: 757px) {
+  .timerContainer > svg{
+    height: 335px;
+    width: 335px;
+  }
+  
+  .container{
+    flex-direction: row;
+    width: 49%;
+    margin: -3% 2% 0 4%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 460px;
+    height: 460px;
+  }
+
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+
+  .backgroundContainer{
+    height: 250px;
+    width: 250px;
+    margin: 20px 0 0 32px;
+  }
+  .title{
+    font-size: 40px;
+    margin-top: 25%;
+  }
+
+  .subTitle{
+    font-size: 34px;
+  }
+
+  .timerText{
+    font-size: 60px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -115%;
+  }
+
+}
+
+@media screen and (max-width: 1536px) and (min-width: 1441px) {
+  .timerContainer > svg{
+    height: 330px;
+    width: 330px;
+  }
+  
+  .container{
+    width: 48%;
+    margin: -4% 2% 0 4%;
+  }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) {
+  .timerContainer > svg{
+    height: 335px;
+    width: 335px;
+  }
+  
+  .container{
+    flex-direction: row;
+    width: 50%;
+    margin: 0 2% 0 4%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 460px;
+    height: 460px;
+  }
+
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+
+  .backgroundContainer{
+    height: 250px;
+    width: 250px;
+    margin: 20px 0 0 32px;
+  }
+  .title{
+    font-size: 40px;
+    margin-top: 25%;
+  }
+
+  .subTitle{
+    font-size: 34px;
+  }
+
+  .timerText{
+    font-size: 60px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -115%;
+  }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) and (max-height: 755px) {
+  .container{
+    flex-direction: row;
+    width: 50%;
+    margin: -4% 2% 0 3%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 420px;
+    height: 420px;
+  }
+
+  .timerContainer > svg{
+    height: 310px;
+    width: 310px;
+  }
+
+  .backgroundContainer{
+    height: 230px;
+    width: 230px;
+    margin: 20px 0 0 32px;
+  }
+
+  .title{
+    font-size: 40px;
+    margin-top: 25%;
+    margin-right: -2%;
+  }
+}
+
+@media screen and (max-width: 1380px) and (min-width: 900px) {
+  .container{
+    flex-direction: row;
+    width: 50%;
+    margin: -4% 2% 0 3%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 400px;
+    height: 400px;
+  }
+
+  .timerContainer > svg{
+    height: 300px;
+    width: 300px;
+  }
+
+  .backgroundContainer{
+    height: 220px;
+    width: 220px;
+    margin: 20px 0 0 32px;
+  }
+
+  .title{
+    font-size: 40px;
+    margin-top: 25%;
+    margin-right: -2%;
+  }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 900px) {
+
+  .container{
+    flex-direction: row;
+    width: 50%;
+    margin: -4% 2% 0 3%;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 400px;
+    height: 400px;
+  }
+
+  .timerContainer > svg{
+    height: 300px;
+    width: 300px;
+  }
+
+  .backgroundContainer{
+    height: 220px;
+    width: 220px;
+    margin: 20px 0 0 32px;
+  }
+
+  .title{
+    font-size: 40px;
+    margin-top: 25%;
+    margin-right: -2%;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 900px) {
+
+  .container{
+    margin: -7% 2% 0 3%;
+  }
+
+  .timerContainer > svg{
+    height: 280px;
+    width: 280px;
+  }
+  .title{
+    font-size: 36px;
+    margin-top: 40%;
+  }
+}
+
+/* tablets landscape */
+@media screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 720px){
+
+  .container{
+    margin: -7% 2% 0 3%;
+  }
+
+  .title{
+    margin-top: 36%;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 632px){
+
+  .container{
+    margin: -5% 2% 0 3%;
+  }
+
+  .title{
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 632px){
+
+  .container{
+    margin: -4% 2% 0 3%;
+  }
+
+  .title{
+    margin-top: 27%;
+  }
+}
+
+@media screen and (max-width: 1194px) and (min-width: 900px) {
+
+  .container{
+    margin: -7% 2% 0 3%;
+  }
+
+  .title{
+    font-size: 36px;
+    margin-top: 42%;
+  }
+}
+
+@media screen and (max-width: 1194px) and (min-width: 900px) and (max-height: 660px){
+
+  .container{
+    margin: -5% 2% 0 3%;
+  }
+
+  .timerContainer > svg{
+    height: 280px;
+    width: 280px;
+  }
+  
+  .title{
+    font-size: 36px;
+    margin-top: 34%;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 900px) {
+
+  .container{
+    margin: -5% 2% 0 3%;
+  }
+
+  .timerContainer > svg{
+    height: 240px;
+    width: 240px;
+  }
+
+  .wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .backgroundContainer{
+    height: 180px;
+    width: 180px;
+    margin: 20px 0 0 32px;
+  }
+
+  .title{
+    font-size: 32px;
+    margin-top: 42%;
+  }
+
+  .subTitle{
+    font-size: 28px;
+  }
+
+  .timerText{
+    font-size: 50px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -110%;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 900px) and (max-height: 640px){
+
+  .container{
+    margin: -5% 2% 0 3%;
+  }
+
+  .title{
+    margin-top: 32%;
+  }
+}
+
+@media screen and (max-width: 965px) and (min-width: 900px) {
+
+  .container{
+    margin: -5% 2% 0 3%;
+  }
+
+  .timerContainer > svg{
+    height: 220px;
+    width: 220px;
+  }
+
+
+  .backgroundContainer{
+    height: 170px;
+    width: 160px;
+    margin: 20px 0 0 32px;
+  }
+
+  .title{
+    font-size: 30px;
+    margin-top: 36%;
+  }
+
+  .subTitle{
+    font-size: 28px;
+  }
+
+  .timerText{
+    font-size: 45px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -113%;
+  }
+}
+
+@media screen and (max-width: 965px) and (min-width: 900px) {
+
+  .title{
+    margin-top: 30%;
+  }
+}
+
+/* mobiles and tablets vertical */
+@media screen and (max-width: 1024px) and (min-height: 1168px) {
+  .wrapper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .timerContainer > svg{
+    height: 270px;
+    width: 270px;
+  }
+
+  .backgroundContainer{
+    height: 200px;
+    width: 200px;
+    margin: 20px 0 0 32px;
+  }
+
+  .timerText{
+    font-size: 55px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -112%;
+  }
+
+  .title{
+      font-size: 40px;
+      margin-top: 1rem;
+  }
+
+  .subTitle{
+      font-size: 36px;
+  }
+
+  .countdown{
+    margin-top: -1rem;
+  }
+
+  .container{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 540px) {
+  .wrapper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .timerContainer > svg{
+    height: 270px;
+    width: 270px;
+  }
+
+  .backgroundContainer{
+    height: 200px;
+    width: 200px;
+    margin: 20px 0 0 32px;
+  }
+
+  .timerText{
+    font-size: 55px;
+    font-family: PoppinsBold;
+    margin-top: 6%;
+    margin-left: -112%;
+  }
+
+  .title{
+      font-size: 40px;
+      margin-top: 1rem;
+  }
+
+  .subTitle{
+      font-size: 36px;
+  }
+
+  .countdown{
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 540px) and (max-width: 876px) {
+  .title{
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .subTitle{
+    font-size: 32px;
+  }
+  .countdown{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 602px) and (min-width: 540px) {
+  .wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .timerContainer > svg{
+    height: 250px;
+    width: 250px;
+  }
+
+  .backgroundContainer{
+    height: 180px;
+    width: 180px;
+    margin: 20px 0 0 32px;
+  }
+
+  .title{
+      font-size: 36px;
+      margin-top: 1rem;
+  }
+
+  .subTitle{
+      font-size: 32px;
+  }
+
+  .countdown{
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 540px) and (max-width: 876px) {
+  .title{
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .subTitle{
+    font-size: 32px;
+  }
+  .countdown{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 751px) and (min-width: 540px) and (max-height: 335px) {
+  .wrapper {
+    width: 200px;
+    height: 200px;
+    margin-top: -15%;
+    margin-left: -87%;
+  }
+  .timerContainer > svg{
+    height: 150px;
+    width: 150px;
+  }
+  .backgroundContainer{
+    height: 120px;
+    width: 120px;
+    margin: 13px 0 0 15px;
+  }
+  .timerText{
+    font-size: 42px;
+    margin-left: -112.5%;
+  }
+  .title{
+    font-size: 29px;
+    margin-top: 10px;
+    margin-left: -50%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wrapper {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .countdown{
+    margin-top: 3rem;
+  }
+}
+

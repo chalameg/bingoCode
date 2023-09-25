@@ -1,0 +1,22 @@
+.mySwiper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .mySwiper {
+        width: 100%;
+        padding: 0 5% !important;
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .mySwiper {
+        width: 100%;
+        padding: 0 5% !important;
+        margin: 0 !important;
+    }
+}

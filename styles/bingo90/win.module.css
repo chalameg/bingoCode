@@ -1,0 +1,379 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  color: #172707;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.username {
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 5px;
+  font-family: "PoppinsBold";
+}
+
+.winner {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winner div {
+  text-align: center;
+}
+
+.center {
+  font-size: 3em;
+}
+
+.winValue {
+  font-size: 40px;
+}
+
+.prizeContainer {
+  color: #7244e9;
+  font-size: 7vw;
+  margin-left: 5px;
+  line-height: 6vw;
+}
+
+.coin {
+  width: 100px;
+}
+
+.bigBingo {
+  background-color: white;
+}
+
+.playerIcon {
+  border-radius: 50%;
+  height: 50px;
+  width: 70px;
+  margin-bottom: 2px;
+}
+
+.winTicket {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.winCoin {
+  width: 30px;
+}
+
+.prizeValueloc {
+  position: relative !important;
+  top: 110px !important;
+  left: -100% !important;
+}
+
+@media only screen and (max-device-width: 2560px) {
+  .prizeContainer {
+    font-size: 50px;
+  }
+  .playerIcon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .username {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .prizeValueloc {
+    top: 110px !important;
+  }
+
+  .winContainer {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-device-width: 1920px) {
+  .prizeContainer {
+    font-size: 7vw;
+  }
+  .playerIcon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .username {
+    font-size: 37px;
+    text-align: center;
+  }
+
+  .prizeValueloc {
+    top: 110px !important;
+  }
+
+  .winContainer {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 1600px) {
+
+  .winContainer {
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-device-width: 1440px) {
+  .prizeContainer {
+    font-size: 7vw;
+  }
+  .playerIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .username {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .prizeValueloc {
+    top: 110px !important;
+  }
+
+  .winContainer {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-device-width: 1367px) {
+
+  .winContainer {
+    margin-top: 10px;
+  }
+}
+
+/* for portrait */
+@media only screen and (max-device-width: 1080px) and (min-width: 900px) {
+  .container {
+    padding-top: 10px;
+  }
+  .prizeContainer {
+    font-size: 5vw;
+  }
+  .playerIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .username {
+    font-size: 23px;
+    text-align: center;
+  }
+  .prizeValueloc {
+    top: 75px !important;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 900px)  and (max-height: 640px){
+  .container {
+    padding-top: 10px;
+  }
+  .prizeContainer {
+    font-size: 4.5vw;
+  }
+  .playerIcon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .username {
+    font-size: 20px;
+    text-align: center;
+  }
+  .prizeValueloc {
+    top: 40px !important;
+  }
+}
+
+
+@media only screen and (max-device-width: 1024px) and (min-width: 900px)  {
+  .container {
+    padding-top: 10px;
+  }
+  .prizeContainer {
+    font-size: 5vw;
+  }
+  .playerIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .username {
+    font-size: 23px;
+    text-align: center;
+  }
+  .prizeValueloc {
+    top: 75px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px)  and  (max-height: 610px){
+  .container {
+    padding-top: 10px;
+  }
+  .prizeContainer {
+    font-size: 4.5vw;
+  }
+  .playerIcon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .username {
+    font-size: 20px;
+    text-align: center;
+  }
+  .prizeValueloc {
+    top: 40px !important;
+  }
+}
+
+@media only screen and (max-device-width: 965px) and (min-width: 900px)  {
+  .container {
+    padding-top: -5px;
+  }
+  .prizeContainer {
+    font-size: 4vw;
+  }
+  .playerIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .username {
+    font-size: 20px;
+    text-align: center;
+  }
+  .prizeValueloc {
+    top: 75px !important;
+  }
+}
+
+
+/* mobiles and tablets vertical */
+@media only screen and (max-width: 900px) {
+  .coin {
+    width: 37px;
+    height: 37px;
+  }
+
+  .prizeContainer {
+    color: #7244e9;
+    font-size: 26px;
+    margin-left: 5px;
+    line-height: 30px;
+  }
+
+  .playerIcon {
+    width: 75px;
+    height: 75px;
+  }
+  .username {
+    font-size: 34px;
+  }
+
+  .prizeValueloc {
+    top: 0 !important;
+  }
+
+  .winContainer {
+    margin-top: -4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .coin {
+    width: 35px;
+    height: 35px;
+  }
+
+  .prizeContainer {
+    color: #7244e9;
+    font-size: 23px;
+    margin-left: 5px;
+    line-height: 30px;
+  }
+
+  .playerIcon {
+    width: 70px;
+    height: 70px;
+  }
+  .username {
+    font-size: 32px;
+  }
+
+  .prizeValueloc {
+    top: 0 !important;
+  }
+
+  .winContainer {
+    margin-top: -8px;
+  }
+}
+
+@media screen and (max-width: 751px) and (min-width: 540px) and (max-height: 335px) {
+  .coin {
+    width: 30px;
+    height: 30px;
+  }
+
+  .prizeContainer {
+    color: #7244e9;
+    font-size: 23px;
+    margin-left: 5px;
+    line-height: 30px;
+  }
+
+  .playerIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .username {
+    font-size: 22px;
+  }
+
+   /* .prizeValueloc {
+    top: 0 !important;
+  } */
+
+  .winContainer {
+    margin-top: -5px;
+    margin-left: -50px;
+  } 
+}
+
+@media only screen and (max-width: 540px) {
+  .playerIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .prizeContainer {
+    color: #7244e9;
+    font-size: 23px;
+    margin-left: 5px;
+    line-height: 30px;
+  }
+
+  .winContainer {
+    margin-top: -28px;
+  }
+
+  .username {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+}

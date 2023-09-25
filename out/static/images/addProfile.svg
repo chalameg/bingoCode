@@ -1,0 +1,23 @@
+<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_5915_855)">
+<circle cx="21.5" cy="20.5" r="15.5" fill="white"/>
+</g>
+<g clip-path="url(#clip0_5915_855)">
+<path d="M29.375 23.125V25.75H32V27.5H29.375V30.125H27.625V27.5H25V25.75H27.625V23.125H29.375ZM29.382 12.625C29.8615 12.625 30.25 13.0144 30.25 13.4939V21.6742C29.6879 21.4757 29.0961 21.3745 28.5 21.375V14.375H14.5L14.5009 26.625L22.6314 18.4936C22.7818 18.3427 22.9823 18.2519 23.195 18.2384C23.4077 18.2248 23.618 18.2895 23.7864 18.4201L23.8678 18.4945L26.9705 21.6007C26.2921 21.8075 25.6625 22.1495 25.1198 22.6061C24.5771 23.0627 24.1325 23.6245 23.8128 24.2576C23.4931 24.8907 23.305 25.582 23.2597 26.2898C23.2144 26.9976 23.3129 27.7072 23.5492 28.3759L13.618 28.375C13.3877 28.3748 13.1669 28.2831 13.0042 28.1202C12.8414 27.9573 12.75 27.7364 12.75 27.5061V13.4939C12.7516 13.2641 12.8435 13.0441 13.0059 12.8816C13.1684 12.719 13.3882 12.6268 13.618 12.625H29.382ZM18 16.125C18.4641 16.125 18.9092 16.3094 19.2374 16.6376C19.5656 16.9658 19.75 17.4109 19.75 17.875C19.75 18.3391 19.5656 18.7842 19.2374 19.1124C18.9092 19.4406 18.4641 19.625 18 19.625C17.5359 19.625 17.0908 19.4406 16.7626 19.1124C16.4344 18.7842 16.25 18.3391 16.25 17.875C16.25 17.4109 16.4344 16.9658 16.7626 16.6376C17.0908 16.3094 17.5359 16.125 18 16.125Z" fill="#7F5AEF"/>
+</g>
+<defs>
+<filter id="filter0_d_5915_855" x="0" y="0" width="39" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2" dy="-1"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5915_855"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5915_855" result="shape"/>
+</filter>
+<clipPath id="clip0_5915_855">
+<rect width="21" height="21" fill="white" transform="translate(11 10)"/>
+</clipPath>
+</defs>
+</svg>

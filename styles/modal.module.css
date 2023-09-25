@@ -1,0 +1,49 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  
+  }
+  
+  .open {
+    display: flex;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .modalcontent {
+    background-color: rgba(242, 238, 238, 0.423) !important;
+    -webkit-backdrop-filter: blur(15.5);
+    backdrop-filter: blur(15.5px);
+    overflow-y: hidden;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100% !important;
+    height: 100% ;
+  }
+  .keyboardOpen {
+      height:50% !important
+  }
+  /* .keyboardClose{
+    height:100% !important;
+  } */
+  
+ 
+  

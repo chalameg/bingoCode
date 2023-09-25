@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 50vw;
+}
+
+.ball,
+.ring {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.anim,
+.text {
+  position: relative;
+}
+
+.text {
+  /* margin-left: 500px; */
+  margin-left: 0px;
+  width: 1500px;
+  height: 100%;
+}
+
+.ring {
+  /* animation: ringspin 2s infinite linear;  */
+  top: 24px;
+  left: 12px;
+}
+
+.text img {
+  width: 100%;
+}
+
+@keyframes ringspin {
+  0% {
+    transform: rotateZ(360deg);
+    top: 24px;
+    left: 12px;
+  }
+  50% {
+    top: -20px;
+    left: 16px;
+    transform: rotateZ(180deg);
+  }
+  100% {
+    left: -6px;
+    top: 20px;
+    transform: rotateZ(0deg);
+  }
+}

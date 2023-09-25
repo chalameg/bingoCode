@@ -1,0 +1,27 @@
+$mainColor: #273fa3;
+$mainColorDark: darken($mainColor, 5%);
+$mainColorDarker: darken($mainColor, 10%);
+$mainColorDarkerOpacity: rgba($mainColorDarker, 0.7);
+$secondaryColor: #d3f8f7;
+$orange: rgb(246, 210, 35);
+$orangeDark: darken($orange, 5%);
+$orangeDarker: darken($orange, 10%);
+$orangeDarkerOpacity: rgba($orangeDarker, 0.9);
+$topGradientDark: #143e5a;
+$topGradientLight:#4589b0;
+$bottomGradientDark: #071620;
+$bottomGradientLight: #204153;
+$homeBackgroundColor: #3B1103;
+$bottomScreenBackgroundColor:  #e2b992; //#efd2ae;
+$red: crimson;
+$white: #f5feff;
+$letterBColor: #000000;
+$letterIColor: #F2BD00;
+$letterNColor: #6E1CFF;
+$letterGColor: #479B04;
+$letterOColor: #FA4545;
+$black: #333;
+
+$orangeMedium: #FF764A;
+$orangeMediumDark: darken($orangeMedium, 10%);
+$redDark: #902610;

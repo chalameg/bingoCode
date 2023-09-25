@@ -1,0 +1,85 @@
+.circleButton {
+  border-radius: 50%;
+  border: 1px #5a8d8e solid;
+  margin-right: 4px;
+  margin-left: 4px;
+  min-width: 50px;
+  font-size: 2em;
+  padding: 1px;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.circleButton:hover {
+  cursor: pointer;
+  background-color: #5a8d8e4f;
+}
+
+.valueChangeButton {
+  font-size: 24px ​ !important;
+  border-radius: 50%;
+  border: 3px #1a2a2a solid;
+  padding: 8px 3px 6px 3px;
+  margin: 3px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #d1d1d1;
+  transition: 0.3s;
+}
+
+.valueChangeButton:hover {
+  cursor: pointer;
+  background-color: rgb(250, 234, 10);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .circleButton {
+    font-size: 12px;
+    min-width: 16px;
+    /* min-width: unset; */
+  }
+  .valueChangeButton {
+    padding: unset;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .circleButton {
+    min-width: 50px !important;
+  }
+  .valueChangeButton {
+    min-width: 30px !important;
+    min-height: 30px !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .circleButton {
+    min-width: 20px !important;
+  }
+}

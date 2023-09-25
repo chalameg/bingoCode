@@ -1,0 +1,860 @@
+.container {
+  display: flex;
+  align-items: start;
+  padding: 10px 10px 10px 0px;
+  height: min-content;
+
+}
+
+.container>div {
+  display: flex;
+}
+
+.ticketQuantity {
+  font-size: 2.5em;
+}
+
+.ticketCount {
+  font-size: 28px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minutsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticketCount2 {
+  color: black;
+}
+
+.toNextGame {
+  margin: 0;
+}
+
+.coin {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.ticketsCost {
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  color: red;
+}
+
+.newTicketsNum {
+  content: " ";
+  animation: pulse 2s linear;
+  border-radius: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #907e05bb;
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.25);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(253, 22, 22, 0);
+  }
+}
+
+.buyButton {
+  color: white !important;
+  border-radius: 25px;
+  background: #252e68;
+  cursor: pointer;
+  width: 150px !important;
+  height: unset !important;
+  font-size: 1em;
+  font-family: inherit;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-position: right center;
+  display: block;
+  line-height: 40px;
+  position: relative;
+  transition: all 0.35s;
+  padding: 0px 20px;
+  min-height: 100px;
+}
+
+.buyButton div {
+  position: relative;
+  z-index: 2;
+  font-size: 2.5rem;
+}
+
+.buyButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+.buyButton:active {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px,
+    inset rgba(255, 255, 255, 0.03) 0px 20px 0px,
+    inset rgba(0, 0, 0, 0.15) 0px -20px 20px,
+    inset rgba(255, 255, 255, 0.05) 0px 20px 20px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #333;
+  display: block;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* CSS */
+/* CSS */
+.buttonI,
+.buttonB {
+  min-width: 180px;
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px, rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .04em;
+  line-height: 16px;
+  margin: 10px;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.buttonI:hover {
+  background-image: linear-gradient(#B384C9, #391F5B 50%);
+}
+
+/* Clock  */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+
+.clockCircles {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  font-size: 100px;
+}
+
+.clockCirclesItem {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1em;
+  height: 1em;
+  font-size: 100%;
+}
+
+.clockCirclesItem:nth-child(1) {
+  background-image: linear-gradient(to bottom, #00c0ff, #ffcf00, #fc4f4f, #0e22c3);
+  box-shadow: 0px 30px 40px 0px rgba(72, 30, 202, 0.2);
+}
+
+.clockCirclesItem:nth-child(2) {
+  background-image: linear-gradient(to bottom, #027fff, #491bc9);
+  font-size: 95%;
+  box-shadow: 0px 10px 20px 0px rgba(42, 17, 121, 0.5);
+}
+
+.clockCirclesItem:nth-child(3) {
+  font-size: 80%;
+  box-shadow: inset 0px 20px 40px rgba(0, 0, 0, 0.1), inset 0px 0px 40px rgba(37, 13, 105, 0.55), 0px 5px 0px #5430ff, 0px -1px 0px 3px rgba(14, 29, 169, 0.35);
+}
+
+.clockCirclesItem:nth-child(4) {
+  background: #3349c9;
+  font-size: 35px;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 20px 1px rgba(54, 21, 148, 0.3);
+}
+
+.clockCirclesItem:nth-child(4) .wave {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-size: 100%;
+}
+
+.clockCirclesItem:nth-child(4) .wave:nth-child(1) {
+  opacity: 0;
+}
+
+.clockCirclesItem:nth-child(4) .wave:nth-child(2) {
+  font-size: 110%;
+  opacity: 0.1;
+}
+
+.clockCirclesItem:nth-child(4) .wave:nth-child(3) {
+  font-size: 120%;
+  opacity: 0.1;
+}
+
+.clockCirclesItem:nth-child(4) .wave:nth-child(4) {
+  font-size: 130%;
+  opacity: 0.1;
+}
+
+.clockCirclesItem:nth-child(4) .wave:nth-child(5) {
+  font-size: 150%;
+  opacity: 0.3;
+  border-color: #321e9a;
+}
+
+
+
+
+.clockIndicators {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-radius: 50%;
+}
+
+.clockIndicatorsItem {
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 2px;
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  z-index: 2;
+  border-radius: 1px;
+  background: none;
+  height: 108px;
+  top: 10px;
+  opacity: 0.5;
+}
+
+.clockIndicatorsItem:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 7px;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.clockIndicatorsItem:nth-child(1),
+.clockIndicatorsItem:nth-child(3),
+.clockIndicatorsItem:nth-child(5),
+.clockIndicatorsItem:nth-child(7) {
+  opacity: 1;
+  width: 8px;
+}
+
+.clockIndicatorsItem:nth-child(1):after,
+.clockIndicatorsItem:nth-child(3):after,
+.clockIndicatorsItem:nth-child(5):after,
+.clockIndicatorsItem:nth-child(7):after {
+  height: 10px;
+  width: 6px;
+}
+
+.clockIndicatorsItem:nth-of-type(1) {
+  transform: rotateZ(calc(45deg * 1));
+}
+
+.clockIndicatorsItem:nth-of-type(2) {
+  transform: rotateZ(calc(45deg * 2));
+}
+
+.clockIndicatorsItem:nth-of-type(3) {
+  transform: rotateZ(calc(45deg * 3));
+}
+
+.clockIndicatorsItem:nth-of-type(4) {
+  transform: rotateZ(calc(45deg * 4));
+}
+
+.clockIndicatorsItem:nth-of-type(5) {
+  transform: rotateZ(calc(45deg * 5));
+}
+
+.clockIndicatorsItem:nth-of-type(6) {
+  transform: rotateZ(calc(45deg * 6));
+}
+
+.clockIndicatorsItem:nth-of-type(7) {
+  transform: rotateZ(calc(45deg * 7));
+}
+
+.clockIndicatorsItem:nth-of-type(8) {
+  transform: rotateZ(calc(45deg * 8));
+}
+
+.clockIndicatorsItem:nth-of-type(9) {
+  transform: rotateZ(calc(45deg * 9));
+}
+
+.clockIndicatorsItem:nth-of-type(10) {
+  transform: rotateZ(calc(45deg * 10));
+}
+
+.clockIndicatorsItem:nth-of-type(11) {
+  transform: rotateZ(calc(45deg * 11));
+}
+
+.clockIndicatorsItem:nth-of-type(12) {
+  transform: rotateZ(calc(45deg * 12));
+}
+
+.clockIndicatorsItem:nth-of-type(13) {
+  transform: rotateZ(calc(45deg * 13));
+}
+
+.clockIndicatorsItem:nth-of-type(14) {
+  transform: rotateZ(calc(45deg * 14));
+}
+
+.clockIndicatorsItem:nth-of-type(15) {
+  transform: rotateZ(calc(45deg * 15));
+}
+
+.clockIndicatorsItem:nth-of-type(16) {
+  transform: rotateZ(calc(45deg * 16));
+}
+
+.clockIndicatorsItem:nth-of-type(17) {
+  transform: rotateZ(calc(45deg * 17));
+}
+
+.clockIndicatorsItem:nth-of-type(18) {
+  transform: rotateZ(calc(45deg * 18));
+}
+
+.clockIndicatorsItem:nth-of-type(19) {
+  transform: rotateZ(calc(45deg * 19));
+}
+
+.clockIndicatorsItem:nth-of-type(20) {
+  transform: rotateZ(calc(45deg * 20));
+}
+
+.clockIndicatorsItem:nth-of-type(21) {
+  transform: rotateZ(calc(45deg * 21));
+}
+
+.clockIndicatorsItem:nth-of-type(22) {
+  transform: rotateZ(calc(45deg * 22));
+}
+
+.clockIndicatorsItem:nth-of-type(23) {
+  transform: rotateZ(calc(45deg * 23));
+}
+
+.clockIndicatorsItem:nth-of-type(24) {
+  transform: rotateZ(calc(45deg * 24));
+}
+
+.clockIndicatorsItem:nth-of-type(25) {
+  transform: rotateZ(calc(45deg * 25));
+}
+
+.clockIndicatorsItem:nth-of-type(26) {
+  transform: rotateZ(calc(45deg * 26));
+}
+
+.clockIndicatorsItem:nth-of-type(27) {
+  transform: rotateZ(calc(45deg * 27));
+}
+
+.clockIndicatorsItem:nth-of-type(28) {
+  transform: rotateZ(calc(45deg * 28));
+}
+
+.clockIndicatorsItem:nth-of-type(29) {
+  transform: rotateZ(calc(45deg * 29));
+}
+
+.clockIndicatorsItem:nth-of-type(30) {
+  transform: rotateZ(calc(45deg * 30));
+}
+
+.clockIndicatorsItem:nth-of-type(31) {
+  transform: rotateZ(calc(45deg * 31));
+}
+
+.clockIndicatorsItem:nth-of-type(32) {
+  transform: rotateZ(calc(45deg * 32));
+}
+
+.clockIndicatorsItem:nth-of-type(33) {
+  transform: rotateZ(calc(45deg * 33));
+}
+
+.clockIndicatorsItem:nth-of-type(34) {
+  transform: rotateZ(calc(45deg * 34));
+}
+
+.clockIndicatorsItem:nth-of-type(35) {
+  transform: rotateZ(calc(45deg * 35));
+}
+
+.clockIndicatorsItem:nth-of-type(36) {
+  transform: rotateZ(calc(45deg * 36));
+}
+
+.clockIndicatorsItem:nth-of-type(37) {
+  transform: rotateZ(calc(45deg * 37));
+}
+
+.clockIndicatorsItem:nth-of-type(38) {
+  transform: rotateZ(calc(45deg * 38));
+}
+
+.clockIndicatorsItem:nth-of-type(39) {
+  transform: rotateZ(calc(45deg * 39));
+}
+
+.clockIndicatorsItem:nth-of-type(40) {
+  transform: rotateZ(calc(45deg * 40));
+}
+
+.clockIndicatorsItem:nth-of-type(41) {
+  transform: rotateZ(calc(45deg * 41));
+}
+
+.clockIndicatorsItem:nth-of-type(42) {
+  transform: rotateZ(calc(45deg * 42));
+}
+
+.clockIndicatorsItem:nth-of-type(43) {
+  transform: rotateZ(calc(45deg * 43));
+}
+
+.clockIndicatorsItem:nth-of-type(44) {
+  transform: rotateZ(calc(45deg * 44));
+}
+
+.clockIndicatorsItem:nth-of-type(45) {
+  transform: rotateZ(calc(45deg * 45));
+}
+
+.clockIndicatorsItem:nth-of-type(46) {
+  transform: rotateZ(calc(45deg * 46));
+}
+
+.clockIndicatorsItem:nth-of-type(47) {
+  transform: rotateZ(calc(45deg * 47));
+}
+
+.clockIndicatorsItem:nth-of-type(48) {
+  transform: rotateZ(calc(45deg * 48));
+}
+
+.clockIndicatorsItem:nth-of-type(49) {
+  transform: rotateZ(calc(45deg * 49));
+}
+
+.clockIndicatorsItem:nth-of-type(50) {
+  transform: rotateZ(calc(45deg * 50));
+}
+
+.clockIndicatorsItem:nth-of-type(51) {
+  transform: rotateZ(calc(45deg * 51));
+}
+
+.clockIndicatorsItem:nth-of-type(52) {
+  transform: rotateZ(calc(45deg * 52));
+}
+
+.clockIndicatorsItem:nth-of-type(53) {
+  transform: rotateZ(calc(45deg * 53));
+}
+
+.clockIndicatorsItem:nth-of-type(54) {
+  transform: rotateZ(calc(45deg * 54));
+}
+
+.clockIndicatorsItem:nth-of-type(55) {
+  transform: rotateZ(calc(45deg * 55));
+}
+
+.clockIndicatorsItem:nth-of-type(56) {
+  transform: rotateZ(calc(45deg * 56));
+}
+
+.clockIndicatorsItem:nth-of-type(57) {
+  transform: rotateZ(calc(45deg * 57));
+}
+
+.clockIndicatorsItem:nth-of-type(58) {
+  transform: rotateZ(calc(45deg * 58));
+}
+
+.clockIndicatorsItem:nth-of-type(59) {
+  transform: rotateZ(calc(45deg * 59));
+}
+
+.clockIndicatorsItem:nth-of-type(60) {
+  transform: rotateZ(calc(45deg * 60));
+}
+
+.clockTimes {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clockTimesSecond,
+.clockTimesMinute,
+.clockTimesHour {
+  position: absolute;
+  left: calc(50% - 1px);
+  width: 2px;
+  background: #f4eed7;
+  transform-origin: bottom center;
+  top: 0px;
+  z-index: 2;
+  border-radius: 1px;
+}
+
+.clockTimesSecond {
+  height: 30px;
+  margin-top: 10px;
+  animation: time 2s linear infinite;
+  z-index: 3;
+  background-image: linear-gradient(to top, #e45753 0%, #ca09e8 100%);
+  width: 3px;
+  border-radius: 50px;
+}
+
+.clockTimesMinute {
+  height: 27px;
+  margin-top: 13px;
+  opacity: 0.75;
+  animation: time 20s linear infinite;
+  animation-delay: -35s;
+}
+
+.clockTimesHour {
+  height: 22px;
+  margin-top: 18px;
+  width: 4px;
+  border-radius: 50px;
+  box-shadow: 3px 1px 6px -1px rgba(10, 21, 53, 0.45);
+  animation: time 60s linear infinite;
+  animation-delay: -20s;
+}
+
+@keyframes time {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 2160px) {
+  .container {
+    height: 75% !important;
+  }
+
+  .container h2,
+  .ticketCount {
+    font-size: 32px !important;
+  }
+
+  .buyButton {
+    min-height: 140px !important;
+  }
+
+  .clock{
+    width: 100px;
+    height: 100px;
+  }
+
+ 
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    height: 75% !important;
+  }
+
+  .container h2,
+  .ticketCount {
+    font-size: 32px !important;
+  }
+
+  .buyButton {
+    min-height: 140px !important;
+  }
+
+  .clock{
+    width: 100px;
+    height: 100px;
+  }
+
+ 
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    height: 75% !important;
+  }
+
+  .container h2,
+  .ticketCount {
+    font-size: 32px !important;
+  }
+
+  .buyButton {
+    min-height: 140px !important;
+  }
+
+  .clock{
+    width: 100px;
+    height: 100px;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+
+  .coin {
+    width: 25px;
+  }
+
+  .ticketCount {
+    font-size: 14px !important;
+  }
+
+  .ticketQuantity {
+    font-size: 1.5em !important;
+  }
+
+  .buyButton {
+    font-size: 1em !important;
+    width: unset !important;
+    flex-direction: column;
+  }
+
+  .buyButton div {
+    line-height: 1;
+  }
+
+  .ticketsCost {
+    font-size: 14px;
+  }
+
+  .spinner {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: #333;
+    display: block;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+    animation: sk-scaleout 1s infinite ease-in-out;
+  }
+
+  .buttonI {
+    min-width: 140px !important;
+  }
+
+  @-webkit-keyframes sk-scaleout {
+    0% {
+      -webkit-transform: scale(0);
+    }
+
+    100% {
+      -webkit-transform: scale(0.5);
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-device-width: 991px) {
+  .container {
+    height: 75% !important;
+  }
+
+  .container h2,
+  .ticketCount {
+    font-size: 20px !important;
+  }
+
+  .buyButton {
+    min-height: 40px !important;
+    min-width: 200px !important;
+  }
+
+  .ticketsCost div,
+  .buyTitle {
+    font-size: 30px !important;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .buttonI {
+    font-size: 21px;
+    padding: 18px 34px;
+
+  }
+}
+
+
+@media screen and (max-width: 750px) and (max-device-width: 750px) {
+
+  .clock {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .clockCirclesItem:nth-child(4) .wave:nth-child(2) {
+    font-size: 110%;
+    opacity: 0.1;
+  }
+
+  .clockCirclesItem:nth-child(4) .wave:nth-child(3) {
+    font-size: 120%;
+    opacity: 0.1;
+  }
+
+  .clockCirclesItem:nth-child(4) .wave:nth-child(4) {
+    font-size: 130%;
+    opacity: 0.1;
+  }
+
+  .clockCirclesItem:nth-child(4) .wave:nth-child(5) {
+    font-size: 150%;
+    opacity: 0.3;
+    border-color: #321e9a;
+  }
+
+  .container h2,
+  .ticketCount {
+    font-size: 15px !important;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ticketsCost div,
+  .buyTitle {
+    font-size: 18px !important;
+  }
+
+  .buttonB {
+    width: 80px;
+    min-width: 90px !important;
+    font-size: 22px;
+  }
+
+  .buttonI {
+    margin: 3px !important;
+    width: 125px;
+    min-width: 125px !important;
+  }
+}

@@ -1,0 +1,1338 @@
+@import "../colors";
+.bingoCard {
+  width: min-content;
+  height: min-content;
+  text-transform: uppercase;
+  background-color: #e4e9ea;
+  min-height: 240px;
+  min-width: 255px;
+  font-family: "LuckiestGuy";
+}
+
+.bingoCardWin {
+  font-size: 8px !important;
+  width: min-content;
+  height: min-content;
+  background-color: #e4e9ea;
+  text-transform: uppercase;
+  min-height: 55px;
+  min-width: 90px;
+  font-family: "LuckiestGuy";
+} 
+
+.numbers {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.numbers.hasNumbers {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content;
+}
+
+.numbersSecondStyle{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.numbersSecondStyle.hasNumbers{
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content;
+}
+
+.bingoCardWin .numbers.hasNumbers {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content;
+}
+
+.numbers .square:not(.hasNumbers) {
+  padding: 0.93em;
+}
+
+.numbersSecondStyle .square:not(.hasNumbers) {
+  padding: 0.93em;
+}
+
+
+.bingoCardWin .numbers .square:not(.hasNumbers) {
+  padding: 4px;
+}
+
+.numbers .square {
+  padding: 20px;
+  border: 0.1px rgb(206, 200, 200) solid;
+  position: relative;
+  
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbersSecondStyle .square {
+  padding: 20px;
+  border: 0.1px rgb(206, 200, 200) solid;
+  position: relative;
+  
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbers > .square::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.numbers .square .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.numbersSecondStyle > .square::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.numbersSecondStyle .square .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.contentText {
+  justify-content: center;
+  align-items: center;
+}
+
+.stump {
+  background-color: #7244e9;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.stumpTopSectionBingoWinCard {
+  background-color: #7244e9;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: black !important;
+}
+
+.cardStump {
+  background-color: #4e76ee; 
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.cardStumpTopSection {
+  background-color: #4e76ee; 
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: rgb(3, 3, 3) !important;
+}
+
+.free {
+  font-size: 0.6em;
+}
+
+.loader {
+  width: 161px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader p {
+  text-align: center;
+}
+
+.newNum {
+  animation: pulse 1.5s;
+  animation-iteration-count: 3;
+  background-color: #FFB697; 
+}
+
+.signForgottenNum{
+  background-color: #FFB697; 
+}
+
+.handPointer{
+  color: #4244E4;
+  height: 24px;
+  width: 22px
+}
+
+.normalHandPointer{
+  color: #4244E4;
+}
+
+.handPointerContainer{
+  position: absolute;
+  top: 60%;
+  left: 65%;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+  .free {
+    font-size: 10px !important;
+  }
+
+  .stump {
+    font-size: 10px !important;
+  }
+
+  .stump span {
+    top: 6px;
+  }
+
+  .title > div {
+    font-size: 35px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 53px;
+    .content span {
+      margin-top: 15px;
+      font-size: 53px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: .9em;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 23px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: .9em;
+    font-size: 23px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 23px !important;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 101px;
+    .content span{
+      font-size: 101px;
+      margin-top: 24px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .98em;
+  }
+
+  .handPointer{
+    height: 75px;
+    width: 70px
+  }
+
+  .normalHandPointer{
+    height: 36px;
+    width: 34px
+  }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) {
+  .free {
+    font-size: 10px !important;
+  }
+
+  .stump {
+    font-size: 10px !important;
+  }
+
+  .stump span {
+    top: 6px;
+  }
+
+  .title > div {
+    font-size: 35px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 38.8px;
+    .content span {
+      margin-top: 10px;
+      font-size: 39px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: .9em;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 18px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 18px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 18px !important;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 73px;
+    .content span{
+      font-size: 73px;
+      margin-top: 24px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: 1em;
+  }
+
+  .handPointer{
+    height: 40px;
+    width: 38px
+  }
+
+  .normalHandPointer{
+    height: 22px;
+    width: 20px
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 32px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 32.5px;
+    .content span {
+      margin-top: 12px;
+      font-size: 32.5px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 9px;
+    font-size: 34px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 18px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 18px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 17px !important;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 70px;
+    .content span{
+      font-size: 70px;
+      margin-top: 20px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .87em;
+  }
+
+  .handPointer{
+    height: 40px;
+    width: 38px
+  }
+
+  .normalHandPointer{
+    height: 20px;
+    width: 18px
+  }
+}
+
+
+@media screen and (max-width: 1537px) and (min-width: 1441px) {
+
+  .numbers .square {
+    font-size: 31px;
+    .content span {
+      margin-top: 12px;
+      font-size: 31px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 69px;
+    .content span{
+      font-size: 69px;
+      margin-top: 20px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .85em;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) and (max-height: 1167px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 30px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 30px;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 9px;
+    font-size: 32px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 18px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 18px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 17px !important;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 63px;
+    .content span{
+      margin-top: 20px;
+      font-size: 63px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .88em;
+  }
+
+  .handPointer{
+    height: 40px;
+    width: 38px
+  }
+
+  .normalHandPointer{
+    height: 20px;
+    width: 20px
+  }
+}
+
+@media screen and (max-width: 1380px) and (min-width: 900px) and (max-height: 1167px){
+  .square .content span {
+    margin-top: 9px;
+    font-size: 30px;
+  }
+
+  .numbers .square {
+    font-size: 28px;
+
+    .content span{
+      font-size: 28px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 61px;
+    .content span{
+      margin-top: 20px;
+      font-size: 61px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .86em;
+  }
+}
+
+@media screen and (max-width: 1380px) and (min-width: 900px) and (max-height:750px){
+  .square .content span {
+    margin-top: 9px;
+    font-size: 30px;
+  }
+
+  .numbers .square {
+    font-size: 28px;
+
+    .content span{
+      font-size: 28px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 61px;
+    .content span{
+      margin-top: 20px;
+      font-size: 61px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .86em;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 1167px){
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 28px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 26px;
+    .content span {
+      margin-top: 9px;
+      font-size: 29px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 18px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 18px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 17px !important;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 55px;
+    .content span{
+      margin-top: 20px;
+      font-size: 55px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .89em;
+  }
+
+  .handPointer{
+    height: 36px;
+    width: 34px
+  }
+
+  .normalHandPointer{
+    height: 18px;
+    width: 18px
+  }
+}
+
+// tablets landscape
+@media screen and (max-width: 1194px) and (min-width: 900px) and (max-height: 1167px) {
+
+  .title > div {
+    font-size: 24px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 24px;
+    .content span {
+      margin-top: 9px;
+      font-size: 27px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 53px;
+    .content span{
+      margin-top: 20px;
+      font-size: 53px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .86em;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 900px) and (max-height: 1167px) {
+  
+  .title > div {
+    font-size: 24px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 22px;
+    .content span {
+      margin-top: 9px;
+      font-size: 22px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.8em;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 46px;
+    .content span{
+      margin-top: 20px;
+      font-size: 46px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .8em;
+  }
+
+  .handPointer{
+    height: 26px;
+    width: 24px
+  }
+
+  .normalHandPointer{
+    height: 13px;
+    width: 11px
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px) and (max-height: 1167px) {
+  
+  .title > div {
+    font-size: 24px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 20.5px;
+    .content span {
+      margin-top: 9px;
+      font-size: 22px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.8em;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 14px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 12px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 12px !important;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 45px;
+    .content span{
+      margin-top: 20px;
+      font-size: 45px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .76em;
+  }
+  .handPointer{
+    height: 26px;
+    width: 24px
+  }
+
+  .normalHandPointer{
+    height: 13px;
+    width: 11px
+  }
+
+}
+
+// mobiles and tablets vertical
+@media screen and (max-width: 1024px) and (min-height:900px) and (min-height: 1168px){
+
+  .numbers .square {
+    font-size: 51px;
+    .content span {
+      margin-top: 15px;
+      font-size: 51px;
+    }
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+    margin-top: 2px;
+  }
+ 
+  .numbers .square:not(.hasNumbers) {
+    padding: .84em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 100px;
+    .content span{
+      margin-top: 30px;
+      font-size: 100px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .88em;
+  }
+
+
+  .title > div {
+    font-size: 30px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 16px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 16px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+  }
+  
+  .handPointer{
+    height: 65px;
+    width: 60px
+  }
+
+  .normalHandPointer{
+    height: 32px;
+    width: 28px
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .numbers .square {
+    font-size: 44px;
+    .content span {
+      margin-top: 15px;
+      font-size: 44px;
+    }
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+    margin-top: 2px;
+  }
+ 
+  .numbers .square:not(.hasNumbers) {
+    padding: .8em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 84px;
+    .content span{
+      margin-top: 30px;
+      font-size: 84px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .88em;
+  }
+
+
+  .title > div {
+    font-size: 30px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 16px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 16px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+  }
+  
+  .handPointer{
+    height: 60px;
+    width: 55px
+  }
+
+  .normalHandPointer{
+    height: 28px;
+    width: 25px
+  }
+}
+
+@media screen and (max-width: 820px) {
+
+  .numbers .square {
+    font-size: 42px;
+    .content span {
+      margin-top: 15px;
+      font-size: 42px;
+    }
+  }
+  
+  .numbersSecondStyle .square{
+    font-size: 82px;
+    .content span{
+      margin-top: 30px;
+      font-size: 82px;
+    }
+  }
+
+  .handPointer{
+    height: 60px;
+    width: 55px
+  }
+
+  .normalHandPointer{
+    height: 28px;
+    width: 25px
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .numbers .square {
+    font-size: 40px;
+    .content span {
+      margin-top: 12px;
+      font-size: 40px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: .8em;
+  }
+
+  .title > div {
+    font-size: 28px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 16px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 16px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+  }
+  
+  .numbersSecondStyle .square{
+    font-size: 80px;
+    .content span{
+      margin-top: 30px;
+      font-size: 80px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .8em;
+  }
+
+  .handPointer{
+    height: 50px;
+    width: 48px
+  }
+
+  .normalHandPointer{
+    height: 25px;
+    width: 22px
+  }
+}
+
+@media screen and (max-width: 751px) and (min-width: 540px) and (max-height: 335px){
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.39em;
+  }
+
+  .square .content span {
+    margin-top: 5px;
+    font-size: 19px;
+  }
+
+  .numbersSecondStyle .square .content {
+    font-size: 30px;
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: 0.7em;
+  }
+  
+}
+
+@media screen and (max-width: 602px) {
+
+  .numbers .square {
+    font-size: 26px;
+    .content span {
+      margin-top: 10px;
+      font-size: 26px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: .9em;
+  }
+
+  .title > div {
+    font-size: 25px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 16px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 16px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 56px;
+    .content span{
+      margin-top: 15px;
+      font-size: 56px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .9em;
+  }
+
+  .handPointer{
+    height: 40px;
+    width: 38px
+  }
+
+  .normalHandPointer{
+    height: 18px;
+    width: 16px
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+
+  .numbers .square {
+    font-size: 20px;
+    .content span {
+      margin-top: 9px;
+      font-size: 21px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: .8em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 40px;
+    .content span{
+      font-size: 40px;
+      margin-top: 15px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .85em;
+  }
+ 
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 16px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 16px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+  }
+
+  .handPointer{
+    height: 25px;
+    width: 23px
+  }
+
+  .normalHandPointer{
+    height: 13px;
+    width: 11px
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .numbers .square {
+    font-size: 19px;
+    .content span {
+      margin-top: 8px;
+      font-size: 19px;
+    }
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.8em;
+  }
+
+  .numbersSecondStyle .square{
+    font-size: 38px;
+    .content span{
+      font-size: 38px;
+      margin-top: 14px;
+    }
+  }
+
+  .numbersSecondStyle .square:not(.hasNumbers) {
+    padding: .85em;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 1px;
+    font-size: 16px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 10px;
+    font-size: 16px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+  }
+}

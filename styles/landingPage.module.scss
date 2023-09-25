@@ -1,0 +1,4627 @@
+@import "colors";
+
+
+
+.landingPage{
+    display:block;
+    height: 100vh;
+    overflow-y: scroll !important;
+    // background-color: #E5E5E5 !important;
+    background-color: white !important;
+    scroll-behavior: smooth;
+}
+
+.landingPageTop{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border-radius: 0 0 20% 20%;
+}
+
+
+
+// .minLandingPageTop{
+//     height: 100%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 0 0 20% 20%;
+// }
+
+// .profileLandingPageTop{
+//     height: 100%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 0 0 20% 20%;
+// }
+
+.bgGradient{
+    background-image: linear-gradient( to bottom, rgba(122, 87, 243, 0.8),rgba(255, 160, 107, 0.4) ), url(/static/images/landingpagebg.png);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+.landingPageHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6% 0 6%;
+    margin-bottom: 20px;
+    // margin-top: -25px;
+    // background-color: #fff;
+
+}
+
+.headerLeft{
+    padding: 10% 6% 5% 6%;
+    margin-top: -12%;
+    background-color: #fff;
+    border-radius: 50%;
+    // margin-bottom: 20px;
+}
+.aboutUsheader{
+    padding: 10% 10% 5% 10%;
+    margin-top: -9%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.headerLeft img{
+    margin-bottom: -40%;
+}
+
+.headerRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4%;
+    color: white;
+    font-size: 16px;
+}
+
+.signOutBtn{
+    background-color: transparent !important;
+    // background-color: #6538EC !important;
+    background-image: none !important;
+    border: 1px solid #fff !important;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.37) !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding-top: 7% !important;
+    padding-bottom: 7% !important;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.signOutBtn:hover{
+    background-color: #2c2c2c ;
+    // background-color: #FF3636 !important;
+    box-shadow: 2px 2px 17px rgba(255, 255, 255, 0.64) !important;
+}
+
+.signOutBtn:active{
+    background-color: transparent;
+    // background-color: #6538EC !important;
+}
+
+.contactItems{
+    display: block !important;
+}
+
+.contactItemsMobile{
+    display: none !important;
+}
+
+.signInContainer {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.signUpBtn {
+    font-family: 'Poppins';
+    background-color: white !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    margin-bottom: 0 !important;
+    width: 257px;
+    color: #FF3636 !important;
+   
+}
+
+.signUpContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactUsBtn{
+    font-family: 'Poppins';
+    background: white !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 257px;
+    color: #7F5AEF !important;
+}
+
+.contactUsContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.signInBtn{
+    background-color: white !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding-top: 3% !important;
+    padding-bottom: 3% !important;
+    margin-left: 10px;
+    color: #FF3636 !important;
+}
+.signInBtn:hover{
+    background-color: #ff5b5b;
+    box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.signInBtn:active{
+    background-color: #FF3636;
+}
+
+.signUpBtn:hover {
+    background-color: #ff5b5b;
+    box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.contactUsBtn:hover {
+    background-color: #916CFF;
+    box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.contactUsBtn:active {
+    background-color: #7F5AEF;
+    box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.signUpBtn:active{
+    background-color: #FF3636;
+}
+
+.accountContainer{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+
+.account {
+    font-size: 14px;
+    margin-bottom: 10px !important;
+}
+
+.langContainer {
+    position: absolute;
+    top: 40px;
+    width: 130px;
+    background-color: #444444;
+    z-index: 2;
+}
+
+.langItem {
+    padding: 15px 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.langItemActive{
+    padding: 15px 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.29);
+}
+
+.langHoverItem:hover {
+    text-decoration: underline;
+}
+
+.coinsContainer {
+    padding: 20px;
+    position: absolute;
+    width: 450px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landingPageBottom{
+    height: 70vh;
+    margin: 5% 10%;
+    color: #000;
+}
+
+.landingPageBody{
+    margin-top: 5%; 
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content:center;
+    // align-items: center;
+}
+
+
+.bingo75Gradient{
+    border-radius: 5%;
+    background-image: linear-gradient( to bottom, rgb(255, 255, 255, 0.9),rgb(255, 255, 255, 0.9) ), url(/static/images/bingogame.jpg);
+}
+
+.bingo75Title{
+    color: #000;
+    text-align: center;
+    padding: 1.35vw 0 !important;
+}
+
+.playNowBtn{
+    background-color: #FF3636 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: 1px 1px  13px rgb(255, 54, 54, 0.31) !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 8px 0 !important;
+    margin-left: 2%;
+    margin-top: 7%;
+    width: 96%;
+}
+.playNowBtn:hover{
+    background-color: #ff5b5b;
+    box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.playNowBtn:active{
+    background-color: #FF3636;
+}
+
+.getCoinsBtn{
+    background-color: #FF3636 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: 1px 1px 13px rgba(255, 54, 54, 0.31) !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 5% 0 !important;
+    margin-top: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getCoinsBtn:hover{
+    background-color: #ff5b5b;
+    box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.getCoinsBtn:active{
+    background-color: #FF3636;
+}
+
+.giftsBtn{
+    background-color: #7F5AEF !important;
+    box-shadow: 1px 1px 13px rgba(127, 90, 239, 0.6) !important;
+    background-image: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 5% 0 !important;
+    margin-top: 7%;
+    width: 100%;
+    margin-left: -0.1% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.giftsBtn:hover{
+    background-color: #6538EC !important;
+    box-shadow: 1px 1px 13px #7F5AEF !important;
+}
+
+.giftsBtn:active{
+    background-color: #6538EC;
+}
+
+.comingSoonBtn{
+    background-color: #FF3636 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: 1px 1px 13px rgba(255, 54, 54, 0.31) !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 3% 15% 3% 15% !important;
+    margin-left: 1%;
+}
+.comingSoonBtn:hover{
+    background-color: #ff5b5b;
+    box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.comingSoonBtn:active{
+    background-color: #FF3636;
+}
+
+.bingo90{
+    background-image: url(/static/images/bingo90/table.svg);
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    width: 435px;
+    height: 435px;
+    border-radius: 28px;
+    padding: 20px;
+    cursor: pointer;
+    // margin-top: 5%;
+}
+
+.bingo75{
+    // background-image: url(/static/images/bingo90/table.svg);
+    background-color: #1E9AE0;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    width: 435px;
+    height: 435px;
+    border-radius: 28px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    // margin-top: 5%;
+}
+
+.bingoJP {
+    text-shadow: rgb(28, 255, 91) 0px 0px 8px;
+    font-size: 24px;
+    color: #8AFF61;
+    font-family: "Inter";
+    display: flex;
+    align-items: center;
+}
+
+.bingo90JackpotText {
+    background: linear-gradient(279.87deg, #FFEF61 14.21%, #FEAE37 100.04%);
+    text-shadow: 0px 0px 8px #FFB21C;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: bolder;
+    margin-left: 9px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bingo90JackpotText div {
+    font-size: 19px;
+}
+
+.bingo90JackpotText span {
+    font-size: 10px;
+}
+
+.bingoGiftButton {
+    background: #7F5AEF !important;
+    box-shadow: 1px 1px 13px rgba(127, 90, 239, 0.49) !important;
+    border-radius: 10px !important;
+    width: 210px !important;
+    height: 54px !important;
+    margin: 0 auto !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+}
+
+.biggerBingo90{
+    width: 270px !important;
+    display: block !important;
+    justify-content: center !important;
+    height: 30vw !important;
+    margin-top: 0 !important;
+}
+
+.bingo90Balls{
+    height: 55px;
+    // width: 55px;
+}
+
+.bingosContainer {
+    display: flex;
+    gap: 10px;
+}
+
+// .bingo90Gradient{
+//     border-radius: 7%;
+//     background-image: linear-gradient( to bottom, rgb(255, 255, 255, 0.9),rgb(255, 255, 255, 0.9) ), url(/static/images/bingo90.png);
+// }
+
+.bingo90Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bingo90Body{
+    height: 6vw;
+}
+.cardItemTitle{
+    text-align: center;
+    margin-top: 30px;
+    color:#9e9e9e;
+}
+
+.cardItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    line-height:50px;
+    color: #000;
+}
+
+.profile{
+    display: block;
+    color: #fff;
+    width: 35%;
+    padding: 0 13%;
+}
+
+.profileCardItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vh 0;
+}
+.gameRecords{
+    padding: 5% 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.recordItem{
+    margin: 10px 1px;
+    display: flex;
+    width: 28%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.recordItem .pcTime {
+    display: block;
+}
+
+.recordItem .mobileTime {
+    display: none;
+}
+
+.recordItem>div{
+    // justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.auth{
+    width:50%;
+    padding: 0 13%;
+}
+
+.logo{
+    height:19px;
+     width:114px;
+}
+
+.userAvatar {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: -35px;
+  }
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 53px;
+    margin-left: -40px;
+}
+
+.updateIcon{
+    position: relative;
+    right: -110px;
+    top: -25px;
+    cursor: pointer;
+}
+
+.giftModal {
+    position: absolute;
+    padding: 30px 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    // min-height: 400px;
+    // max-height: 80vh;
+    background-color: #fff;
+    // border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    // border-radius: 6px;
+    // height: 220px !important;
+    // width: 350px;
+
+}
+
+.giftAnswerModal {
+    position: absolute;
+    padding: 30px 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // min-height: 400px;
+    // max-height: 80vh;
+    background-color: #fff;
+    // border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    height: 220px !important;
+    width: 350px;
+}
+
+.giftModal::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+
+// .giftModal.transparentModal {
+//     background-color: rgba($color: #fff, $alpha: 0.75) !important;
+// }
+
+.giftAnswerModal button {
+    background-image: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 5% 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #7F5AEF !important;
+    box-shadow: 1px 1px 13px rgba(127, 90, 239, 0.49) !important;
+    width: 210px !important;
+    height: 54px !important;
+    margin: 0 auto !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+}
+
+.giftModal button {
+    // box-shadow: 1px 1px 13px rgba(127, 90, 239, 0.6) !important;
+    background-image: none !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    padding: 5% 0 !important;
+    margin-top: 7%;
+    width: 100%;
+    margin-left: -0.1% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.giftModal input::placeholder{
+    color: #000 !important;
+}
+.giftModalTitle {
+    color: #000;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.giftModalInput {
+    width: 100% !important;
+    margin-top: 10px;
+    padding: 15px;
+    border: #F6F3FE solid 1px !important;
+}
+
+.friendsList {
+    max-height: 240px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+    margin-top: 10px;
+    border: rgb(209, 208, 208) solid 1px !important;
+    border-radius: 5%;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.friend:hover{
+    background-color: rgba($color: #7F5AEF, $alpha: 0.07);
+}
+
+.friend img {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+
+.friendName {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.choosen {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    border: rgb(209, 208, 208) solid 1px !important;
+    border-radius: 5%;
+}
+
+.choosen img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.choosen span{
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    color: #000;
+}
+
+.answerModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.answerModal img{
+    // height: 32px;
+    // width: 32px;
+    border-radius: 50%;
+
+}
+
+.packageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: -webkit-fill-available;
+    overflow-y: scroll;
+    // justify-content: center;
+}
+
+.package {
+    flex: 0 0 calc(16.66% - 20px);
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.package p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.package .btn {
+    width: 87px;
+    height: 46px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    background: #FF3636 !important;
+    box-shadow: 2px 2px 15px rgba(255, 54, 54, 0.37);
+    border-radius: 10px;
+    color: white;
+    border-color: #FF3636;
+    margin: auto;
+}
+
+.paymentOptionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paymentOption{
+    position: relative;
+    width: 50%;
+    height: 60px;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+
+    cursor: pointer;
+    // overflow-y: hidden;
+}
+
+.paymentOption.active {
+    border-radius: 10%;
+    border: #FF3636 solid 2px;
+}
+
+.paymentIcon {
+    position: absolute;
+    width: 15px;
+    background-color: #fff;
+    top: -10px;
+    right: -8px;
+}
+
+.btnContainer {
+    display: none;
+}
+
+.footerPoweredBy {
+    text-align: right;
+    font-size: 16px;
+    display: block;
+    margin: 0 10px 10px 10px;
+  }
+
+  .bingo90TopTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  .logoBall {
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    top: -10px;
+    left: 62px;
+  }
+
+  .bingo90play {
+    border: 1.5px solid #FFFFFF !important;
+    box-shadow: 1px 1px 20px rgba(255, 54, 54, 0.4) !important;
+    border-radius: 61px !important;
+    background: #FF3636 !important;
+    font-size: 36px !important;
+    height: 64px;
+    width: 185px;
+    margin: 0 !important;
+  }
+
+  .bingo75play {
+    background: linear-gradient(126.77deg, #FE7F37 18.49%, #FF4B4B 81.72%) !important;
+    border: 1.5px solid #FFFFFF !important;
+    box-shadow: 1px 1px 20px rgba(255, 54, 54, 0.4) !important;
+    border-radius: 61px !important;
+    font-size: 36px !important;
+    height: 64px;
+    width: 185px;
+    margin: 0 !important;
+  }
+
+  .bingo90luckyContainer {
+    font-size: 10px;
+    line-height: 15px; 
+    font-weight: 700;
+    font-family: "Poppins"; 
+    color: white; 
+    position: absolute; 
+    top: 5px; 
+    left: 25%; 
+    text-align: center; 
+    z-index: 1000; 
+  }
+
+  .bingo90Price {
+    display: block;
+}
+
+.bingo90PriceMobile {
+    display: none;
+}
+
+.bingo90GameStartMobile {
+    display:  none;
+}
+
+.bingo90GameStart {
+    display: flex;
+   align-items: center;
+}
+
+.bingo75Number {
+    height: 80px !important;
+}
+
+.bingo75AvatarImage {
+    left: 0;
+    position: absolute;
+    top: 129px;
+}
+
+.bingo75CrowdImage {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.bingo75Bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 72px;
+    width: 1120px;
+    margin: auto;
+}
+
+.coinsImage{
+    width: auto;
+}
+
+.bingo75Box {
+    width: 310px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.profileBalance {
+    color: #FFEC93;
+    font-size: 32px;
+    text-shadow: 0px 0px 4px #E8B600;
+}
+
+.profileCoin {
+    width: 50px;
+    height: 50px;
+}
+
+.bingo75BingoBorder {
+    box-shadow: 0px 0px 4px #FE6737, 0px 1px 4px #FFAA8E;
+    border: 2px dotted #FE6737;
+    border-radius: 15px;
+    height: 56px;
+}
+
+.bingo90BingoBorder {
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    height: 56px;
+    box-shadow: 0px 0px 4px #FF3636, 0px 1px 4px #FF8E8E;
+    border: 2px dotted #FF3636
+  }
+
+  .bingo90JackpotBorder {
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    height: 56px;
+    box-shadow: 0px 1px 4px #FFAA8E, 0px 0px 4px #FE712B;
+    border: 2px dotted #FF3636;
+  }
+
+  .bingo75JackpotBorder {
+    border-radius: 15px;
+    height: 56px;
+    box-shadow: 0px 1px 4px #FBFF38;
+    border: 2px dotted #FFE66A;
+  }
+
+  .bingoExtra {
+    border: 2px solid #FFFFFF;
+    box-shadow: 1px 1px 13px rgba(255, 110, 73, 0.5);
+    border-radius: 48px;
+    height: 52px;
+    border-top: 0
+  }
+
+  .bingoHiLoContainer {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+  }
+
+  .bingo75PlayButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bingo90BallsMobile {
+    display: none;
+  }
+
+  .bingo90BallsAndBorderContainer {
+    display: block;
+    gap: 0;
+    margin: 0;   
+  }
+
+  .bingoBag {
+    width: 50px;
+  }
+
+  .bingoJPImage {
+    width: auto;
+  }
+
+  .bingo90BallContainer {
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .authAccount {
+    margin-bottom: 5px;
+    font-size: 14px
+  }
+
+  .authBottomText {
+    text-decoration-line: underline;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .authForgotPassword {
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+  }
+
+  .welcomeContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .contact {
+    position: relative;
+    background-color: white;
+    z-index: 1001;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: 10px auto auto auto;
+  }
+
+  .contactImg {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
+  .bingoExtraGame {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    color: white;
+    position: absolute;
+    top: -9px;
+    left: 21%;
+    z-index: 1000;
+  }
+
+  .welcome {
+    font-size: 64px;
+  }
+
+  .welcomeStyleContainer {
+    flex: 1;
+  }
+
+  .accountSignIn {
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .langTopContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    gap: 10px;
+    position: relative;
+  }
+
+  .signInText {
+    margin-bottom: 32px;
+    font-size: 64px;
+    color: white;
+    font-family: "Poppins";
+  }
+
+  .namesHello {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .bingoUserName {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+
+  .profileImages {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+  }
+
+  .bingoNextGameContainer {
+    border-radius: 14px;
+    border: 1px solid white;
+    width: 74px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .jackpotCreditValue {
+    color: #8AFF61;
+    font-family: "Inter";
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .bingoAmmount {
+    color: #8AFF61;
+    font-family: "Inter";
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+@media screen and (max-width: 2161px) {
+    .landingPage{
+        font-size: 30px;
+    }
+
+    .giftModal {
+        width: 600px !important;
+    }
+
+    .paymentOption{
+        height: 90px !important;
+    }
+
+    // .landingPageTop{
+    //     height: 56vw;
+    // }
+    // .minLandingPageTop{
+    //     height: 56vw !important;
+    // }
+    // .profileLandingPageTop{
+    //     height: 56vw !important;
+    // }
+   
+
+    .playNowBtn {
+        height: 60px !important;
+        margin-top: 20% !important;
+    }
+
+    .cardItemTitle{
+        margin-top: 4.5vw;
+    }
+
+    // .bingo90{
+    //     width: 390px !important;
+    //     height: 27vw;
+    //     margin-top: 23% !important;
+    // }
+
+    .bingo90Body{
+        height: 14vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 9vw;
+        color:#000;
+        font-size: 26px;
+    }
+
+    .biggerBingo90{
+        width: 320px !important;
+        height: 31vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 21.1vw !important;
+        font-size: 25px !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.4vw !important;
+        font-size: 30px;
+        padding-top: 6vw;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 10vw !important;
+        color:#000;
+    }   
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 19% 4% 19% !important;
+        margin-left: 3.8%;
+        margin-top: 10%;
+    }
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 14% 4% 14% !important;
+        margin-left: 15.3%;
+        margin-top: 30%;
+    }
+
+    .rating{
+        font-size: 53px;
+        margin-left: -18% !important;
+    }
+
+
+
+    .updateIcon img{
+        width: 65px;
+    }
+
+    .logo{
+        height:40px;
+        width:250px;
+    }
+
+    .headerLeft img{
+        margin-bottom: -26%;
+    }
+
+    .landingPageBottom{
+        height: fit-content;
+        margin: 5% 10% 1% 10%;
+        color: #000;
+    }
+
+    // .gameRecords{
+    //     padding: 5% 10px;
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     font-weight: bold;
+    // }
+    
+    // .recordItem{
+    //     margin: 10px 1px;
+    //     display: flex;
+    //     width: 32% !important;
+    //     overflow: hidden;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    .gameRecordTitle {
+        font-size: 60px !important;
+    }
+    .recordUserImg {
+        height: 85px;
+        width: 85px;
+    }
+
+    .recordUsername {
+       font-size: 40px; 
+    }
+
+    .recordSubtitle {
+        font-size: 25px !important;
+    }
+
+    .recordSubtitleImg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .pcTime {
+        font-size: 25px !important;
+    }
+
+    .timeGameImg {
+        width: 55px !important;
+        height: 55px !important;
+    }
+
+   
+
+    .packageTitle {
+        font-size: 60px;
+        
+    }
+    
+
+  
+    
+
+}
+
+@media screen and (max-width: 1921px) {
+    // .landingPageTop{
+    //     height: 56vw;
+    // }
+    // .minLandingPageTop{
+    //     height: 56vw !important;
+    // }
+    // .profileLandingPageTop{
+    //     height: 56vw !important;
+    // }
+
+
+    .playNowBtn {
+        margin-top: 20% !important;
+    }
+
+    .cardItemTitle{
+        margin-top: 2.3vw;
+    }
+
+    // .bingo90{
+    //     width: 300px;
+    //     height: 22vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 7.5vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 290px !important;
+        height: 31vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 21.1vw !important;
+        font-size: 25px !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.4vw !important;
+        font-size: 30px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 10vw !important;
+        color:#000;
+    }   
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 19% 4% 19% !important;
+        margin-left: 2.5%;
+    }
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 10% 4% 10% !important;
+        margin-left: 17.3%;
+    }
+
+    .rating{
+        font-size: 53px;
+        margin-left: -18% !important;
+    }
+
+    .updateIcon{
+        position: relative;
+        right: -126px;
+        top: -27px;
+        cursor: pointer;
+    }
+
+    .logo{
+        height:32px;
+        width:200px;
+    }
+
+    .headerLeft img{
+        margin-bottom: -30%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    
+
+    
+    .cardItemTitle {
+        margin-top:  3.8vw !important;
+    }
+    // .bingo90{
+    //     width: 390px !important;
+    //     height: 26vw;
+    //     margin-top: 23% !important;
+    // }
+    
+    .bingo90Body {
+        height: 10vw !important;
+    }
+
+    .biggerBingo90 {
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 19% 4% 19% !important;
+        margin-left: 8.8%;
+        margin-top: 1%;
+    }
+
+    .logo {
+        height: 36px;
+        width: 225px;
+    }
+    .headerLeft img{
+        margin-bottom: -22%;
+    }
+}
+
+@media screen and (max-width: 1620px){
+
+
+
+    .playNowBtn {
+        margin-top: 20% !important;
+    }
+
+    .cardItemTitle{
+        margin-top: 2.3vw !important;
+    }
+
+    // .bingo90{
+    //     width: 290px !important;
+    //     height: 26vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 14vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 3vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 290px !important;
+        height: 33vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 17.1vw !important;
+        font-size: 25px !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.4vw !important;
+        font-size: 30px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 10vw !important;
+        color:#000;
+    }   
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 19% 4% 19% !important;
+        margin-left: 2.5%;
+    }
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 10% 4% 10% !important;
+        margin-left: 11.3%;
+        margin-top: 30% !important;
+    }
+
+    .rating{
+        font-size: 53px;
+        margin-left: -10% !important;
+    }
+
+    .updateIcon{
+        position: relative;
+        right: -140px;
+        top: -20px;
+        cursor: pointer;
+    }
+
+    .logo{
+        height:36px;
+        width:225px;
+    }
+
+    .headerLeft img{
+        margin-bottom: -20%;
+    }
+
+    .landingPageBottom {
+        height: 55vh !important;
+    }
+
+    .footer {
+        bottom: -45% !important;
+    }
+
+    .updateIcon {
+        position: relative;
+        right: -120px;
+        top: -15px;
+        cursor: pointer;   
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    // .landingPageTop{
+    //     height: 56vw;
+    // }
+    // .minLandingPageTop{
+    //     height: 56vw !important;
+    // }
+    // .profileLandingPageTop{
+    //     height: 56vw !important;
+    // }
+
+
+    .cardItemTitle{
+        margin-top: 1.3vw !important;
+    }
+
+    // .bingo90{
+    //     width: 219px;
+    //     height: 22vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 7vw !important;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 290px !important;
+        height: 31vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 15.1vw !important;
+        font-size: 25px !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.4vw !important;
+        font-size: 30px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 10vw !important;
+        color:#000;
+    }   
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 15px !important;
+        padding: 4% 19% 4% 19% !important;
+        margin-left: 2.5%;
+    }
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 10% 4% 10% !important;
+        margin-left: 9.3% !important;
+    }
+
+    .rating{
+        font-size: 53px;
+        margin-left: -80px !important;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    // .landingPageTop{
+    //     height: 56.5vw;
+    // }
+
+    // .minLandingPageTop{
+    //     height: 56.5vw !important;
+    // }
+    // .profileLandingPageTop{
+    //     height: 56.5vw !important;
+    // }
+
+    .headerLeft img {
+        width: 200px;
+    }
+
+
+    .cardItemTitle{
+        margin-top: 1.25vw !important;
+    }
+
+    // .bingo90{
+    //     width: 219px;
+    //     height: 22vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 13.8vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 290px !important;
+        height: 31vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 14vw !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.4vw !important;
+        font-size: 30px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 10vw !important;
+        color:#000;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 10px !important;
+        padding: 4% 10% 4% 10% !important;
+        margin-left: 2.3% !important;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 10% 4% 10% !important;
+        margin-left: 2.3%;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 19% 4% 19% !important;
+        margin-left: 2.5%;
+    }
+
+    .rating{
+        font-size: 65px !important;
+    }
+
+    .giftModal {
+        position: absolute;
+        padding: 30px 25px;
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    // .landingPageTop{
+    //     height: 56.5vw;
+    // }
+
+    .headerLeft img {
+        width: 170px;
+        margin-bottom: -25%;
+    }
+
+    .landingPageBottom {
+        margin: 5% 2% 1% 2%;
+    }
+
+    .signUpBtn {
+        padding-top: 1% !important;
+        padding-bottom: 1% !important;
+    }
+
+    .contactUsBtn {
+        padding-top: 1% !important;
+        padding-bottom: 1% !important;
+    }
+
+    // .minLandingPageTop{
+    //     height: 56.5vw !important;
+    // }
+
+    // .profileLandingPageTop{
+    //     height: 56.5vw !important;
+    // }
+
+
+
+    .cardItemTitle{
+        margin-top: 2vw;
+    }
+
+    // .bingo90{
+    //     width: 219px;
+    //     height: 24vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 13.6vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        margin-top: 0 !important;
+    }
+    .biggerBingo90 > .bingo90Body{
+        height: 14vw !important;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 10% 4% 10% !important;
+        margin-left: 2.3%;
+    }
+
+    .rating{
+        font-size: 65px !important;
+        margin-left: -70px !important;
+    }
+
+    .logo{
+        height:28px;
+        width:175px;
+    }
+
+
+    .updateIcon {
+        position: relative;
+        right: -105px;
+        top: -10px;
+        cursor: pointer;   
+    }
+
+    .updateIcon img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    // .landingPageTop{
+    //     height: 56vw !important;
+    // }
+
+    // .minLandingPageTop{
+    //     height: 56vw !important;
+    // }
+
+    // .profileLandingPageTop{
+    //     height: 56vw !important;
+    // }
+
+    .landingPageBody {
+        margin: 0;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .cardItemTitle{
+        margin-top: 1.8vw;
+    }
+
+    // .bingo90{
+    //     width: 279px !important;
+    //     height: 28vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .biggerBingo90{
+        width: 290px !important;
+        height: 32vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 12vw !important;
+    }
+
+    .bingo90Body{
+        height: 8.6vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 10% 4% 10% !important;
+        margin-left: 9.3%;
+        margin-top: 35% !important;
+    }
+
+    .getCoinsBtn{
+        padding: 3% 0 !important;
+    }
+    .giftsBtn{
+        padding: 3% 0 !important;
+    }
+    .rating{
+        font-size: 65px !important;
+        margin-left: -60px !important;
+    }
+    .logo{
+        height:24px;
+        width:150px;
+    }
+
+    .headerLeft img{
+        margin-bottom: -25%;
+    }
+
+    .landingPageBottom {
+        margin: 5% 2% 1% 2%;
+    }
+    .recordItem {
+        width: 33%;
+        margin: 0 1px;
+    }
+
+    .giftModal {
+        width: 450px !important;
+        height: 549px;
+    }
+
+    .paymentOption{
+        height: 80px !important;
+    }
+
+    .updateIcon {
+        position: relative;
+        right: -90px;
+        top: -10px;
+        cursor: pointer;   
+    }
+
+    .profile {
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1240px) {
+    // .landingPageTop{
+    //     height: 57vw !important;
+    // }
+
+    // .minLandingPageTop{
+    //     height: 57vw !important;
+    // }
+
+    // .profileLandingPageTop{
+    //     height: 57vw !important;
+    // }
+
+    .blogContainer {
+        width: 800px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    
+    .cardItemTitle{
+        margin-top: 0.8vw !important;
+    }
+
+    // .bingo90{
+    //     width: 215px;
+    //     height: 26vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 13.6vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 250px !important;
+        height: 32vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 14.5vw !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.2vw !important;
+        font-size: 28px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 9vw !important;
+        color:#000;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 15% 4% 15% !important;
+        margin-left: 2.5%;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 9% 4% 9% !important;
+        margin-left: 2.3%;
+    }
+
+    .getCoinsBtn{
+        padding: 3% 0 !important;
+    }
+    .giftsBtn{
+        padding: 3% 0 !important;
+    }
+
+    .rating{
+        font-size: 60px !important;
+    }
+
+    .logo{
+        height:24px;
+        width:150px;
+    }
+
+    .headerLeft img{
+        margin-bottom: -20%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    // .landingPageTop{
+    //     height: 90vw !important;
+    // }
+
+    // .minLandingPageTop{
+    //     height: 60vw !important;
+    // }
+
+    // .profileLandingPageTop{
+    //     height: 70vw !important;
+    // }
+
+    .headerLeft img {
+        width: 135px;
+    }
+
+
+
+    
+    .cardItemTitle{
+        margin-top: 2.5vw !important;
+    }
+
+    // .bingo90{
+    //     width: 220px !important;
+    //     height: 31vw;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 14vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 230px !important;
+        height: 36vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 23vw !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.2vw !important;
+        font-size: 28px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 9vw !important;
+        color:#000;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 12% 4% 12% !important;
+        margin-left: 2%;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 6% 4% 6% !important;
+        margin-left: 3.8%;
+    }
+
+    .getCoinsBtn{
+        padding: 3% 0 !important;
+    }
+    .giftsBtn{
+        padding: 3% 0 !important;
+    }
+    
+    .rating{
+        font-size: 60px !important;
+        margin-left: -15px !important;
+    }
+
+    .landingPageBottom {
+        height: fit-content !important;
+    }
+    .updateIcon {
+        position: relative;
+        right: -74px;
+        top: -10px;
+        cursor: pointer;   
+    }
+
+    .updateIcon img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    // .landingPageTop{
+    //     height: 90vw !important;
+    // }
+
+    // .minLandingPageTop{
+    //     height: 60vw !important;
+    // }
+
+    // .profileLandingPageTop{
+    //     height: 60vw !important;
+    // }
+
+   
+
+    
+    .cardItemTitle{
+        margin-top: 0.7vw !important;
+    }
+
+    // .bingo90{
+    //     width: 200px !important;
+    //     height: 30vw !important;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 10vw !important;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 230px !important;
+        height: 36vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 15vw !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 0.2vw !important;
+        font-size: 28px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 9vw !important;
+        color:#000;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 12% 4% 12% !important;
+        margin-left: 2%;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 6% 4% 6% !important;
+        margin-left: 2.3% !important;
+    }
+
+    .getCoinsBtn{
+        padding: 3% 0 !important;
+    }
+    .giftsBtn{
+        padding: 3% 0 !important;
+    }
+    
+    .rating{
+        font-size: 60px !important;
+        margin-left: -15px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    // .landingPageTop{
+    //     height: 70vw !important;
+    // }
+
+    // .minLandingPageTop{
+    //     height: 70vw !important;
+    // }
+
+    // .profileLandingPageTop{
+    //     height: 70vw !important;
+    // }
+
+    
+    .cardItemTitle{
+        margin-top: 0.6vw;
+    }
+
+    // .bingo90{
+    //     width: 200px !important;
+    //     height: 35vw !important;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 12.5vw !important;
+        
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 200px !important;
+        height: 42vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 16vw !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 1.5vw !important;
+        font-size: 28px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 9vw !important;
+        color:#000;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 6% 4% 6% !important;
+        margin-left: 2.5%;
+    }
+
+    .comingSoonBtn{
+        font-size: 18px !important;
+        padding: 4% 6% 4% 6% !important;
+        margin-left: 3.5% !important;
+    }
+
+    .getCoinsBtn{
+        padding: 3% 0 !important;
+    }
+    .giftsBtn{
+        padding: 3% 0 !important;
+    }
+    
+    .rating{
+        font-size: 50px !important;
+    }
+    .logo{
+        // height:16px;
+        width:100px;
+    }
+
+    // .headerLeft img{
+    //     margin-bottom: -30%;
+    // }
+
+    .updateIcon {
+        position: relative;
+        right: -70px;
+        top: -10px;
+        cursor: pointer;   
+    }
+
+    .bingosContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 840px) {
+    .signUpBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .contactUsBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .paymentOption{
+        height: 100px !important;
+    }
+
+    
+    .cardItemTitle{
+        margin-top: 0.6vw;
+    }
+
+    .bingo90Body{
+        height: 16.5vw;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .biggerBingo90{
+        width: 200px !important;
+        height: 40vw !important;
+        margin-top: 0 !important;
+    }
+
+    .biggerBingo90 > .bingo90Body{
+        height: 23vw !important;
+    }
+
+    .biggerBingo90 > .bingo90Title{
+        padding: 1.5vw !important;
+        font-size: 28px;
+    }
+
+    .biggerBingo90 > .bingo90Body > .b90ItemTitle{
+        text-align: center;
+        padding-top: 9vw !important;
+        color:#000;
+    }
+
+    .biggerBingo90 > .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 6% 4% 6% !important;
+        margin-left: 2.5%;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 0 4% 0 !important;
+        margin-left: 2.3%;
+    }
+
+    .getCoinsBtn{
+        padding: 3% 0 !important;
+    }
+    .giftsBtn{
+        padding: 3% 0 !important;
+    }
+    
+    .rating{
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .landingPageBody{
+        display: block;
+    }
+
+    .landingPageHeader{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 6% 0 6%;
+        // margin-top: -15px;
+    }
+    
+    .headerLeft{
+        padding: 10% 6% 10% 6%;
+        background-color: #fff;
+        border-radius: 50%;
+        // margin-bottom: 20px;
+        margin-top: -14%;
+    }
+
+    .headerLeft img{
+        margin-bottom: -30%;
+    }
+    
+    .headerRight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6vw;
+        color: white;
+        font-size: 20px !important;
+    }
+
+    .auth{
+        width:100%;
+        padding:0 8%;
+        margin-top: 0 !important;
+    }
+
+    .accountMessage{
+        display: none;
+    }
+
+
+
+    .cardItemTitle{
+        margin-top: 2vh;
+    }
+
+    .bingo75Title{
+        color: #000;
+        text-align: center;
+        padding: 3vh 0 !important;
+    }
+
+
+    .bingo90Title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bingo90Body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    .profile{
+        width: 100%;
+        padding: 0 11%;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    
+    .userAvatar {
+        width: 18vh;
+        height: 18vh;
+        border-radius: 50%;
+      }
+
+    // .gameRecords{
+    //     padding: 5% 10% !important;
+    //     display: block;
+    //     align-items: center;
+    //     font-weight: bold;
+
+    // }
+    .recordItem{
+        width: 40%;
+    }
+
+    .recordSubtitle {
+        font-size: 12px !important;
+    }
+
+    .recordSubtitleImg {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .signInBtn {
+        padding-top: 2vw !important;
+        padding-bottom: 2vw !important;
+    }
+
+    .signOutBtn{
+        padding-top: 2vw !important;
+        padding-bottom: 2vw !important;
+    }
+
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 20% 4% 20% !important;
+        margin-left: 3%;
+    }
+
+    .rating{
+        display: none;
+    }
+
+    .updateIcon {
+        position: relative;
+        right: -155px;
+        top: -25px;
+        cursor: pointer;
+    }
+
+    .landingPageBottom {
+        margin: 5% 2% 1% 2% !important;
+    }
+    .recordItem {
+        width: 32%;
+        margin: 0 5px !important;
+    }
+
+    .recordUserImg{
+        width: 65px !important;
+        height: 65px !important;
+    }
+    .recordUsername {
+        font-size: 30px ;
+    }
+    .recordSubtitle {
+        font-size: 20px !important;
+    }
+    .pcTime {
+        font-size: 20px !important;
+    }
+
+    .recordSubtitleImg {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .gameRecordTitle {
+        font-size: 30px !important;
+    }
+
+    .packageTitle {
+        margin-top: 20px ;
+        font-size: 30px !important;
+    }
+
+    .packageTitle {
+        font-size: 40px;
+        
+    }
+    
+
+ 
+}
+
+
+@media screen and (max-width: 834px) {
+
+    .landingPageBody{
+        display: block;
+    }
+
+    .landingPageHeader{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 6% 0 6%;
+        // margin-top: -15px;
+    }
+    
+    
+    .headerRight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6vw;
+        color: white;
+        font-size: 20px !important;
+    }
+
+    .auth{
+        width:100%;
+        padding:0 8%;
+        margin-top: 0 !important;
+    }
+
+    .accountMessage{
+        display: none;
+    }
+
+
+
+    .cardItemTitle{
+        margin-top: 5vh !important;
+    }
+
+    .bingo75Title{
+        color: #000;
+        text-align: center;
+        padding: 3vh 0 !important;
+    }
+
+
+    .bingo90Title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bingo90Body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+    }
+
+    .profile{
+        width: 100%;
+        padding: 0 11%;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .userAvatar {
+        width: 18vh;
+        height: 18vh;
+        border-radius: 50%;
+      }
+
+    .gameRecords{
+        padding: 5% 0px !important;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: auto;
+        flex-wrap: nowrap;
+        // width: 100%;
+
+    }
+    .recordItem{
+        display: flex;
+        width: 35%;
+        // height: 180px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 10px 10px;
+        flex-shrink: 0;
+    }
+
+    .recordItem .pcTime {
+        display: none;
+    }
+
+    .recordItem .mobileTime {
+        display: block;
+    }
+
+    .timeGameImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signInBtn {
+        padding-top: 2vw !important;
+        padding-bottom: 2vw !important;
+    }
+
+    .signOutBtn{
+        padding-top: 2vw !important;
+        padding-bottom: 2vw !important;
+    }
+
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 26vw 4% 26vw !important;
+        margin-left: 2vw;
+        margin-top: 50% !important;
+    }
+
+    .rating{
+        display: block;
+        margin-left: 40% !important;
+    }
+
+    .updateIcon {
+        position: relative;
+        right: -130px;
+        top: -20px;
+        cursor: pointer;
+    }
+
+    .giftModal {
+        width: 80vw;
+    }
+
+    .paymentOption{ 
+        width: 50%;
+        height: 90px;
+    }
+    .welcome {
+        display: none !important;
+    }
+
+    .btnContainer {
+        display: flex !important;
+        justify-content: space-between !important;
+        margin-bottom: 20px !important;
+    }
+    .signUpBtn {
+        width: 187px !important;
+        font-size: 18px !important;
+    }
+   
+    .contactUsBtn {
+        width: 187px !important;
+        font-size: 18px !important;
+        margin-left: 10px !important;
+    }
+    .accountContainer {
+        color: white !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .account {
+        margin-bottom: 0 !important;
+        margin-right: 10px !important;
+    }
+
+    .signUpContainer {
+        margin: 0 !important;
+        display: none !important;
+    }
+
+    .contactUsContainer {
+        display: none !important;
+    }
+
+    .contactItems{
+        display: none !important;
+    }
+  
+    .contactItemsMobile{
+        display: block !important;
+        position: absolute;
+        right: 10px;
+        background-color: white;
+        z-index: 1001;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 10px;
+        margin-left: auto;
+    }
+
+
+    .bingo75 {
+        width: 360px;
+    }
+
+    .bingo75BoxBg {
+        width: 360px;
+      }
+
+    .bingo90 {
+        width: 360px;
+    }
+
+
+    .bingo90TopTitleContainer {
+        justify-content: center;
+    }
+
+    .bingoNumber {
+        width: 150px !important;
+    }
+
+    .bingo75Number {
+        height: 60px !important;
+    }
+
+    .bingo75Bottom {
+        bottom: 15px;
+    }
+
+    .bingo75Image {
+        width: 280px;
+    }
+
+    .numberTitle {
+        height: 40px !important;
+    }
+
+    .logoBall {
+        height: 11px;
+        width: 11px;
+        top: -6px;
+        left: 85px;
+    }
+
+    .bingo90play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+  
+    .bingo75play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+
+    .bingo90luckyContainer {
+        left: 19px;
+    }
+    .bingo90Price {
+        display: none;
+    }
+
+    .bingo90PriceMobile {
+        display: block;
+    }
+    .bingo90GameStartMobile {
+        border-radius:"14px";
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        border:1px solid white;
+        width:183px;
+        padding:4px;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        border-radius: 15px;
+    }
+
+    .bingo90GameStart {
+        display: none !important;
+    }
+
+    .bingo90BallContainer {
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        position: absolute;
+        right: 20px;
+    }
+
+    .contactImg {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+       .headerLeft{
+        background-color: #fff;
+        border-radius: 50%;
+        margin-top: -17%;
+
+    }
+
+    .headerLeft img{
+        margin-bottom: -40%;
+    }
+}
+
+@media screen and (width: 1920px) and (max-height: 1080px) {
+    .updateIcon {    
+        right: -137px;
+        top: -30px;
+    }
+    .bingo75 {
+        width: 500px;
+        height: 500px;
+    }
+
+    .bingo75BoxContainer {
+        margin-top: 50px;
+    }
+
+    .bingo90 {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+    }
+
+    .bingo90FillContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .bingo75AvatarImage {
+        top: 180px;
+    }
+
+    .bingo75Box {
+        width: 350px;
+    }
+
+    .bingo75BoxBg {
+        width: 500px;
+    }
+
+    .signInContainer {
+        width: 450px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .authAccount {
+        font-size: 20px;
+    }
+
+    .authBottomText {
+        font-size: 24px;
+    }
+
+    .authForgotPassword {
+        font-size: 18px;
+    }
+
+    .signInBtn {
+        font-size: 25px !important;
+    }
+
+    .bingosContainer {
+        gap: 25px;
+    }
+}
+
+@media screen and (width: 1600px) and (max-height: 900px) {
+    .updateIcon {
+        right: -110px;
+        top: -27px;    
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+
+    .bingosContainer {
+        align-items: center;
+        margin: 0 20px !important;
+    }
+
+    .landingPageBody {
+        flex: 1;
+        margin: 0;
+    }
+
+    .landingPageHeader {
+        margin-bottom: 0;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (width: 1536px) and (max-height: 864px) {
+    .updateIcon {
+        right: -100px;
+        top: -24px;
+    }
+
+    .bingosContainer {
+        align-items: center;
+    }
+
+    .bingosContainer {
+        align-items: center;
+        margin: 0 20px !important;
+    }
+
+    .landingPageBody {
+        flex: 1;
+        margin: 0;
+    }
+
+    .landingPageHeader {
+        margin-bottom: 0;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (width: 1440px) and (max-height: 900px) {
+    .updateIcon {
+        top: -32px;
+        right: -100px;
+    }
+}
+
+@media screen and (width: 1400px) and (max-height: 900px) {
+    .updateIcon {
+        top: -20px;
+        right: -104px;
+    }
+
+    .contactUsBtn {
+        padding: 10px !important;
+    }
+
+    .signUpBtn {
+        padding: 10px !important;
+    }
+}
+
+@media screen and (width: 1366px) and (max-height: 768px) {
+    .bingo75 {
+        width: 400px;
+    }
+
+    .bingo90 {
+        width: 400px;
+    }
+
+    .bingo75Box {
+        width: 280px;
+    }
+
+    .bingosContainer {
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px !important;
+    }
+
+    .landingPageBody {
+        flex: 1;
+    }
+
+    .contactUsBtn {
+        padding: 10px !important;
+    }
+
+    .signUpBtn {
+        padding: 10px !important;
+    }
+
+    .landingPageHeader {
+        margin-bottom: 0;
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (width: 1280px) and (max-height: 768px) {
+    .bingo75 {
+        width: 400px;
+    }
+
+    .bingo90 {
+        width: 400px;
+    }
+
+    .bingo75Box {
+        width: 280px;
+    }
+
+    .bingosContainer {
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px !important;
+    }
+
+    .landingPageBody {
+        flex: 1;
+    }
+
+    .contactUsBtn {
+        padding: 10px !important;
+    }
+
+    .signUpBtn {
+        padding: 10px !important;
+    }
+
+    .landingPageHeader {
+        margin-bottom: 0;
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 834px) {
+    .contactImg img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 834px) and (min-width: 740px) {
+    .nameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .bingo75 {
+        width: 360px;
+        padding: 10px;
+    }
+
+    .bingo90 {
+        width: 360px;
+        padding: 10px;
+    }
+
+    .bingosContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bingo75Box {
+        width: 240px;
+    }
+
+ 
+
+    .blogContainer {
+        width: 360px;
+        grid-template-columns: 1fr;
+    }
+
+
+    .center {
+        margin-bottom: 0;
+        margin-right: 25px;
+    }
+
+    .profileAndWalletConatainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .userAvatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .updateIcon {
+        top: -13px;
+        right: -60px;
+    }
+
+}
+
+
+@media screen and (max-width: 740px) and (min-width: 546px) {
+    .nameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .bingo75 {
+        width: 360px;
+        height: 340px;
+        padding: 10px;
+    }
+
+    .bingo90 {
+        width: 360px;
+        height: 340px;
+        padding: 10px;
+    }
+
+    .bingosContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bingo75Box {
+        width: 240px;
+    }
+
+    .blogContainer {
+        width: 360px;
+        grid-template-columns: 1fr;
+    }
+
+
+    .center {
+        margin-bottom: 0;
+        margin-right: 25px;
+    }
+
+    .profileAndWalletConatainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 0;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .userAvatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .updateIcon {   
+        top: -3px;
+        right: -50px;
+    }
+
+    .updateIcon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .bingo90BallContainer {
+        display: none;
+      }
+
+      .bingo90BallsMobile {
+        display: block;
+        width: 30px;
+      }
+
+      .bingo90BallsAndBorderContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        gap: 5px;
+      }
+
+    .bingo75AvatarImage img {
+        width: 150px;
+    }
+
+    .profileCardItem {
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (width: 2560px) and (max-height: 1440px) {
+    
+    .headerLeft img {
+        height: 40px;
+        width: auto;
+        margin-bottom: -35%;
+    }
+
+    .landingPageHeader {
+        margin-bottom: 0;
+    }
+
+    .landingPageBody {
+        margin-top: 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    .welcomeStyleContainer {
+        flex: none;
+        margin-right: 10%;
+    }
+    
+    .bingosContainer {
+        margin: unset !important;
+        gap: 20px;
+    }
+
+    .welcome {
+        font-size: 80px;
+    }
+
+    .signUpBtn {
+        padding: 15px 10px !important;
+        font-size: 25px !important;
+        width: 100%;
+    }
+
+    .signInBtn {
+        padding: 15px 10px !important;
+        font-size: 25px !important;
+        width: 100%;
+    }
+
+    .contactUsBtn {
+        padding: 15px 10px !important;
+        font-size: 25px !important;
+        width: 100%;
+    }
+
+    .account {
+        font-size: 20px;
+    }
+
+    .accountSignIn {
+        font-size: 20px;
+    }
+
+    .langTopContainer {
+        font-size: 20px;
+    }
+
+    .signInTopContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .signInContainer {
+        margin: unset;
+        width: 400px;
+    }
+
+    .signInText {
+        font-size: 80px;
+    }
+
+    .authAccount {
+        font-size: 20px;
+    }
+
+    .authBottomText {
+        font-size: 22px;
+    }
+
+    .authForgotPassword {
+        font-size: 18px;
+    }
+
+    .userAvatar {
+        width: 300px;
+        height: 300px;
+    }
+
+    .updateIcon {
+        right: -190px;
+        top: -55px;    
+    }
+
+    .updateIcon img {
+        width: 100px;
+    }
+
+    .namesHello {
+        font-size: 30px;
+      }
+    
+    .bingoUserName {
+        font-size: 45px;
+    }
+
+    .profileBalance {
+        font-size: 45px;
+    }
+
+    .profileCardItem img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profileImages {
+        height: 100px;
+        width: 100px;
+    }
+
+    .giftModal {
+        width: 600px;
+    }
+
+    .getCoinsBtn {
+        padding: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    .giftsBtn {
+        padding: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    .bingo75 {
+        width: 800px;
+        height: 800px;
+    }
+
+    .bingo90 {
+        width: 800px;
+        height: 800px;
+        position: relative;
+    }
+
+    .bingo75BoxBg {
+        width: 800px;
+    }
+
+    .bingo75Box {
+        width: 550px;
+    }
+
+    .bingo75BingoBorder {
+        height: 100px;
+    }
+
+    .bingo75JackpotBorder {
+        height: 100px;
+    }
+
+    .bingo90BingoBorder {
+        height: 100px;
+    }
+
+    .bingo90JackpotBorder {
+        height: 100px;
+    }
+
+    .bingo75AvatarImage {
+        top: 100px;
+    }
+
+    .bingo75AvatarImage img {
+        width: 400px;
+    }
+
+    .bingo90BottomContainer {
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        position: absolute;
+    }
+
+    .bingoPlayerCountContainer span {
+        font-size: 50px;
+    }
+
+    .bingoPlayerCountContainer img {
+        width: 50px;
+    }
+
+    .bingo90GameStart span {
+        font-size: 30px !important;
+    }
+
+    .bingoNextGameContainer {
+        width: 150px;
+    }
+
+    .bingoNextGameContainer div {
+        font-size: 30px !important;
+    }
+
+    .footerPoweredBy {
+        font-size: 30px;
+    }
+
+    .bingo75BoxContainer {
+        top: 100px;
+    }
+
+    .bingo90play {
+        height: 100px;
+        width: 300px;
+    }
+ 
+    .bingo75play {
+        height: 100px;
+        width: 300px;
+    }
+
+    .bingo90JackpotText div {
+        font-size: 40px;
+    }
+
+    .bingo90JackpotText span {
+        font-size: 25px;
+    }
+
+    .jackpotCreditValue {
+        font-size: 30px;
+    }
+    
+    .bingoBag {
+        width: 100px;
+    }
+
+    .bingoAmmount {
+        font-size: 30px;
+    }
+
+    .bingoImage {
+        width: 200px;
+    }
+
+    .bingo90JackpotText {
+        width: 200px;
+    }
+
+    .bingo75Bottom {
+        width: 96%;
+    }
+
+    .bingo90Balls {
+        height: 100px;
+    }
+
+    .bingo90BallContainer {
+        position: absolute;
+        bottom: 150px;
+        width: 96%;
+    }
+
+    .bingo90Price div img {
+        width: 30px !important;
+    }
+   
+    .bingo90Price div span {
+        font-size: 30px !important;
+    }
+
+    .bingo75Price div img {
+        width: 30px !important;
+    }
+   
+    .bingo75Price div span {
+        font-size: 30px !important;
+    }
+
+    .bingo90FillContainer {
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (width: 1280px) and (max-height: 900px) {
+    .landingPageBody {
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+
+    .bingo75 {
+        width: 360px;
+    }
+
+    .bingo90 {
+        width: 360px;
+    }
+
+    .bingo75Box {
+        width: 300px;
+    }
+
+    .bingo75BoxBg {
+        width: 360px;
+      }
+
+      .profile {
+        width: 33%;
+      }
+
+    .bingo90TopTitleContainer {
+        justify-content: center;
+    }
+
+    .bingoNumber {
+        width: 150px !important;
+    }
+
+    .bingo75Number {
+        height: 60px !important;
+    }
+
+    .bingo75Bottom {
+        bottom: 15px;
+    }
+
+    .bingo75Image {
+        width: 280px;
+    }
+
+    .numberTitle {
+        height: 40px !important;
+    }
+
+    .logoBall {
+        height: 11px;
+        width: 11px;
+        top: -6px;
+        left: 85px;
+    }
+
+    .bingo90play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+  
+    .bingo75play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+
+    .bingo90luckyContainer {
+        left: 19px;
+    }
+    .bingo90Price {
+        display: none;
+    }
+
+    .bingo90PriceMobile {
+        display: block;
+    }
+    .bingo90GameStartMobile {
+        border-radius:"14px";
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        border:1px solid white;
+        width:183px;
+        padding:4px;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        border-radius: 15px;
+    }
+
+    .bingo90GameStart {
+        display: none !important;
+    }
+
+    .bingo90BallContainer {
+        margin-bottom: 15px;
+    }
+
+    .bingosContainer {
+        margin: 0 20px !important;
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+
+    .signUpBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .contactUsBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .bingo75AvatarImage {
+        top: 190px;
+    }
+   
+    .bingo75AvatarImage img {
+        width: 140px;
+    }
+}
+
+
+
+
+@media screen and (width: 1194px) and (max-height: 834px) {
+    .landingPageBody {
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+
+    .bingo75 {
+        width: 360px;
+    }
+
+    .bingo90 {
+        width: 360px;
+    }
+
+    .bingo75Box {
+        width: 300px;
+    }
+
+    .bingo75BoxBg {
+        width: 360px;
+      }
+
+      .profile {
+        width: 33%;
+      }
+
+    .bingo90TopTitleContainer {
+        justify-content: center;
+    }
+
+    .bingoNumber {
+        width: 150px !important;
+    }
+
+    .bingo75Number {
+        height: 60px !important;
+    }
+
+    .bingo75Bottom {
+        bottom: 15px;
+    }
+
+    .bingo75Image {
+        width: 280px;
+    }
+
+    .numberTitle {
+        height: 40px !important;
+    }
+
+    .logoBall {
+        height: 11px;
+        width: 11px;
+        top: -6px;
+        left: 85px;
+    }
+
+    .bingo90play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+  
+    .bingo75play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+
+    .bingo90luckyContainer {
+        left: 19px;
+    }
+    .bingo90Price {
+        display: none;
+    }
+
+    .bingo90PriceMobile {
+        display: block;
+    }
+    .bingo90GameStartMobile {
+        border-radius:"14px";
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        border:1px solid white;
+        width:183px;
+        padding:4px;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        border-radius: 15px;
+    }
+
+    .bingo90GameStart {
+        display: none !important;
+    }
+
+    .bingo90BallContainer {
+        margin-bottom: 15px;
+    }
+
+    .bingosContainer {
+        margin: 0 20px !important;
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+
+    .signUpBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .contactUsBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .bingo75AvatarImage {
+        top: 190px;
+    }
+   
+    .bingo75AvatarImage img {
+        width: 140px;
+    }
+}
+
+@media screen and (width: 1180px) and (max-height: 900px) {
+    .landingPageBody {
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+
+    .bingo75 {
+        width: 360px;
+    }
+
+    .bingo90 {
+        width: 360px;
+    }
+
+    .bingo75Box {
+        width: 300px;
+    }
+
+    .bingo75BoxBg {
+        width: 360px;
+      }
+
+      .profile {
+        width: 33%;
+      }
+
+    .bingo90TopTitleContainer {
+        justify-content: center;
+    }
+
+    .bingoNumber {
+        width: 150px !important;
+    }
+
+    .bingo75Number {
+        height: 60px !important;
+    }
+
+    .bingo75Bottom {
+        bottom: 15px;
+    }
+
+    .bingo75Image {
+        width: 280px;
+    }
+
+    .numberTitle {
+        height: 40px !important;
+    }
+
+    .logoBall {
+        height: 11px;
+        width: 11px;
+        top: -6px;
+        left: 85px;
+    }
+
+    .bingo90play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+  
+    .bingo75play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+
+    .bingo90luckyContainer {
+        left: 19px;
+    }
+    .bingo90Price {
+        display: none;
+    }
+
+    .bingo90PriceMobile {
+        display: block;
+    }
+    .bingo90GameStartMobile {
+        border-radius:"14px";
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        border:1px solid white;
+        width:183px;
+        padding:4px;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        border-radius: 15px;
+    }
+
+    .bingo90GameStart {
+        display: none !important;
+    }
+
+    .bingo90BallContainer {
+        margin-bottom: 15px;
+    }
+
+    .bingosContainer {
+        margin: 0 20px !important;
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+
+    .signUpBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .contactUsBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .bingo75AvatarImage {
+        top: 190px;
+    }
+   
+    .bingo75AvatarImage img {
+        width: 140px;
+    }
+}
+
+@media screen and (width: 1080px) and (max-height: 900px) {
+    .landingPageBody {
+        flex-direction: row;
+        gap: 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    .bingo75 {
+        width: 360px;
+    }
+
+    .bingo90 {
+        width: 360px;
+    }
+
+    .bingo75Box {
+        width: 300px;
+    }
+
+    .bingo75BoxBg {
+        width: 360px;
+      }
+
+    .profile {
+        width: 31%;
+      }
+
+    .bingo90TopTitleContainer {
+        justify-content: center;
+    }
+
+    .bingoNumber {
+        width: 150px !important;
+    }
+
+    .bingo75Number {
+        height: 60px !important;
+    }
+
+    .bingo75Bottom {
+        bottom: 15px;
+    }
+
+    .bingo75Image {
+        width: 280px;
+    }
+
+    .numberTitle {
+        height: 40px !important;
+    }
+
+    .logoBall {
+        height: 11px;
+        width: 11px;
+        top: -6px;
+        left: 85px;
+    }
+
+    .bingo90play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+  
+    .bingo75play {
+        font-size: 26px !important;
+        width: 150px !important;
+    }
+
+    .bingo90luckyContainer {
+        left: 19px;
+    }
+    .bingo90Price {
+        display: none;
+    }
+
+    .bingo90PriceMobile {
+        display: block;
+    }
+    .bingo90GameStartMobile {
+        border-radius:"14px";
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        border:1px solid white;
+        width:183px;
+        padding:4px;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        border-radius: 15px;
+    }
+
+    .bingo90GameStart {
+        display: none !important;
+    }
+
+    .bingo90BallContainer {
+        margin-bottom: 15px;
+    }
+
+    .bingosContainer {
+        margin: 0 10px !important;
+    }
+
+    .welcomeContainer {
+        justify-content: center;
+    }
+
+    .signUpBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .contactUsBtn {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .bingo75AvatarImage {
+        top: 190px;
+    }
+   
+    .bingo75AvatarImage img {
+        width: 140px;
+    }
+}
+
+@media screen and (width: 962px) and (max-height: 601px) {
+    .updateIcon {
+        right: -70px;
+        top: -7px;
+    }
+
+    .updateIcon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+// @media screen and (max-height: 768px) {
+//     .landingPageBody {
+//         flex-direction: row;
+//     }
+// }
+
+@media screen and (max-width: 768px) {
+    // .bingo75AvatarImage {
+    //     top: 190px;
+    // }
+
+    .bingoExtra {
+        border-top: 2px solid white;
+    }
+
+    .bingoExtraGame {
+        display: none;
+    }
+
+    .bingo75Box {
+        width: 240px;
+    }
+
+    .headerLeft {
+        margin-top: -15%;
+    }
+
+    .headerLeft img{
+        margin-bottom: -30%;
+    }
+
+    .blogContainer {
+        width: 360px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headerLeft img{
+        margin-bottom: -35px;
+    }
+}
+
+
+
+@media screen and (max-width: 545px) {
+
+    .nameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .names {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .profileBalance {
+        font-size: 24px;
+    }
+
+    .profileCardItem {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .profileCoin {
+        width: 25px;
+        height: 25px;
+    }
+
+    .profileAndWalletConatainer {
+        display: flex;
+        align-items: center;
+    }
+    
+
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        /* margin: 0; */
+        margin: 20px 0;
+
+        // width: 100%;
+        // padding: 0 11%;
+        // margin-bottom: 20px;
+        // margin-top: 40px !important;
+    }
+
+    .center {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+    
+    .userAvatar {
+        width: 90px;
+        height: 90px;
+        // width: 18vh;
+        // height: 18vh;
+        border-radius: 50%;
+      }
+
+    .updateIcon {
+        position: relative;
+        top: 0 !important;
+        right: -60px !important;
+        // right: -130px;
+        // top: -20px;
+        cursor: pointer;
+    }
+
+    .updateIcon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    .footerPoweredBy {
+        font-size: 12px !important;
+        text-align: center !important;
+      }
+
+      .bingo75 {
+        height: 280px;
+        padding: 5px;
+      }
+
+      .bingo90 {
+        height: 280px;
+        padding: 5px;
+      }
+
+      .bingo90BallContainer {
+        display: none;
+      }
+
+      .bingo75BingoBorder {
+        height: 44px;
+        border-radius: 60px;
+      }
+   
+      .bingo90BingoBorder {
+        height: 44px;
+        border-radius: 60px;
+        margin-bottom: 0;
+      }
+    
+      .bingo90JackpotBorder {
+        height: 44px;
+        border-radius: 60px;
+      }
+    
+      .bingo75JackpotBorder {
+        height: 44px;
+        border-radius: 60px;
+      }
+
+      .bingo90TopTitleContainer {
+        margin-bottom: 7px;
+      }
+
+      .logoBall {
+        left: 100px;
+        top: -5px;
+      }
+
+      .bingo90play {
+        height: 46px;
+      }
+
+      .bingo90luckyContainer {
+        top: 0px;
+        left: 21px;
+      }
+
+      .bingoExtra {
+        height: 46px;
+      }
+
+      .bingoHiLoContainer {
+        margin-bottom: 1px;
+      }
+
+      .bingo75play {
+        height: 46px;
+        flex: 1;
+      }
+
+      .bingo75PlayButtonContainer {
+        justify-content: unset;
+        gap: 5px;
+        margin-bottom: 5px !important;
+      }
+
+      .bingo90BallsMobile {
+        display: block;
+        width: 30px;
+      }
+
+      .bingo90BallsAndBorderContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        gap: 5px;
+      }
+
+      .bingo75AvatarImage {
+        top: 105px;
+      }
+
+      .bingo75AvatarImage img {
+        width: 100px;
+      }
+
+      .bingo75Box {
+        width: 300px;
+        border-radius: 60px;
+      }
+
+      .bingo75Bottom {
+        width: 97%;
+        bottom: 5px;
+      }
+
+      .bingoJP {
+        font-size: 20px;
+      }
+
+      .bingoBag {
+        width: 35px;
+      }
+
+      .bingoJPImage {
+        width: 116px;
+      }
+
+      .bingo75BoxBg {
+        height: 280px;
+      }
+
+      .headerLeft img{
+        margin-bottom: -20%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .headerLeft img {
+        margin-bottom: -17%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .coinsImage{
+        width: 75px;
+    }
+
+    .giftModalContainer {
+        position: absolute;
+        height: 100vh;
+    } 
+
+    .giftModal {
+        // border-radius: 19px;
+        position: relative;
+        padding: 30px 20px;
+        width: 100vw !important;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .friendsList {
+        max-height: 180px;
+    }
+
+    .logo {
+        height: 16px !important;
+        width: 100px !important;
+    }
+
+
+    
+    .cardItemTitle{
+        margin-top: 1.7vw !important;
+    }
+
+    // .bingo90{
+    //     width: 170px;
+    //     margin-top: 18% !important;
+    // }
+
+    .bingo90Body{
+        height: 20.5vw !important;
+    }
+
+    .b90ItemTitle{
+        text-align: center;
+        padding-top: 6vw;
+        color:#000;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 13% 4% 13% !important;
+        margin-left: 12.3% !important;
+    }
+
+    .rating {
+        margin-left: 23% !important;
+    }
+
+    // .updateIcon {
+    //     position: relative;
+    //     right: -111px;
+    //     top: -16px;
+    //     cursor: pointer;
+    // }
+
+    .paymentOption {
+        height: 60px !important;
+    }
+
+    .recordItem {
+        width: 36%;
+        margin: 0 5px !important;
+    }
+
+    .recordUserImg{
+        width: 65px !important;
+        height: 65px !important;
+    }
+    .recordUsername {
+        font-size: 30px ;
+    }
+    .recordSubtitle {
+        font-size: 15px !important;
+    }
+    .pcTime {
+        font-size: 15px !important;
+    }
+
+    .recordSubtitleImg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .gameRecordTitle {
+        font-size: 30px !important;
+    }
+
+    .packageTitle {
+        margin-top: 20px ;
+        font-size: 30px !important;
+    }
+
+
+    .coinsContainer {
+       width: 100% !important;
+        height: 100vh
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+    .bingo75 {
+        width: 340px;
+    }
+
+    .bingo90 {
+        width: 340px;
+    }
+
+    .contact {
+        position: absolute;
+        right: 10px;
+    }
+
+    .landingPageBody{
+        display: block;
+    }
+
+    .landingPageHeader{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 6% 0 6%;
+        // margin-top: -15px;
+    }
+    
+    .headerLeft{
+        padding: 10% 6% 10% 6%;
+        background-color: #fff;
+        border-radius: 50%;
+        // margin-bottom: 20px;
+    }
+
+    .headerLeft img{
+        margin-bottom: -20%;
+    }
+    
+    .headerRight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6vw;
+        color: white;
+        font-size: 20px !important;
+    }
+
+    .auth{
+        width:100%;
+        padding:0 8%;
+        margin-top: 0 !important;
+    }
+
+    .accountMessage{
+        display: none;
+    }
+
+
+    .cardItemTitle{
+        margin-top: 2vh;
+    }
+
+    .bingo75Title{
+        color: #000;
+        text-align: center;
+        padding: 3vh 0 !important;
+    }
+
+    // .bingo90{
+    //     width: 85% !important;
+    //     height: 55vh;
+    //     display: block;
+    //     justify-content: center;
+    //     margin-left: 8%;
+    //     margin-top: 5% !important;
+    // }
+
+    .bingo90Title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bingo90Body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    .profile{
+        // width: 100%;
+        padding: 0 10px;
+        // margin-bottom: 20px;
+        // margin-top: 40px !important;
+    }
+    
+    // .userAvatar {
+    //     width: 18vh;
+    //     height: 18vh;
+    //     border-radius: 50%;
+    //   }
+
+    // .gameRecords{
+    //     padding: 5% 10% !important;
+    //     display: block;
+    //     align-items: center;
+    //     font-weight: bold;
+
+    // }
+    // .recordItem{
+    //     width: 40%;
+    // }
+
+    // .recordSubtitle {
+    //     font-size: 2px;
+    // }
+
+    // .recordSubtitleImg {
+    //     width: 15px !important;
+    //     height: 15px !important;
+    // }
+    .signInBtn {
+        padding-top: 2vw !important;
+        padding-bottom: 2vw !important;
+    }
+
+    .signOutBtn{
+        padding-top: 2vw !important;
+        padding-bottom: 2vw !important;
+    }
+
+    .logo{
+        height:16px;
+         width:100px;
+    }
+
+    .comingSoonBtn{
+        font-size: 20px !important;
+        padding: 4% 20% 4% 20% !important;
+        margin-left: 3% !important;
+    }
+
+    .rating{
+        display: none;
+    }
+
+    // .updateIcon {
+    //     position: relative;
+    //     right: -100px !important;
+    //     top: -15px !important;
+    //     cursor: pointer;
+    // }
+
+    .landingPageBottom {
+        margin: 5% 2% 1% 2% !important;
+    }
+
+    
+}
+// @media screen and (max-width: 380px) {
+//     .updateIcon {
+//         position: relative;
+//         right: -80px !important;
+//         top: 0 !important;
+//         cursor: pointer;
+//     }
+// }

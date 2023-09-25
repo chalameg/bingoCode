@@ -1,0 +1,294 @@
+.matrixNum {
+    border: transparent 2px solid;
+    border-radius: 50%;
+    padding: 2px;
+    min-width: 20px;
+    min-height: 20px;
+    vertical-align: middle;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: "LuckiestGuy";
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrixNumber{
+    font-size: 26px;
+    padding: 5px;
+    font-family: "LuckiestGuy";
+    font-weight: bold;
+}
+
+@media screen and (max-width: 2160px) {
+    .matrixNum {
+        border: 4px solid;
+        font-size: 30px !important;
+        width: 32px !important;
+        min-width: 32px;
+        height: 32px !important;
+        max-height: 32px;
+        padding: 2px;
+        box-sizing: content-box;
+    }
+
+    .matrixNumber{
+        padding: 0 10px;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1920px) {
+    .matrixNum {
+        border: 4px solid;
+        font-size: 30px !important;
+        width: 32px !important;
+        min-width: 32px;
+        height: 32px !important;
+        max-height: 32px;
+        padding: 2px;
+        box-sizing: content-box;
+    }
+
+    .matrixNumber{
+        padding: 0 10px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .matrixNum {
+        border: 4px solid;
+        font-size: 30px !important;
+        width: 32px !important;
+        min-width: 32px;
+        height: 32px !important;
+        max-height: 32px;
+        padding: 2px;
+        box-sizing: content-box;
+    }
+    .matrixNumber{
+        font-size: 26px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .matrixNum {
+        border: 4px solid;
+        font-size: 31px;
+        width: 35px;
+        min-width: 22px;
+        height: 35px;
+        max-height: 35px;
+        padding: 2px;
+        box-sizing: content-box;
+    }
+    .matrixNumber{
+        font-size: 26px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .matrixNum {
+        font-size: 14px;
+        min-width: 22px;
+        min-height: 22px;
+        width: 22px;
+        height: 22px;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .matrixNum {
+        font-size: 15px;
+        padding: 2px;
+        min-width: 24px;
+        min-height: 24px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .matrixNumber{
+        font-size: 32px;
+        padding: 0 5px;
+    }
+}
+@media screen and (max-width: 1024px) and (max-height:770px) and (min-height: 765px){
+    
+    .matrixNumber{
+        font-size: 26px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .matrixNum {
+        border: 2px solid;
+        min-width: 12px !important;
+        min-height: 12px !important;
+        width: 5.4vw !important;
+        height: 5.4vw !important;
+        font-size: 3.4vw !important;
+        padding-top: 1vw !important;
+    }
+
+    .matrixNumber{
+        font-size: 26px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .matrixNum {
+        border: 2px solid;
+        min-width: 12px;
+        min-height: 12px;
+    }
+
+    .matrixNumber{
+        font-size: 30px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .matrixNum {
+        width: 18px !important;
+        height: 18px !important;
+        font-size: 16px !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .matrixNumber{
+        font-size: 18px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .matrixNum {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 5120px) and (max-width: 5130px),
+       screen and (min-height: 2880px) and (max-height: 2890px) {
+        .matrixNum {
+            border: 1px solid;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    
+        .matrixNumber{
+            font-size: 150px !important;
+            padding: 0 17px;
+        }
+       }
+
+@media screen and (min-width: 3840px) and (max-width: 3850px),
+screen and (min-height: 2160px) and (max-height: 2170px) {
+    .matrixNum {
+        border: 1px solid;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .matrixNumber{
+        font-size: 95px !important;
+        padding: 0 17px;
+    }
+}
+
+@media screen and (min-width: 2722px) and (max-width: 2742px),
+       screen and (min-height: 2038px) and (max-height: 2058px){
+        .matrixNum {
+            border: 1px solid;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    
+        .matrixNumber{
+            font-size: 65px !important;
+            padding: 0 6px;
+        }
+       }
+@media screen and (min-width: 2560px) and (max-width: 2570px),
+       screen and (min-height: 1440px) and (max-height: 1610px){
+        .matrixNum {
+            border: 1px solid;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    
+        .matrixNumber{
+            font-size: 60.9375px !important;
+            padding: 0 5.625px;
+        }
+       }
+@media screen and (min-width: 2048px) and (max-width: 2058px),
+       screen and (min-height: 1536px) and (max-height: 1546px) {
+        .matrixNum {
+            border: 1px solid;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    
+        .matrixNumber{
+            font-size: 209% !important;
+            padding: 0 6px;
+        }
+       }
+       @media screen and (max-width: 916px) and (max-height: 412px){
+    .matrixNum {
+        border: 1px solid;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .matrixNumber{
+        font-size: 80% !important;
+        padding: 0 3px;
+    }
+}
+@media only screen and (max-width: 896px) and (max-height: 415px) {
+    .matrixNum {
+        border: 1px solid;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .matrixNumber{
+        font-size: 74.17% !important;
+        padding: 0 2px;
+    }
+}
+@media only screen and (max-width: 844px) and (max-height: 390px) {
+    .matrixNum {
+        border: 1px solid;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .matrixNumber{
+        font-size: 70% !important;
+        padding: 0 2px;
+    }
+}
+@media only screen and (max-width: 800px) and (max-height: 330px) {
+    .matrixNum {
+        border: 1px solid;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .matrixNumber{
+        font-size: 65% !important;
+        padding: 0 2px;
+    }
+}

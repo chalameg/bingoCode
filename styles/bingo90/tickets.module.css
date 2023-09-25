@@ -1,0 +1,1366 @@
+.container {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.tickets {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 42vw;
+  max-height: 380px !important;
+}
+
+.scrollUpBtn {
+  position: absolute;
+  left: 45%;
+  bottom: 7vh;
+  background: #252e6870;
+}
+
+.first {
+  font-size: 3.7em;
+}
+
+.second {
+  font-size: 3.7em;
+}
+
+.remaining {
+  display: flex;
+  padding: 0 10px 10px 10px;
+  height: 25px;
+}
+
+.remaining img {
+  width: 28px;
+}
+
+.rightCol {
+  justify-content: flex-end;
+}
+
+img.fire {
+  width: 20px;
+}
+
+.numbers {
+  font-size: 0.5em;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.titleNum {
+  margin-right: -5px;
+}
+
+.heart {
+  text-align: center;
+  max-height: 10px;
+}
+
+.heart > div {
+  margin: 0 5px 4px 5px;
+  font-size: 20px;
+  color: #e00;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
+}
+
+.bingoCardContainer {
+  font-size: 6px;
+  color: black;
+}
+
+.ticketsCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 140px !important;
+  height: 140px !important;
+  overflow-y: auto;
+}
+
+/* fire */
+.moFire {
+  width: 28px;
+  max-width: 28px;
+  height: 28px;
+  max-height: 28px;
+  margin-top: -15px;
+}
+
+.moFire svg {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.flame {
+  animation-name: flamefly;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transform-origin: 50% 50% 0;
+}
+
+.flame.one {
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.flame3.two {
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.flameMain {
+  animation-name: flameWobble;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.flameMain.one {
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.flame-main.two {
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.flameMain.three {
+  animation-duration: 2.1s;
+  animation-delay: 3s;
+}
+
+.flameMain.four {
+  animation-duration: 3.2s;
+  animation-delay: 4s;
+}
+
+.flameMain.five {
+  animation-duration: 2.5s;
+  animation-delay: 5s;
+}
+
+@keyframes flameWobble {
+  50% {
+    transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
+  }
+}
+
+@keyframes flamefly {
+  0% {
+    transform: translate(0) rotate(180deg);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-20px, -100px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.bottomCenterContainer {
+  overflow-y: hidden;
+  width: 100dvw;
+}
+
+.bottomRightContainer {
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1921px) {
+  .bottomHeight {
+    height: 100% !important;
+    position: relative;
+  }
+
+  .bottomCenterContainer {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -50px;
+  }
+
+  .bottomRightContainer {
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    margin-right: 2%;
+  }
+
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 50vh !important;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 52vh !important;
+  }
+
+  /* padding between tickets */
+  .numbers {
+    padding: 0 13px;
+  }
+
+  .title {
+    margin-bottom: -30px;
+    font-size: 34px;
+  }
+
+  .remaining {
+    padding: 10px 14px 5px 10px;
+    gap: 5px;
+    height: 36px;
+  }
+
+  .tickets{
+    margin-left: -3%;;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: -0.5%;
+  }
+ 
+}
+
+
+@media only screen and (max-width: 1920px) and (min-width: 1441px) {
+  .bottomHeight {
+    height: 100% !important;
+    position: relative;
+  }
+
+  .bottomCenterContainer {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -30px;
+  }
+
+  .bottomRightContainer {
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18vh;
+    margin-right: 2%;
+  }
+
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 50vh !important;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 52vh !important;
+  }
+
+  /* padding between tickets */
+  .numbers {
+    padding: 0 13px;
+  }
+
+  .title {
+    margin-bottom: -30px;
+    font-size: 29px;
+  }
+
+  .remaining {
+    padding: 10px 14px 5px 10px;
+    gap: 5px;
+    height: 36px;
+  }
+
+  .tickets{
+    margin-left: -3%;;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: -1%;
+  }
+ 
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1601px) and (max-height: 910px) {
+
+  .widerContainer {
+    height: 50vh !important;
+  }
+
+  .bottomRightContainer{
+    margin-top: 20vh;
+  }
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1441px) {
+  .bottomHeight {
+    height: 100% !important;
+    position: relative;
+  }
+
+  .bottomCenterContainer {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3vw;
+    margin-top: -30px;
+  }
+
+  .bottomRightContainer {
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16vh;
+    margin-right: 1%;
+  }
+
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 51vh !important;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 49vh !important;
+  }
+
+  .numbers {
+    padding: 0 8px;
+    /* padding between tickets */
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: -30px;
+    font-size: 24px;
+  }
+
+  .remaining {
+    padding: 10px 12px 5px 8px;
+    gap: 5px;
+    height: 36px;
+  }
+
+  .tickets{
+    margin-left: -2%;;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1441px) and (max-height: 757px){
+  .widerContainer {
+    height: 50vh !important;
+  }
+  .bottomRightContainer{
+    margin-top: 16vh;
+  }
+
+  .bottomCenterContainer{
+    margin-top: -29px;
+  }
+}
+
+@media only screen and (max-width: 1537px) and (min-width: 1441px) {
+
+  .bottomCenterContainer {
+    margin-left: -2vw;
+    margin-top: -30px;
+  }
+
+  .bottomRightContainer {
+    margin-top: 14vh;
+    margin-right: 1vw;
+  }
+
+  .tickets{
+    margin-left: -2.5%;;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1537px) and (min-width: 1441px) and (max-height: 751px){
+
+  .bottomRightContainer {
+    margin-top: 14vh;
+  }
+
+  .tickets{
+    margin-left: -3%;;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 900px) and (max-height: 1167px){
+  .bottomHeight {
+    height: 100% !important;
+    position: relative;
+  }
+
+  .bottomCenterContainer {
+    width: 40.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+    margin-top: -30px;
+    height: 50vh;
+  }
+
+  .bottomRightContainer {
+    width: 34vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    margin-right: 0;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 49vh !important;
+  }
+
+  /* padding between tickets */
+  .numbers {
+    padding: 0 8px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: -20px;
+    font-size: 24px;
+  }
+
+  .remaining {
+    padding: 6px 12px 5px 8px;
+    gap: 5px;
+    height: 32px;
+  }
+
+  .tickets{
+    margin-left: -3%;;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: -1%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 900px) and (max-height: 756px) {
+  .bottomRightContainer {
+    margin-top: 13vh;
+  }
+
+  .bottomCenterContainer{
+    margin-top: -20px;
+  }
+  
+  .widerContainer {
+    height: 45vh !important;
+  }
+
+  .title{
+    margin-bottom: -28px;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 900px) {
+  .bottomCenterContainer{
+    margin-top: -30px;
+  }
+
+  .bottomRightContainer{
+    margin-top: 12vh;
+  }
+
+  .widerContainer {
+    height: 49vh !important;
+  }
+
+  .title{
+    margin-bottom: -28px;
+  }
+
+  .tickets{
+    margin-left: -2.5%;;
+  }
+
+  .ticketsSecondStyle{
+    margin-left: -1%;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 900px) and (min-height: 950px){
+  .bottomCenterContainer{
+    height: 56vh;
+    margin-top: 0;
+  }
+
+  .bottomRightContainer{
+    margin-top: 12vh;
+  }
+
+  .widerContainer {
+    height: 56vh !important;
+  }
+
+  .title{
+    margin-bottom: -28px;
+  }
+
+  .tickets{
+    margin-left: -2.5%;;
+  }
+
+  .ticketsSecondStyle{
+    margin-left: -1%;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 900px) and (max-height:650px){
+  .bottomCenterContainer{
+    margin-top: -25px;
+  }
+  .bottomRightContainer{
+    margin-top: 13vh;
+  }
+  .widerContainer {
+    height: 50vh !important;
+  }
+
+  .title{
+    margin-bottom: -28px;
+  }
+
+  .tickets{
+    margin-left: -2.5%;;
+  }
+
+  .ticketsSecondStyle{
+    margin-left: -1%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 1167px){
+  .bottomCenterContainer{
+    margin-top: -30px;
+  }
+
+  .widerContainer {
+    height: 50vh !important;
+  }
+
+  .title{
+    margin-bottom: -30px;
+  }
+
+  .tickets{
+    margin-left: -2.5%;;
+  }
+
+  .ticketsSecondStyle{
+    margin-left: -1.5%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 900px) and (min-height: 800px){
+  .bottomCenterContainer{
+    height: 57vh;
+    margin-top: -6vh;
+  }
+
+  .widerContainer {
+    height: 57vh !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 632px){
+  .bottomRightContainer{
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 610px){
+  .bottomRightContainer{
+    margin-top: 12.5vh;
+  }
+}
+
+/* tablets landscape */
+@media only screen and (max-width: 1194px) and (min-width: 900px) and (max-height: 1167px){
+  .bottomCenterContainer{
+    margin-top: -1vh;
+    height: 47.5vh;
+  }
+
+  .bottomRightContainer {
+    width: 34vw;
+    margin-top: 12vh;
+    margin-right: 0;
+  }
+
+  .widerContainer {
+    height: 47.5vh !important;
+  }
+
+  .tickets{
+    margin-left: -3%;;
+  }
+
+  .ticketsSecondStyle{
+    margin-left: -1%;
+  }
+}
+
+@media only screen and (max-width: 1194px) and (min-width: 900px) and (min-height: 833px){
+  .bottomCenterContainer{
+    height: 57vh;
+    margin-top: -6vh;
+  }
+
+  .bottomRightContainer{
+    margin-top: 12vh;
+  }
+
+  .widerContainer {
+    height: 57vh !important;
+  }
+}
+
+@media only screen and (max-width: 1194px) and (min-width: 900px) and (max-height: 660px){
+  .bottomCenterContainer{
+    margin-top: -2vh;
+  }
+  .bottomRightContainer{
+    margin-top: 12vh;
+  }
+
+  .widerContainer {
+    height: 47vh !important;
+  }
+
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 900px) and (min-height: 820px){
+  .bottomCenterContainer{
+    height: 54vh;
+    margin-top: -4vh;
+  }
+
+  .widerContainer {
+    height: 54vh !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 900px) and (max-height: 1167px) {
+  .bottomCenterContainer{
+    margin-top: 0;
+    width: 36vw;
+    margin-left: -35px;
+    margin-top: -20px;
+  }
+
+  .bottomRightContainer {
+    margin-top: 11vh;
+    margin-right: 1%;
+  }
+
+  .widerContainer {
+    height: 48.2vh !important;
+  }
+
+  .title{
+    margin-bottom: -30px;
+  }
+
+  .title > div{
+    font-size: 20px;
+  }
+  .tickets{
+    margin-left: -10%;
+  }
+
+  .numbers{
+    padding: 0 6px;
+  }
+  .ticketsSecondStyle{
+    margin-left: -1.5%;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 900px) and (min-height: 810px){
+  .bottomCenterContainer{
+    height: 57vh;
+    margin-top: -7vh;
+    
+  }
+
+  .widerContainer {
+    height: 57vh !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 900px) and (max-height: 1167px){
+  .bottomCenterContainer{
+    margin-top: 0;
+    width: 36vw;
+    margin-left: -35px;
+    margin-top: -20px;
+    height: 50vh;
+  }
+
+  .bottomRightContainer {
+    width: 34vw;
+    margin-top: 10.5vh;
+    margin-right: 0;
+  }
+
+  .widerContainer {
+    height: 48.3vh !important;
+  }
+
+  .title{
+    margin-bottom: -30px;
+  }
+
+  .title > div{
+    font-size: 20px;
+  }
+  .tickets{
+    margin-left: -10%;
+  }
+
+  .numbers{
+    padding: 0 6px;
+  }
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: -1.5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 900px) and (min-height: 768px) and (max-height: 1100px){
+  .bottomCenterContainer{
+    height: 56vh;
+    margin-top: -6vh;
+    
+  }
+
+  .widerContainer {
+    height: 56vh !important;
+  }
+}
+
+@media only screen and (max-width: 965px) and (min-width: 900px) {
+  .bottomCenterContainer{
+    margin-top: 0;
+    width: 40vw;
+    margin-left: -35px;
+    margin-top: -20px;
+    height: 50vh;
+  }
+
+  .bottomRightContainer {
+    margin-top: 13vh;
+    margin-right: 1%;
+  }
+
+  .widerContainer {
+    height: 50vh !important;
+  }
+
+  .title{
+    margin-bottom: -30px;
+  }
+
+  .title > div{
+    font-size: 20px;
+  }
+  .tickets{
+    margin-left: -2%;
+  }
+
+  .numbers{
+    padding: 0 6px;
+  }
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin-left: 1%;
+  }
+}
+
+/* mobiles and tablet vertical */
+@media screen and (max-width: 1024px) and (min-width: 900px) and (min-height: 1168px){
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 40vh !important;
+    margin-left: 0;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 54vh !important;
+  }
+
+  .title {
+    font-size: 29px;
+    margin-bottom: -30px;
+  }
+
+  .remaining img {
+    width: 14px;
+  }
+
+  /* padding between tickets */
+  .numbers {
+    padding: 0 .6rem;
+  }
+
+  .bottomCenterContainer {
+    width: 100%;
+    height: 54vh;
+    margin: 0;
+  }
+
+  .remaining {
+    padding: 12px 12px 5px 10px;
+    gap: 5px;
+    height: 36px;
+  }
+  .tickets {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 98%;
+    width: 100%;
+    margin-left: 1%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-height: 1300px) {
+
+  .widerContainer {
+    height: 63vh !important;
+  }
+
+  .bottomCenterContainer{
+    height: 63vh;
+  }
+}
+@media screen and (max-width: 900px){
+  .tickets {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    width: 100%;
+  }
+
+  .ticketsSecondStyle{
+    display: grid;
+    grid-template-columns: 98%;
+    width: 100%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 540px){
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 40vh !important;
+    margin-left: -6px;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 53vh !important;
+  }
+
+  .title {
+    font-size: 29px;
+    margin-bottom: -30px;
+  }
+
+  .remaining img {
+    width: 14px;
+  }
+
+  /* padding between tickets */
+  .numbers {
+    padding: 0 .6rem;
+  }
+
+  .bottomCenterContainer {
+    width: 100%;
+  }
+
+  .remaining {
+    padding: 12px 12px 5px 10px;
+    gap: 5px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 835px) and (min-width: 540px){
+  .container {
+    height: 37vh !important;
+    margin-left: -8px;
+  }
+
+  .widerContainer {
+    height: 59vh !important;
+  }
+
+}
+
+@media screen and (max-width: 835px) and (min-width: 540px) and (max-height: 1021px){
+
+  .widerContainer {
+    height: 51vh !important;
+  }
+
+}
+
+@media screen and (max-width: 811px) and (min-width: 540px){
+  .container {
+    height: 37vh !important;
+    margin-left: -8px;
+  }
+
+  .widerContainer {
+    height: 55.2vh !important;
+  }
+
+}
+
+@media screen and (max-width: 810px) and (min-width: 540px) and (max-height: 925px){
+
+  .widerContainer {
+    height: 49.2vh !important;
+  }
+
+  .title{
+    margin-bottom: -35px;
+  }
+
+}
+
+@media screen and (max-width: 801px) and (min-width: 540px){
+
+  .widerContainer {
+    height: 61vh !important;
+  }
+
+}
+
+@media screen and (max-width: 801px) and (min-width: 540px) and (max-height: 1094px){
+
+  .widerContainer {
+    height: 55vh !important;
+  }
+
+  .title{
+    margin-bottom: -35px;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 540px){
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 35vh !important;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 54vh !important;
+  }
+
+  .title {
+    font-size: 27px;
+    margin-bottom: -30px;
+  }
+
+  .remaining img {
+    width: 14px;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 540px) and (max-height: 876px){
+
+  .widerContainer {
+    height: 48vh !important;
+  }
+
+  .title {
+    margin-bottom: -35px;
+  }
+
+}
+
+@media screen and (max-width: 751px) and (min-width: 540px) and (max-height: 335px) {
+  .container {
+    height: 30vh !important;
+  }
+  .widerContainer {
+    height: 78.5vh !important;
+  }
+  .title{
+    font-size: 18px;
+    margin-bottom: -28px;
+  }
+
+  .bottomRightContainer {
+    display: none;
+  }
+  .rightSideDesktopFeatures{
+    display: none;
+  }
+  .bottomCenterContainer {
+    margin-top: -4vh;
+  }
+  .numbers {
+    font-size: 0.2em;
+    padding: 0 0.2rem;
+    /* padding between tickets */
+  }
+  .first {
+    font-size: 3.7em;
+    margin-top: -5px;
+  }
+  .remaining {
+    padding: 6px 0px 10px;
+    gap: 5px;
+    height: 35px;
+  }
+  .heart > div{
+    margin: 6px 5px 4px 5px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 602px) and (min-width: 540px){
+  .container {
+    height: 32vh !important;
+  }
+
+  .widerContainer {
+    height: 58vh !important;
+  }
+
+  .remaining {
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 602px) and (min-width: 540px) and (max-height: 824px){
+  .widerContainer{
+    height: 53vh !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 32vh !important;
+    margin-left: -2px;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 47vh !important;
+    margin-left: -2px;
+  }
+
+
+  .title {
+    font-size: 20px;
+    margin-bottom: -28px;
+  }
+
+  .remaining {
+    padding: 0 12px 0 6px;
+    margin-top: 5px;
+    gap: 3px; 
+    display: flex;
+  }
+
+  .remaining img {
+    width: 14px;
+  }
+
+  .numbers {
+    font-size: 0.2em;
+    padding: 0 0.4rem;
+    /* padding between tickets */
+  }
+
+  .bottomCenterContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) and (max-height: 920px) {
+  .container {
+    height: 45.5dvh !important;
+  }
+
+  .widerContainer {
+    height: 59dvh !important;
+  }
+}
+
+@media screen and (max-width: 540px) and (max-height: 900px) {
+  .container {
+    height: 44.8dvh !important;
+  }
+
+  .widerContainer {
+    height: 58.5dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 875px) {
+  .container {
+    height: 44.3dvh !important;
+  }
+
+  .widerContainer {
+    height: 58.3dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 850px) {
+  .container {
+    height: 42dvh !important;
+  }
+
+  .widerContainer {
+    height: 56.5dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 740px) {
+  .container {
+    height: 33dvh !important;
+  }
+
+  .widerContainer {
+    height: 49.6dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 720px) {
+  .container {
+    height: 32.5dvh !important;
+  }
+
+  .widerContainer {
+    height: 49.5dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 700px) {
+  .container {
+    height: 29dvh !important;
+  }
+
+  .widerContainer {
+    height: 46.2dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 676px) {
+  .container {
+    height: 27.8dvh !important;
+  }
+
+  .widerContainer {
+    height: 46dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 540px) and (max-height: 665px) {
+  .container {
+    height: 25.5dvh !important;
+  }
+
+  .widerContainer {
+    height: 46dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 32vh !important;
+    margin-left: -2px;
+  }
+
+  .widerContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 44vh !important;
+    margin-left: -2px;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+
+  .remaining img {
+    width: 14px;
+  }
+
+  .numbers {
+    font-size: 0.2em;
+    padding: 0 0.2rem;
+    /* padding between tickets */
+  }
+}
+
+@media screen and (max-width: 366px) and (max-height: 920px) {
+  .container {
+    height: 41dvh !important;
+  }
+
+  .widerContainer {
+    height: 54dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 366px) and (max-height: 801px) {
+  .container {
+    height: 38dvh !important;
+  }
+
+  .widerContainer {
+    height: 53dvh !important;
+  }
+
+}
+
+
+@media screen and (max-width: 366px) and (max-height: 640px) {
+  .container {
+    height: 24.3dvh !important;
+  }
+
+  .widerContainer {
+    height: 43.5dvh !important;
+  }
+
+}
+
+@media screen and (max-width: 366px) and (max-height: 624px) {
+  .container {
+    height: 24.3dvh !important;
+  }
+
+  .widerContainer {
+    height: 46dvh !important;
+  }
+
+}
+

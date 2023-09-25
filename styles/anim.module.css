@@ -1,0 +1,239 @@
+.dnawrapper {
+    position: relative;
+    /*margin: 60px auto 0 auto;*/
+}
+
+.dnadot1,
+.dnadot2,
+.dnadot3,
+.dnadot4,
+.dnadot5,
+.dnadot6,
+.dnadot7,
+.dnadot8,
+.dnadot9,
+.dnadot10 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px 50px;
+    background: 0;
+    animation: dnaspin 1.5s linear infinite;
+    transform-origin: center center;
+    background-color: rgb(77, 77, 77);
+}
+
+.dnadot2 {
+    animation: dnaspin 1.5s -0.75s linear infinite;
+}
+
+.dnadot3 {
+    left: 30px;
+    animation: dnaspin 1.5s -1.3s linear infinite;
+}
+
+.dnadot4 {
+    left: 30px;
+    animation: dnaspin 1.5s -0.55s linear infinite;
+}
+
+.dnadot5 {
+    left: 60px;
+    animation: dnaspin 1.5s -1.1s linear infinite;
+}
+
+.dnadot6 {
+    left: 60px;
+    animation: dnaspin 1.5s -0.35s linear infinite;
+}
+
+.dnadot7 {
+    left: 90px;
+    animation: dnaspin 1.5s -0.9s linear infinite;
+}
+
+.dnadot8 {
+    left: 90px;
+    animation: dnaspin 1.5s -0.15s linear infinite;
+}
+
+.dnadot9 {
+    left: 120px;
+    animation: dnaspin 1.5s -0.7s linear infinite;
+}
+
+.dnadot10 {
+    left: 120px;
+    animation: dnaspin 1.5s 0.05s linear infinite;
+}
+
+.dnabase1,
+.dnabase2,
+.dnabase3,
+.dnabase4,
+.dnabase5 {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    width: 1px;
+    height: 10px;
+    background: 0;
+    background-color: black;
+    animation: dnaflex 1.5s linear infinite;
+    transform-origin: center center;
+}
+
+.dnabase2 {
+    left: 35px;
+    animation: dnaflex 1.5s -1.3s linear infinite;
+}
+
+.dnabase3 {
+    left: 65px;
+    animation: dnaflex 1.5s -1.1s linear infinite;
+}
+
+.dnabase4 {
+    left: 95px;
+    animation: dnaflex 1.5s -0.9s linear infinite;
+}
+
+.dnabase5 {
+    left: 125px;
+    animation: dnaflex 1.5s -0.75s linear infinite;
+}
+
+@-moz-keyframes dnaspin {
+    0%,
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+    25% {
+        transform: translateY(30px) scale(2);
+    }
+    50% {
+        transform: translateY(60px) scale(1);
+    }
+    75% {
+        transform: translateY(30px) scale(0.3);
+    }
+}
+
+@-webkit-keyframes dnaspin {
+    0%,
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+    25% {
+        transform: translateY(30px) scale(2);
+    }
+    50% {
+        transform: translateY(60px) scale(1);
+    }
+    75% {
+        transform: translateY(30px) scale(0.3);
+    }
+}
+
+@-o-keyframes dnaspin {
+    0%,
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+    25% {
+        transform: translateY(30px) scale(2);
+    }
+    50% {
+        transform: translateY(60px) scale(1);
+    }
+    75% {
+        transform: translateY(30px) scale(0.3);
+    }
+}
+
+@keyframes dnaspin {
+    0%,
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+    25% {
+        transform: translateY(30px) scale(2);
+    }
+    50% {
+        transform: translateY(60px) scale(1);
+    }
+    75% {
+        transform: translateY(30px) scale(0.3);
+    }
+}
+
+@-moz-keyframes dnaflex {
+    0%,
+    100% {
+        transform: scaleY(5);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(5);
+    }
+    75% {
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes dnaflex {
+    0%,
+    100% {
+        transform: scaleY(5);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(5);
+    }
+    75% {
+        transform: scaleY(1);
+    }
+}
+
+@-o-keyframes dnaflex {
+    0%,
+    100% {
+        transform: scaleY(5);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(5);
+    }
+    75% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes dnaflex {
+    0%,
+    100% {
+        transform: scaleY(5);
+    }
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(5);
+    }
+    75% {
+        transform: scaleY(1);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dnawrapper {
+        position: relative;
+        /*margin: 20px auto 0 auto;*/
+    }
+}

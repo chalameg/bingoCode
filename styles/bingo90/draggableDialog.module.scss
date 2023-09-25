@@ -1,0 +1,25 @@
+/* draggable dialog styles */
+
+.dialogContent {
+  background-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  // min-width: 255px;
+  height: 40vh;
+  min-height: 340px;
+  top: 43%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1300;
+}
+
+.drag-handle {
+  cursor: grab;
+}
+
+@media screen and (max-width: 751px) and (min-width: 540px) and (max-height: 335px) {
+  .dialogContent {
+    width: 35%;
+    top: -2%;
+    left: 60%;
+  }
+}

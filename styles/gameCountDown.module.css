@@ -1,0 +1,345 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timerText {
+  
+  margin-top: 8%;
+  margin-left: -120%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.timerContainer {
+  width: 100%;
+  z-index: 2;
+}
+
+.countdownContainer {
+  width: 100%;
+  margin-left: -100%;
+  z-index: 1;
+}
+.backgroundContainer {
+  width: 130px;
+  height: 130px;
+  margin: 14px 0 0 27px;
+  background: #c9e1ed;
+  background-image: linear-gradient(180deg, transparent 50%, white 50%),
+    linear-gradient(180deg, white 50%, transparent 50%);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  animation-name: countdown;
+  animation-timing-function: linear;
+  animation-duration: 12s;
+  animation-iteration-count: 12;
+  box-sizing: border-box;
+}
+
+@keyframes countdown {
+  9% {
+    background-color: white;
+    background-image: linear-gradient(-144deg, transparent 50%, #c9e1ed 50%),
+      linear-gradient(180deg, #c9e1ed 50%, transparent 50%);
+  }
+  18% {
+    background-color: white;
+    background-image: linear-gradient(-108deg, transparent 50%, #c9e1ed 50%),
+      linear-gradient(180deg, #c9e1ed 50%, transparent 50%);
+  }
+  27% {
+    background-color: white;
+    background-image: linear-gradient(-72deg, transparent 50%, #c9e1ed 50%),
+      linear-gradient(180deg, #c9e1ed 50%, transparent 50%);
+  }
+  36% {
+    background-color: white;
+    background-image: linear-gradient(-36deg, transparent 50%, #c9e1ed 50%),
+      linear-gradient(180deg, #c9e1ed 50%, transparent 50%);
+  }
+  45% {
+    background-color: #c9e1ed;
+    background-image: linear-gradient(180deg, transparent 50%, white 50%),
+      linear-gradient(0deg, white 50%, transparent 50%);
+  }
+  54% {
+    background-color: #c9e1ed;
+    background-image: linear-gradient(180deg, transparent 50%, white 50%),
+      linear-gradient(36deg, white 50%, transparent 50%);
+  }
+  63% {
+    background-color: #c9e1ed;
+    background-image: linear-gradient(180deg, transparent 50%, white 50%),
+      linear-gradient(72deg, white 50%, transparent 50%);
+  }
+  72% {
+    background-color: #c9e1ed;
+    background-image: linear-gradient(180deg, transparent 50%, white 50%),
+      linear-gradient(108deg, white 50%, transparent 50%);
+  }
+  81% {
+    background-color: #c9e1ed;
+    background-image: linear-gradient(180deg, transparent 50%, white 50%),
+      linear-gradient(144deg, white 50%, transparent 50%);
+  }
+  90% {
+    background-color: #c9e1ed;
+    background-image: linear-gradient(180deg, transparent 50%, white 50%),
+      linear-gradient(180deg, white 50%, transparent 50%);
+  }
+  100% {
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wrapper {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (min-width: 7680px) and (max-width: 7690px),
+       screen and (min-height: 4320px) and (max-height: 4330px) {
+        .wrapper {
+          -webkit-transform: scale(5.9);
+          -moz-transform: scale(5.9);
+          -ms-transform: scale(5.9);
+          transform: scale(5.9);
+          margin-top: -400px;
+          }
+       }
+@media screen and (min-width: 5120px) and (max-width: 5130px),
+       screen and (min-height: 2880px) and (max-height: 2890px) {
+        .wrapper {
+          -webkit-transform: scale(3.9);
+          -moz-transform: scale(3.9);
+          -ms-transform: scale(3.9);
+          transform: scale(3.9);
+          margin-top: -370px;
+          }
+       }
+@media screen and (min-width: 3840px) and (max-width: 3850px),
+       screen and (min-height: 2160px) and (max-height: 2170px) {
+        .wrapper {
+          -webkit-transform: scale(2.6);
+          -moz-transform: scale(2.6);
+          -ms-transform: scale(2.6);
+          transform: scale(2.6);
+          margin-top: -250px;
+          }
+       }
+@media screen and (min-width: 2732px) and (max-width: 2742px),
+       screen and (min-height: 2048px) and (max-height: 2058px) {
+        .wrapper {
+          -webkit-transform: scale(2.333);
+          -moz-transform: scale(2.333);
+          -ms-transform: scale(2.333);
+          transform: scale(2.333);
+          margin-top: -160px;
+          }
+          .timerContainer {
+          margin-left: 0.53px;
+          }
+          .countdownContainer {
+          width: 100%;
+          margin-left: -100%;
+          z-index: 1;
+          }
+          .backgroundContainer {}
+          .timerText {
+          margin-top: 7.56%;
+          margin-left: -120%;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+          }
+       }
+@media screen and (min-width: 2560px) and (max-width: 2570px),
+       screen and (min-height: 1440px) and (max-height: 1610px) {
+        .wrapper {
+          -webkit-transform: scale(2.2);
+          -moz-transform: scale(2.2);
+          -ms-transform: scale(2.2);
+          transform: scale(2.2);
+          margin-top: -170px;
+          }
+          .timerContainer {
+          margin-left: 0.53px;
+          }
+          .countdownContainer {
+          width: 100%;
+          margin-left: -100%;
+          z-index: 1;
+          }
+          .backgroundContainer {}
+          .timerText {
+          margin-top: 7.56%;
+          margin-left: -120%;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+          }
+       }
+@media screen and (min-width: 2048px) and (max-width: 2058px),
+       screen and (min-height: 1536px) and (max-height: 1546px) {
+        .wrapper {
+          -webkit-transform: scale(2);
+          -moz-transform: scale(2);
+          -ms-transform: scale(2);
+          transform: scale(2);
+          }
+          .timerContainer {
+          margin-left: 0.8px;
+          margin-top: 95px;
+          }
+          .countdownContainer {
+          width: 100%;
+          margin-top: 95px;
+          margin-left: -100%;
+          z-index: 1;
+          }
+          .backgroundContainer {}
+          .timerText {
+          margin-top: 38.4%;
+          margin-left: -119%;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+          }
+       }
+@media screen and (max-width: 916px) and (max-height: 412px){
+  .wrapper {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  transform: scale(0.39);
+  }
+  .timerContainer {
+  margin-left: 10.8px;
+  }
+  .countdownContainer {
+  width: 100%;
+  margin-left: -100%;
+  z-index: 1;
+  }
+  .backgroundContainer {}
+  .timerText {
+  margin-top: 8.4%;
+  margin-left: -120%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  }
+  }
+@media only screen and (max-width: 896px) and (max-height: 415px) {
+  .wrapper {
+    -webkit-transform: scale(0.4943);
+    -moz-transform: scale(0.4943);
+    -ms-transform: scale(0.4943);
+    transform: scale(0.4786);
+  }
+  .timerContainer {
+    margin-left: 31.83px;
+    margin-top: 14px;
+  }
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+  .backgroundContainer {}
+  .timerText {
+    margin-top: 9%;
+    margin-left: -119%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+}
+@media only screen and (max-width: 844px) and (max-height: 390px)  {
+  .wrapper {
+    -webkit-transform: scale(0.46);
+    -moz-transform: scale(0.46);
+    -ms-transform: scale(0.46);
+    transform: scale(0.44);
+  }
+  .timerContainer {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+  .backgroundContainer {}
+  .timerText {
+  
+    margin-top: 8%;
+    margin-left: -120%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+
+}
+@media only screen and (max-width: 800px) and (max-height: 330px) {
+  .wrapper {
+    -webkit-transform: scale(0.33);
+    -moz-transform: scale(0.33);
+    -ms-transform: scale(0.33);
+    transform: scale(0.33);
+  }
+  .timerContainer {
+    margin-left: 24px;
+    margin-top: 12px;
+  }
+  .countdownContainer {
+    width: 100%;
+    margin-left: -100%;
+    z-index: 1;
+  }
+  .backgroundContainer {
+    /* No changes needed */
+  }
+  .timerText {
+    margin-top: 8%;
+    margin-left: -118%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+}

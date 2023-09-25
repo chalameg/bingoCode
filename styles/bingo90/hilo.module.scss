@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.topContainer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.dragIcon {
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background-color: #4d6fed;
+  color: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background: linear-gradient(102.27deg, #fe7f37 14.74%, #ff4b4b 89.43%);
+  color: white;
+}
+
+.hiloContainer {
+  border: 0.3rem solid;
+  border-radius: 25px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.hiloInfo {
+  padding: 0 0.3rem;
+  color: white;
+  font-size: 0.65rem;
+  text-align: justify;
+}
+
+.flipIcon {
+  background-color: #fe7f37;
+  border-radius: 50%;
+  z-index: 1001;
+  padding: 0.2rem;
+  color: white;
+}

@@ -1,0 +1,60 @@
+/* --toastify-color-light: #fff;
+--toastify-color-dark: #121212;
+--toastify-color-info: #3498db;
+--toastify-color-success: #07bc0c;
+--toastify-color-warning: #f1c40f;
+--toastify-color-error: #e74c3c;
+--toastify-color-transparent: hsla(0,0%,100%,.7);
+--toastify-icon-color-info: var(--toastify-color-info);
+--toastify-icon-color-success: var(--toastify-color-success);
+--toastify-icon-color-warning: var(--toastify-color-warning);
+--toastify-icon-color-error: var(--toastify-color-error);
+--toastify-toast-width: 320px;
+--toastify-toast-background: #fff;
+--toastify-toast-min-height: 64px;
+--toastify-toast-max-height: 800px;
+--toastify-font-family: sans-serif;
+--toastify-z-index: 9999;
+--toastify-text-color-light: #757575;
+--toastify-text-color-dark: #fff;
+--toastify-text-color-info: #fff;
+--toastify-text-color-success: #fff;
+--toastify-text-color-warning: #fff;
+--toastify-text-color-error: #fff;
+--toastify-spinner-color: #616161;
+--toastify-spinner-color-empty-area: #e0e0e0;
+--toastify-color-progress-light: linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55);
+--toastify-color-progress-dark: #bb86fc;
+--toastify-color-progress-info: var(--toastify-color-info);
+--toastify-color-progress-success: var(--toastify-color-success);
+--toastify-color-progress-warning: var(--toastify-color-warning);
+--toastify-color-progress-error: var(--toastify-color-error); */
+
+.paragraph {
+    // font-family: 'Indie Flower', cursive, sans-serif;
+    // font-family: poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    pointer-events: all;
+    font-size: medium;
+    font-weight: normal;
+    // color: #273fa3;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 4vh 2vw 0 4vw;
+    position: relative;
+}
+
+.paragraph p{
+    margin-bottom: 5px;
+}
+.paragraph h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}

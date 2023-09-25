@@ -1,0 +1,929 @@
+@import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+@import "colors";
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url("/static/fonts/IndieFlower-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/static/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/static/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("/static/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/static/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  src: url("/static/fonts/Raleway-Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "Casino";
+  src: url("/static/fonts/CasinoFlat-Regular.woff2") format("woff2"),
+  url("/static/fonts/CasinoFlat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LuckiestGuy";
+  src: url("/static/fonts/LuckiestGuy-Regular.ttf");
+}
+
+.CircularProgressbar {
+  position: relative;
+  z-index: 99;
+}
+
+.CircularProgressbar-text {
+  transform: translateY(5px);
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 10px !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused  {
+  border-color: white !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.MuiOutlinedInput-input {
+  color: white !important;
+}
+
+.MuiIconButton-edgeEnd {
+  border: 0 !important;
+  margin: 0 !important;
+  font-size: 1.5rem !important;
+  color: white !important;
+  padding: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background-image: none !important;
+  background: none !important;
+  background-color: none !important;
+}
+
+.MuiInputLabel-root {
+  margin: 0 !important;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $mainColor;
+  font-family: "poppins", -apple-system, BlinkMacSystemFont, Segoe UI,
+  Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  sans-serif;
+  // background-color: $homeBackgroundColor;
+  background-image: linear-gradient($homeBackgroundColor, $homeBackgroundColor, $homeBackgroundColor, $bottomScreenBackgroundColor);
+  font-size: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1;
+
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+text {
+  font-family: "LuckiestGuy", Tahoma, sans-serif;
+}
+
+
+body {
+  max-height: 100vh;
+  min-height: 100vh;
+  height: 100vh;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.1s ease-in-out;
+}
+
+.ios {
+  min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
+}
+
+body > div {
+  height: 100%;
+}
+
+body:-webkit-full-screen {
+  width: 100% !important;
+}
+
+body:-moz-full-screen {
+  width: 100% !important;
+}
+
+body:-ms-fullscreen {
+  width: 100% !important;
+}
+
+body:fullscreen {
+  width: 100% !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+button {
+  &:not(.normal) {
+    border: 2px solid $mainColorDark;
+    background-color: $mainColor;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px $mainColorDarkerOpacity,
+    -1px -1px 5px $mainColorDarkerOpacity;
+    padding: 3px 20px;
+    font-size: 24px;
+    color: $secondaryColor;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 10px;
+    outline: none;
+    font-family: "Poppins", "LuckiestGuy", sans-serif;
+    transition: all 0.1s ease-in-out;
+    background-image: linear-gradient(
+                    to bottom,
+                    transparent 0%,
+                    $mainColorDarkerOpacity 50%,
+                    transparent 100%
+    );
+
+    &:hover{
+      background-color: $mainColorDark;
+      border-color: $mainColorDarker;
+    }
+
+    &:active {
+      background-color: $mainColorDarker;
+    }
+
+    &[disabled] {
+      background-color: $secondaryColor;
+      background-image: none;
+      color: $mainColor;
+      cursor: default;
+      box-shadow: none;
+    }
+
+    &.back {
+      margin-left: 10px;
+      padding: 0 10px;
+      font-size: 20px;
+    }
+
+    &.inactive {
+      color: $mainColor;
+      background-color: $secondaryColor;
+      background-image: none;
+    }
+
+    & + button {
+      margin-left: 10px;
+    }
+
+    &.inverted-button {
+      color: $mainColor;
+      background-color: transparent;
+      box-shadow: unset;
+      background-image: none;
+      border: none;
+      padding: 5px 10px;
+    }
+    &.pressed {
+      &:active, &.active {
+        color:$black;
+        background-color: $orange;
+        box-shadow: 1px 1px 5px $orangeDarkerOpacity,
+        -1px -1px 5px $orangeDarkerOpacity;
+
+        background-image: linear-gradient(
+                        to bottom,
+                        transparent 0%,
+                        $orangeDarkerOpacity 50%,
+                        transparent 100%
+        );
+        border-color: $orangeDarker;
+      }
+    }
+  }
+  &.btn-chat{
+    border-radius: 0 !important;
+  }
+  &.btn-orange {
+    // background-color: $orangeMedium;
+    color: $white !important;
+    background-image: linear-gradient(119.36deg, #FF6D3F 28.25%, #FF4A11 79.56%) !important;
+    box-shadow: 1px 1px 10px rgba(255, 97, 48, 0.85) !important;
+    border-radius: 21px;
+    align-self: center;border: none !important;
+    &:hover {
+      background-image: #FF4105 !important;
+      box-shadow: 1px 1px 10px #FF4105 !important;
+    }
+    &:active,&.active {
+      background-color: $redDark !important;
+      background-image: linear-gradient(to bottom, transparent 0%, lighten($redDark, 10%) 50%, transparent 100%) !important;
+    }
+    &.pressed {
+      background-image: #FF6D3F !important;
+      box-shadow: inset 0px 1px 9px #E94714 !important;
+    }
+    &[disabled] {
+      background-color: #FF6D3F !important;
+      background-image: none !important;
+    }
+  }
+  &.btn-orange-inverted {
+    background-color: none  !important;
+    box-shadow: none !important;
+    color: $orangeMedium !important;
+    background-image: linear-gradient(to right, transparent 0%, none, transparent 100%);
+    border-color: none !important;
+    &:hover {
+      background-color: $orangeMediumDark;
+      color: $white;
+      background-image: linear-gradient(to bottom, transparent 100%) !important;
+    }
+    &:active,&.active {
+      background-color: $orangeMedium!important;
+      color: $white !important;
+      border-color: $orangeDarker !important;
+      background-image: linear-gradient(to bottom, transparent 100%) !important;
+    }
+    &[disabled] {
+      background-color: $white !important;
+      background-image: none !important;
+    }
+  }
+}
+
+.orangeButton{
+    color: $white !important;
+    background-image: linear-gradient(119.36deg, #FF6D3F 28.25%, #FF4A11 79.56%) !important;
+    box-shadow: 1px 1px 10px rgba(255, 97, 48, 0.85) !important;
+    border-radius: 21px;
+    align-self: center;
+    border: none !important;
+   
+}
+.orangeButton:hover{
+  background-image: #FF4105 !important;
+  box-shadow: 1px 1px 10px #FF4105 !important;
+}
+
+.orangeButton:active{
+  background: #FF6D3F;
+  box-shadow: inset 0px 1px 9px #E94714;
+}
+
+.luckiestBtn{
+  font-family: "LuckiestGuy" !important;
+}
+.luckiestText{
+  font-family: "LuckiestGuy" !important;
+}
+
+.fbButton{
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-size: 18px !important;
+  padding: 3% 0 !important;
+  width: 96%;
+  color: $white !important;
+}
+.fbButton:hover{
+  background-color: rgba($color: #fff, $alpha: 0.59) !important;
+}
+
+.fbButton:active{
+  background-color: rgba($color: #fff, $alpha: 0.59) !important;
+}
+
+.fbButton>svg{
+  color: #4267B2 !important;
+  font-size: 22px;
+}
+
+.fbButton>
+.m0 {
+  margin: 0 !important;
+}
+
+.fbButton2 {
+  width: 96% !important;
+}
+
+
+
+.playNowBtn{
+  background-color: #FF3636 !important;
+  background-image: none !important;
+  box-shadow: 1px 1px 13px rgba(255, 54, 54, 0.31) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  padding: 10px 0 !important;
+  width: 96%;
+  margin-top: 5%;
+  color: $white !important;
+  box-shadow: none !important;
+}
+.playNowBtn:hover{
+  background-color: #ff5b5b;
+  box-shadow: 2px 2px 17px rgba(255, 54, 54, 0.95) !important;
+}
+
+.playNowBtn:active{
+  background-color: #FF3636;
+}
+
+.flippingBtn{
+  background-color: #FF3636 !important;
+  background-image: none !important;
+  box-shadow: 1px 1px 13px rgba(255, 54, 54, 0.31) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  padding: 3% 0 !important;
+  width: 47% !important;
+  color: $white !important;
+  box-shadow: none !important;
+
+  &:active{
+
+  }
+  &.inactive{
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.block {
+  display: block;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.items-center{
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+footer {
+  /*padding: 0 20px;
+  height: 45px;*/
+}
+
+.form-group {
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.submit-btn {
+  margin-left: 20px;
+}
+
+input {
+  border: 1px solid $white;
+  display: block;
+  padding: 9px 9px;
+  border-radius: 10px;
+  background-color: transparent !important;
+  font-size: 24px;
+  width: 105%;
+  &:focus {
+    border-color: $white;
+    border-width: 2px;
+  }
+
+  &.error {
+    border-color: $red;
+    border-width: 3px;
+  }
+}
+
+::placeholder {
+  color: $white;
+  font-size: 18px;
+  opacity: 1; /* Firefox */
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: #fff !important;
+}
+
+.form-error {
+  color: $red;
+  text-align: center;
+  font-size: 16px;
+}
+
+.loader {
+  svg {
+    color: $mainColor;
+
+    * {
+      stroke: $mainColor;
+    }
+  }
+}
+
+.line-break {
+  height: 3px;
+  width: 100%;
+  background-color: $mainColor;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.padding-top {
+  padding-top: 5px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mr-5{
+  margin-right: 5px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+
+.ml-15{
+  margin-left: 15px;
+}
+
+.mb-5{
+  margin-bottom: 5px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mb-n10{
+  margin-bottom: -15px;
+}
+.ml-20{
+  margin-left: 20px !important;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.mr-20{
+  margin-right: 20px !important;
+}
+.mt-20{
+  margin-top: 20px !important;
+}
+.mb-20{
+  margin-bottom: 20px !important;
+}
+.mb-30{
+  margin-bottom: 30px !important;
+}
+.mt-m20{
+  margin-top: -20px;
+}
+
+.pr-10{
+  padding-right: 10px;
+}
+.pr-20{
+  padding-right: 20px;
+}
+.pr-30{
+  padding-right: 30px !important;
+}
+.pr-60{
+  padding-right: 100px !important;
+}
+.px-10{
+  padding: 0 10px;
+}
+
+.px-5{
+  padding: 0 5px;
+}
+.py-5{
+  padding: 5px 0;
+}
+
+.py-10{
+  padding: 10px 0;
+}
+
+.bolder{
+  font-weight: 900;
+}
+.capitalize{
+  text-transform:capitalize;
+}
+
+.p-10{
+  padding: 10px;
+}
+
+.p-5{
+  padding: 5px;
+}
+
+.p-15{
+  padding: 15px;
+}
+.loginTitle{
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.hSpace{
+  height:7vw;
+}
+
+@media screen and (max-width: 1540px) {
+
+  .swiper-button-prev{
+    display:none !important;
+  }
+  input{
+    width: 112%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+
+  .swiper-button-prev{
+    display:none !important;
+  }
+  input{
+    width: 105%;
+  }
+  
+}
+
+@media screen and (max-width: 1370px) {
+  input{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-button-prev{
+    display:block !important;
+  }
+
+  .loginTitle{
+    display: none;
+  }
+
+  .mr-top{
+    margin-top: 40px;
+  }
+
+  .hSpace{
+    height:10vh;
+  }
+
+  //chat dialog style after deployment(on mobile)
+  .MuiDialog-container{
+    // background-color: transparent !important;
+  }
+  .css-uhb5lp{
+    background-color: rgba($color: rgb(227, 227, 227, 0.67), $alpha: 0.9) !important;
+    border-radius: 20px !important;
+  }
+  .MuiPaper-root-MuiDialog-paper{
+    background-color: rgba($color: rgb(227, 227, 227, 0.67), $alpha: 0.9) !important;
+  }
+  .MuiBackdrop-root{
+    background-color: transparent !important;
+  }
+
+
+}
+@media screen and (max-width: 395px) {
+  .swiper-button-prev{
+    display:block !important;
+  }
+
+  .loginTitle{
+    display: none;
+  }
+
+  .mr-top{
+    margin-top: 40px;
+  }
+
+  .hSpace{
+    height:10vh;
+  }
+}
+
+.swiper-button-prev{
+  background-image: url('/static/images/prev-icon.png');
+}
+.swiper-button-next{
+  background-image: url('/static/images/next-icon.png');
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-size: contain;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  display: none;
+}
+
+
+.aboutus{
+  background-color: #fff;
+  height: 125vh;
+  color: #000;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-orange{
+  color: $orangeMedium;
+}
+
+
+//smile icons
+.react-emoji{
+  // margin-bottom: 2px;
+}
+
+.react-emoji-picker--wrapper{
+  width: 260px !important;
+  height: 80px !important;
+  border-radius: 20px;
+}
+
+.emoji-mart-anchors{
+  display: none !important;
+}
+
+.emoji-mart-search{
+  display: none !important;
+}
+
+.emoji-mart-category-label{
+  display: none;
+}
+
+.emoji-mart-scroll{
+  overflow-x: hidden !important;
+  padding: 0 16px 6px 0 !important;
+}
+
+.emoji-mart-category-list > li > button{
+  background-color: transparent !important;
+  border:  none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.react-input-emoji--button {
+  background-color: transparent !important;
+  border:  none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  position: relative;
+  top: 10px;
+  left: -20px;
+}
+
+.react-input-emoji--button svg{
+  fill: $orangeMedium !important;
+}
+
+.react-input-emoji--container{
+  // width: 100px !important;
+  margin-left: -2px !important; 
+  margin-bottom: 2px !important;
+}
+
+//custom css for emoji-picker-react
+.EmojiPickerReact .Flex.FlexRow {
+  display: none;
+}
+
+aside.EmojiPickerReact.epr-main:has(input:placeholder-shown) .epr-category-nav{
+  display: none;
+}
+
+.EmojiPickerReact li.epr-emoji-category>.epr-emoji-category-label{
+  display: none !important;
+}
+
+.raleway-bold{
+  font-family: 'RalewayBold';
+}
+
+.poppins-bold{
+  font-family: 'PoppinsBold';
+}
+
+.f-20{
+  font-size: 20px;
+}
+
+.f-24{
+  font-size: 24px;
+}
+
+.css-hz1bth-MuiDialog-container{
+  background-color: rgba(227, 227, 227, 0.01) !important;
+  -webkit-backdrop-filter: blur(27.5);
+  backdrop-filter: blur(27.5px);
+  height: 100% ;
+  overflow-y: hidden;
+}
+
+
+.gap-1 {
+  gap: 5px;
+}
+
+.gap-2 {
+  gap: 10px;
+}
+
+.gap-3 {
+  gap: 15px;
+}
+
+.gap-4 {
+  gap: 20px;
+}
+
+.gap-5{
+  gap: 25px;
+}
+
+.gap-6{
+  gap: 25px;
+}
+
+.EmojiPickerReact{
+
+  --epr-emoji-size: 25px !important;
+  --epr-emoji-padding: 5px;
+  --epr-emoji-gap: 2px !important;
+}
+button.epr-btn.epr-emoji.epr-visible {
+  box-shadow: none !important;
+  
+}
+aside.EmojiPickerReact.epr-main{
+  min-width: 100% !important;
+}
+.css-gr5ats-MuiPaper-root-MuiDialog-paper{
+  overflow-y: hidden;
+
+}
+
+
+/* spinning animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation: spin 1s linear infinite;
+}

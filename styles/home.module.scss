@@ -1,0 +1,2202 @@
+.profileAvatar {
+  overflow: hidden;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.hiLoQuestionMarkButton {
+  padding-bottom: 19px!important;
+  padding-left: 0px!important;
+  margin: 0!important; 
+}
+
+.balance {
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.priceButton {
+  padding: 0px 5px !important;
+  margin: 0 5px !important;
+}
+
+.collectButton {
+  font-size: 16px !important;
+  padding: 4px 14px !important;
+  margin: 0 5px 0 0 !important;
+}
+
+.buyButton{
+
+}
+
+.logoutButton{
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: none !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+    outline: none !important;
+}
+
+.buyHiLoButton {
+  font-size: 16px !important;
+  padding: 0px 3px !important;
+  margin: 0 3px 0 0 !important;
+}
+
+.purchaseAmount {
+  margin-left: 9px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.purchaseCardsStyle {
+  margin: 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hiLoPricesContainer {
+  // margin-bottom: 15px;
+}
+
+.hiLoPlayButton {
+  font-size: 24px !important;
+  padding: 2px 10px!important;
+  margin: 10px 0 0 -10px;
+}
+
+.hiLoContainer {
+  height: 50%;
+  padding: 30px 10px 0;
+}
+
+.chatContainer{
+  width: 13rem;
+  background-color: red;
+  border: #fff solid 5px;
+  padding: 5px;
+  border-radius: 20px;
+  margin: -30px 0 0 10px;
+  position: relative;
+  overflow-x: hidden;
+  // overflow-y: auto;
+  
+}
+
+.chatMessagesContainer{
+  padding: 5px;
+  border-radius: 10px;
+  height: 88% !important;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+// .chatInnerContainer{
+//   height: 44vh;
+// }
+
+.chatIcon{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  width: 12.5rem;
+  z-index: 1002;
+}
+
+.icon{
+  width: 27px;
+  height: 27px;
+}
+
+.singleChat{
+  padding-bottom: 15px;
+}
+
+.singleChat >img{
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.chatMessageContainer{
+  color: #000;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.chatMessage{
+  font-size: 4vw;
+  font-weight: 300;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+.chatTopBar{
+  display: flex;
+  color: #fff;
+  background-color: rgba(136, 136, 136, 0.2) !important;
+  width: 100% !important;
+}
+.backToGame{
+  font-family: "RalewayBold";
+  padding: 7px 0px 0px 3px; 
+  font-size: 5vw;
+}
+.playersCount {
+  display:flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 0px; 
+  color:  rgba(66, 68, 228, 1)!important;
+
+}
+.chatInputContainer{
+  display: flex;
+  height: 70px;
+}
+.chatPlaceHolderContainer{
+  display:flex;
+  background-color:#fff;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 15px;
+}
+.borderlessInput::placeholder{
+  color: #999; /* Replace with the desired text color */
+}
+.borderlessInput {
+  border: none;
+  padding: 17px; 
+}
+
+.borderlessInput:focus {
+  border: none;
+  outline: none;
+}
+
+.chatUser{
+  font-family: "RalewayBold";
+  font-size: 3vw;
+  font-weight: 1500;
+  padding: 3px;
+}
+
+.chatTime{
+  font-size: 10px;
+  color: #11298A;
+  text-align: end;
+  padding-top: 3px;
+}
+
+
+.ownerMessageContainer{
+  background: linear-gradient(to bottom, rgb(99, 109, 255), rgba(66, 68, 228, 1));
+  color: #fff !important;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 1px;
+  padding: 5px;
+}
+
+.ownerMessageContainer > .chatMessage{
+  padding: 5px 25px 5px 5px;
+}
+
+.ownerMessageContainer > .chatTime{
+  color: #fff !important;
+  padding-top: 3px;
+  text-align: end !important;
+}
+
+.chatForm{
+  margin-top: auto;
+  padding: 0 0 0 5px;
+  align-items: center;
+  justify-content: center;
+}
+// .EmojiPickerReact{
+//   --epr-emoji-size: 2px;
+//   --epr-emoji-gap:10px;
+// }
+.EmojiPickerReact {
+  --epr-emoji-size: 10px !important;
+}
+
+
+.chatForm>div{
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2px;
+
+}
+
+
+.chatForm > div > Button {
+  border-radius: 50% !important;
+  margin-bottom: 0;
+  margin-left: 3px;
+  z-index: 1005 !important;
+}
+.mobileFeatures{
+  display: none;
+}
+
+.desktopFeatures{
+  display: flex;
+}
+
+.rightSideDesktopFeatures{
+  display: block;
+}
+.active {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: orange;
+  position: relative;
+  top: -20px;
+  left: -6px;
+}
+
+@media screen and (max-width: 2160px) {
+  .chatContainer{
+    width: 21em;
+  }
+
+  // .chatInnerContainer{
+  //   height: 53vh;
+  // }
+
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 21.8rem;
+    margin-top: -10px;
+  }
+
+  .buyButton{
+    display: none;
+  }
+
+  .hiLoButton{
+    display: flex;
+    position: relative;
+    right: 0;
+    font-size: 24px !important;
+  }
+
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+  }
+
+  .icon{
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .chatContainer{
+    width: 17rem;
+  }
+
+  // .chatInnerContainer{
+  //   height: 50vh;
+  // }
+
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 17.5rem;
+    margin-top: -10px;
+  }
+
+  .buyButton{
+    display: none;
+  }
+
+  .hiLoButton{
+    display: flex;
+    position: relative;
+    right: 0;
+    font-size: 24px !important;
+  }
+
+  .purchaseButton{
+    font-size: 32px !important;
+    padding: 4px 26px !important;
+  }
+
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+  }
+
+  .icon{
+    width: 30px;
+    height: 30px;
+  }
+  .priceButton{
+    font-size: 250px;
+  }
+}
+@media only screen and (max-width: 1920px) and (max-height: 1100px){ 
+  // .chatInnerContainer{
+  //   height: 48vh;
+  // }
+}
+@media only screen and (max-width: 1920px) and (max-height: 1080px){ 
+  // .chatInnerContainer{
+  //   height: 47.5vh;
+  // }
+}
+@media only screen and (max-width: 1920px) and (max-height: 1060px){ 
+  // .chatInnerContainer{
+  //   height: 47vh;
+  // }
+}
+@media only screen and (max-width: 1920px) and (max-height: 1040px){ 
+  // .chatInnerContainer{
+  //   height: 46vh;
+  // }
+}
+@media only screen and (max-width: 1920px) and (max-height: 1020px){ 
+  // .chatInnerContainer{
+  //   height: 44.5vh;
+  // }
+}
+@media only screen and (max-width: 1920px) and (max-height: 1000px){ 
+  // .chatInnerContainer{
+  //   height: 44vh;
+  // }
+}
+
+@media screen and (max-width: 1536px) {
+  .chatContainer{
+    width: 15rem;
+  }
+
+  .chatInnerContainer{
+  }
+
+  .chatMessagesContainer{
+    // height: 70% !important;
+  }
+
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 15.5rem;
+    margin-top: -10px;
+  }
+
+  .buyButton{
+    display: none;
+  }
+
+  .hiLoButton{
+    display: flex;
+    position: relative;
+    right: 0;
+    font-size: 24px !important;
+  }
+
+  .purchaseButton{
+    font-size: 30px !important;
+  }
+
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+  }
+
+  .icon{
+    width: 30px;
+    height: 30px;
+  }
+  .priceButton{
+    font-size: 250px;
+  }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+  .chatContainer{
+    width: 13rem;
+  }
+
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 13.5rem;
+    margin-top: -10px;
+  }
+
+  .buyButton{
+    display: none;
+  }
+
+  .hiLoButton{
+    display: flex;
+    position: relative;
+    right: 0;
+    font-size: 24px !important;
+  }
+
+  .purchaseButton{
+    font-size: 24px !important;
+    padding: 3px 20px !important;
+  }
+
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+  }
+
+  .priceButton{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .chatContainer{
+    width: 13rem;
+  }
+
+
+  @media screen and (max-width:706px) {
+    .chatContainer{
+      width: 13rem;
+      overflow-y: auto;
+    }
+
+    .onmobile-device {
+      border-radius: 0;
+
+    }
+    .onmobile-device:focus {
+      border-bottom: 5px;
+     
+    }
+
+  }
+
+  // .chatInnerContainer{
+  //   height: 48vh;
+  // }
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 13.5rem;
+    margin-top: -10px;
+  }
+
+  .buyButton{
+    display: none;
+  }
+
+  .hiLoButton{
+    display: flex;
+    position: relative;
+    right: 0;
+    font-size: 24px !important;
+  }
+
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+  }
+
+  .priceButton{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .chatContainer{
+    width: 11.5rem;
+  }
+
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 12rem;
+    margin-top: -10px;
+  }
+
+  // .chatInnerContainer{
+  //   height: 40vh;
+  // }
+
+  .buyButton{
+    display: none;
+  }
+
+  .hiLoButton{
+    display: flex;
+    position: relative;
+    right: 0;
+    font-size: 22px !important;
+  }
+
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+  }
+
+  .priceButton{
+    font-size: 18px;
+  }
+}
+
+//for vertical
+@media screen and (max-width: 1024px) and (min-height: 1000px) {
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 1rem;
+    margin-left: 5px;
+  }
+
+  .active{
+    top: -25px;
+    left: -2px;
+    width: 8px;
+    height: 4px;
+  }
+
+  .icon{
+    width: 37px;
+    height: 37px;
+  }
+
+  .chatContainer{
+    width: 25rem;
+    background-color: transparent !important;
+    border: none;
+    margin: 0;
+    margin: -30px 0 0 0;
+    height: 31rem !important;
+  }
+
+  .chatMessagesContainer{
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 28rem !important;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin: 0em;
+  }
+  
+  // .chatInnerContainer{
+  //   background-color: transparent;
+  //   border-radius: 10px;
+  //   height: 17.6rem !important;
+  // }
+
+  .buyButton{
+    display: flex !important;
+  }
+
+  .mobileFeatures{
+    display: block;
+  }
+  
+  .desktopFeatures{
+    display: none;
+  }
+
+  .rightSideDesktopFeatures{
+    display: none;
+  }
+
+  .collectButton {
+    font-size: 16px !important;
+    padding: 4px 3px !important;
+    margin: 0 5px 0 0 !important;
+  }
+}
+
+//for portrait
+@media screen and (max-width: 1024px) and (max-height: 770px) {
+  .chatContainer{
+    width: 11.5rem;
+  }
+
+  .chatMessageContainer{
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 1px;
+    padding: 5px;
+    margin-left: 3px;
+  }
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 11.5rem;
+    margin-top: -10px;
+  }
+
+  .chatInnerContainer{
+  }
+
+  .buyButton{
+    display: none;
+  }
+  // .hiLoButton{
+  //   display: flex;
+  //   position: relative;
+  //   right: 0;
+  //   font-size: 20px !important;
+  // }
+
+  .hiLoPlayButton {
+    font-size: 20px !important;
+    padding: 2px 5px!important;
+    margin: 10px 0 0 -10px;
+  }
+  
+  .hiLoContainer {
+    height: 50%;
+    padding: 30px 15px 0;
+  }
+
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+  }
+
+  .priceButton{
+    font-size: 18px !important;
+  }
+
+  .rightSideDesktopFeatures{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 1rem;
+    margin-left: 5px;
+  }
+
+  .active{
+    top: -25px;
+    left: -2px;
+    width: 8px;
+    height: 4px;
+  }
+
+  .icon{
+    width: 37px;
+    height: 37px;
+  }
+
+  .chatContainer{
+    width: 25rem;
+    background-color: transparent !important;
+    border: none;
+    margin: 0;
+    margin: -30px 0 0 0;
+    height: 31rem !important;
+  }
+
+  .chatMessagesContainer{
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 28rem !important;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin: 0em;
+  }
+  
+  .chatInnerContainer{
+  
+  }
+
+  .buyButton{
+    display: flex !important;
+  }
+
+  .mobileFeatures{
+    display: block;
+  }
+  
+  .desktopFeatures{
+    display: none;
+  }
+
+  .rightSideDesktopFeatures{
+    display: none;
+  }
+
+  .collectButton {
+    font-size: 20px !important;
+    padding: 4px 6px !important;
+    margin: 0 5px 0 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 1rem;
+    margin-left: 5px;
+  }
+
+  .active{
+    top: -25px;
+    left: -2px;
+    width: 8px;
+    height: 4px;
+  }
+
+  .icon{
+    width: 37px;
+    height: 37px;
+  }
+
+  .chatContainer{
+    width: 25rem;
+    background-color: transparent !important;
+    border: none;
+    margin: 0;
+    margin: -30px 0 0 0;
+    height: 22rem !important;
+    overflow-y: hidden !important;
+  }
+
+  .chatMessagesContainer{
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 28rem !important;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin: 0em;
+  }
+  
+  .chatInnerContainer{
+ 
+  }
+
+  .buyButton{
+    display: flex !important;
+  }
+
+  .mobileFeatures{
+    display: block;
+  }
+  
+  .desktopFeatures{
+    display: none;
+  }
+
+  .rightSideDesktopFeatures{
+    display: none;
+  }
+
+  .collectButton {
+    font-size: 16px !important;
+    padding: 4px 8px !important;
+    margin: 0 5px 0 0 !important;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 1rem;
+    margin-left: 5px;
+    padding-top: 8px;
+  }
+
+  .active{
+    top: -35px;
+    left: 30px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .icon{
+    width: 37px;
+    height: 37px;
+  }
+
+  .chatContainer{
+    position:fixed;
+    top: 40px;
+    width: 100%;
+    background-color: transparent !important;
+    border: none;
+    margin:  0 0 0;
+    // margin: -30px 0 0 0;
+    min-height: 100%;
+    max-height: 100% !important;
+    // overflow: hidden;
+    border-color: red;
+  }
+
+  .chatMessagesContainer{
+    padding: 10px;
+    background-color: transparent;
+    max-height: 80%;
+    min-height: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    // overflow-y: scroll;
+    margin-bottom: 10%;
+  }
+  
+ 
+  .buyButton{
+    display: flex !important;
+  }
+
+  .mobileFeatures{
+    display: block;
+  }
+  
+  .desktopFeatures{
+    display: none;
+  }
+
+  .rightSideDesktopFeatures{
+    display: none;
+  }
+
+  .collectButton {
+    font-size: 16px !important;
+    padding: 4px 3px !important;
+    margin: 0 5px 0 0 !important;
+  }
+
+  .homeTitle {
+    font-size: 10vw;
+  }
+  .priceButton {
+    svg {
+      display: none;
+    }
+  }
+  .purchaseAmount {
+    font-size: 24px;
+  }
+  .priceButton {
+    font-size: 20px !important;
+  }
+}
+
+// @media screen and (max-height: 900px){ 
+//   .chatInnerContainer{
+//     height: 52vh;
+//   }
+// }
+// @media screen and (max-height: 880px){ 
+//   .chatInnerContainer{
+//     height: 51vh;
+//   }
+// }
+// @media screen and (max-height: 860px){ 
+//   .chatInnerContainer{
+//     height: 50vh;
+//   }
+// }
+// @media screen and (max-height: 840px){ 
+//   .chatInnerContainer{
+//     height: 49vh;
+//   }
+// }
+// @media screen and (max-height: 820px){ 
+//   .chatInnerContainer{
+//     height: 47.5vh;
+//   }
+// }
+// @media screen and (max-height: 800px){ 
+//   .chatInnerContainer{
+//     height: 46vh;
+//   }
+// }
+// @media screen and (max-height: 780px){ 
+//   .chatInnerContainer{
+//   }
+// }
+// @media screen and (max-height: 760px){ 
+//   .chatInnerContainer{
+//   }
+// }
+// @media screen and (max-height: 740px){ 
+//   .chatInnerContainer{
+//   }
+// }
+// @media screen and (max-height: 720px){ 
+//   .chatInnerContainer{
+//   }
+// }
+// @media screen and (max-height: 700px){ 
+//   .chatInnerContainer{
+//   }
+// }
+
+@media screen and (min-width: 5120px) and (max-width: 5130px),
+screen and (min-height: 2880px) and (max-height: 2890px) {
+    .chatContainer {
+    width: 32vw;
+    height: 44.3vh !important;
+    background-color: #e3e3e3ab !important;
+    border: #fff solid 7px;
+    padding: 7px;
+    border-radius: 25px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 15px;
+    top: -25px;
+    }
+    .chatForm {
+    margin-top: auto;
+    padding: 0 35px 0 10px;
+    width: 95%;
+    align-items: center;
+    font-size: 200px;
+    justify-content: center;
+    }
+    .chatForm > div > Button {
+    border-radius: 50% !important;
+    height: 190px;
+    font-size: 150px;
+    width: 250px;
+    margin-bottom: 0;
+    margin-left: 35px;
+    margin-right: -50px;
+    z-index: 1005 !important;
+    }
+    .chatMessageContainer {
+    height: 15px !important;
+    }
+    .chatIcon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 26.5vw !important;
+    top: 10px;
+    }
+    .mobileLandscapeView {
+    font-size: 90px !important;
+    margin: 0px;
+    margin-top: 30px !important;
+    }
+    .mobileLandscapeView > span {
+    font-size: 100px !important;
+    }
+    .priceButton {
+    font-size: 95px !important;
+    margin: 25px !important;
+    padding: 10px 38px !important;
+    }
+    .purchaseCardsStyle {
+    margin: 0 60px;
+    font-size: 1520px;
+    font-weight: bold;
+    }
+    .purchaseButton {
+    font-size: 110px !important;
+    padding: 20px 50px 20px 50px !important;
+    margin-bottom: -2px !important;
+    }
+    .collectButton {
+    font-size: 97px !important;
+    padding: 0px 40px !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    }
+    .balance {
+    color: #333;
+    font-size: 100px;
+    font-weight: bold;
+    }
+    .profileAvatar {
+    overflow: hidden;
+    margin: 0 50px;
+    cursor: pointer;
+    }
+    .icon {
+    margin-top: 100px;
+    width: 180px;
+    height: 180px;
+    }
+    .hiLoPlayButton {
+    font-size: 80px !important;
+    padding: 10px 35px !important;
+    margin: 30px 0 0 -20px;
+    }
+    .mobileFeatures {
+    display: none;
+    }
+    .desktopFeatures {
+    display: flex;
+    font-size: 90px !important;
+    width: 28.5vw;
+    padding-left: 100px !important;
+    margin-bottom: 20px !important;
+    }
+    .rightSideDesktopFeatures {
+    display: block;
+    }
+    .hiLoPricesContainer {
+      margin-bottom: 90px;
+      margin-right: 0px;
+    }
+    .buyButton{
+      display: none !important;
+    }
+}
+@media screen and (min-width: 3840px) and (max-width: 3850px),
+screen and (min-height: 2160px) and (max-height: 2170px) {
+    .chatContainer{
+    width: 27vw;
+    height: 47.5vh !important;
+    background-color: #e3e3e3ab !important;
+    border: #fff solid 5px;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 10px;
+    top: -15px;
+    }
+    .chatForm{
+    margin-top: auto;
+    padding: 0 25px 0 5px;
+    width: 820px;
+    align-items: center;
+    font-size: 150px;
+    justify-content: center;
+    }
+    .chatForm > div > Button {
+    border-radius: 50% !important;
+    height: 100px;
+    font-size: 70px;
+    width: 150px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: -36px;
+    z-index: 1005 !important;
+    }
+    .chatMessageContainer{
+    height: 10px !important;
+    }
+    .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 26vw !important;
+    top: 5px;
+    }
+    .mobileLandscapeView{
+    font-size: 70px !important;
+    margin: 0px;
+    margin-top: 20px !important;
+    }
+    .mobileLandscapeView>span{
+      font-size: 70px !important;
+    }
+    .priceButton{
+      font-size: 65px !important;
+      margin: 10px !important;
+      padding: 10px 21px !important;
+    }
+    .purchaseCardsStyle {
+      margin: 0 40px;
+      font-size: 70px;
+      font-weight: bold;
+    }
+    .purchaseButton{
+      font-size: 73px !important;
+      padding: 15px 30px 15px 30px !important;
+      margin-bottom: -2px !important;
+    }
+    .collectButton {
+      font-size: 75px !important;
+      padding: 0px 30px  !important;
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+    .balance {
+      color: #333;
+      font-size: 75px;
+      font-weight: bold;
+    }
+    .profileAvatar {
+      overflow: hidden;
+      margin: 0 30px;
+      cursor: pointer;
+    }
+    .icon{
+      margin-top: 80px;
+      width: 115px;
+      height: 115px;
+    }
+    .hiLoPlayButton {
+      font-size: 65px !important;
+      padding: 6px 25px!important;
+      margin: 20px 0 0 -12px;
+    }
+    .mobileFeatures{
+      display: none;
+    }
+
+    .desktopFeatures{
+      display: flex;
+      font-size: 75px !important;
+      width: 24.5vw;
+      padding-left: 80px !important;
+      margin-bottom: 10px !important;
+    }
+    .rightSideDesktopFeatures{
+      display: block;
+    }
+    .hiLoPricesContainer {
+      margin-bottom: 40px;
+      margin-right: 0px;
+    }
+    .buyButton{
+      display: none !important;
+    }
+}
+@media screen and (min-width: 2688px) and (max-width: 2742px),
+screen and (min-height: 2002px) and (max-height: 2098px) {
+    .chatContainer{
+    width: 27.5vw;
+    height: 57vh !important;
+    background-color: #e3e3e3ab !important;
+    border: #fff solid 5px;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 20px;
+    top: -30px;
+    }
+    .chatForm{
+    margin-top: auto;
+    padding: 0 35px 0 5px;
+    width: 620px;
+    align-items: center;
+    font-size: 100px;
+    justify-content: center;
+    }
+    .chatForm > div > Button {
+    border-radius: 50% !important;
+    height: 80px;
+    font-size: 60px;
+    width: 100px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: -28px;
+    z-index: 1005 !important;
+    }
+    .chatMessageContainer{
+    height: 12px !important;
+    }
+    .chatMessagesContainer{
+      padding: 5px;
+      border-radius: 10px;
+      height: 110% !important;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+    .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 26vw !important;
+    top: 0px;
+    }
+    .mobileLandscapeView{
+    font-size: 60px !important;
+    margin: 0px;
+    margin-top: 15px !important;
+    }
+    .mobileLandscapeView>span{
+      font-size: 60px !important;
+    }
+    .priceButton{
+      font-size: 55px !important;
+      margin: 7px !important;
+      padding: 7px 15px !important;
+    }
+    .purchaseCardsStyle {
+      margin: 0 25px;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .purchaseButton{
+      font-size: 63px !important;
+      padding: 12px 25px 12px 25px !important;
+      margin-bottom: -3px !important;
+    }
+    .collectButton {
+      font-size: 50px !important;
+      padding: 0px 25px  !important;
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+    .balance {
+      color: #333;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .profileAvatar {
+      overflow: hidden;
+      margin: 0 20px;
+      cursor: pointer;
+    }
+    .icon{
+      margin-top: 50px;
+      width: 95px;
+      height: 95px;
+    }
+    .hiLoPlayButton {
+      font-size: 50px !important;
+      padding: 7px 20px!important;
+      margin: 15px 0 0 -10px;
+    }
+    .mobileFeatures{
+      display: none;
+    }
+
+    .desktopFeatures{
+      display: flex;
+      font-size: 60px !important;
+      width: 26.5vw;
+      padding-left: 80px !important;
+      margin-bottom: 30px;
+    }
+    .rightSideDesktopFeatures{
+      display: block;
+    }
+    .hiLoPricesContainer {
+      margin-bottom: 40px;
+      margin-right: 0px;
+    }
+    .buyButton{
+      display: none !important;
+    }
+}
+@media  screen and (min-width: 2560px) and (max-width: 2570px),
+        screen and (min-height: 1440px) and (max-height: 1650px) {
+    .chatContainer{
+        width: 25.78125vw;
+        height: 49vh !important;
+        background-color: #e3e3e3ab !important;
+        border: #fff solid 5px;
+        padding: 5px;
+        border-radius: 20px;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-left: 18.75px;
+        top: -28.125px;
+    }
+    .chatForm{
+        margin-top: auto;
+        padding: 0 32.8125px 0 5px;
+        width: 581.25px;
+        align-items: center;
+        font-size: 93.75px;
+        justify-content: center;
+    }
+    .chatForm > div > Button {
+        border-radius: 50% !important;
+        height: 75px;
+        font-size: 56.25px;
+        width: 93.75px;
+        margin-bottom: 0;
+        margin-left: 18.75px;
+        margin-right: -26.25px;
+        z-index: 1005 !important;
+    }
+    .chatMessageContainer{
+        height:11.25px !important
+    }
+    .chatMessagesContainer{
+      padding:
+      5px;border-radius:
+      10px;height:
+      103.125% !important;display:
+      flex;flex-direction:
+      column;overflow-y:
+      auto
+    }
+    .chatIcon{
+      display:flex;align-items:
+      flex-end;justify-content:
+      end;width:
+      24.375vw !important;top:
+      0
+    }
+    .mobileLandscapeView{
+      font-size:
+      56.25px !important;margin:
+      0;margin-top:
+      14.0625px !important
+    }
+    .mobileLandscapeView>span{
+      font-size:
+      56.25px !important
+    }
+    .priceButton{
+      font-size:51.5625px !important;
+      margin:6.5625px !important;
+      padding:6.5625px;
+    }
+    .purchaseCardsStyle {
+      margin: 0 23.4375px;
+      font-size: 56.25px;
+      font-weight: bold;
+  }
+  .purchaseButton{
+      font-size: 59.0625px !important;
+      padding: 11.25px 23.4375px 11.25px 23.4375px !important;
+      margin-bottom: -2.8125px !important;
+  }
+  .collectButton {
+      font-size: 46.875px !important;
+      padding: 0px 23.4375px !important;
+      margin-left: 18.75px !important;
+      margin-right: 18.75px !important;
+  }
+    .balance {
+      color: #333;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .profileAvatar {
+      overflow: hidden;
+      margin: 0 18.75px;
+      cursor: pointer;
+    }
+    .icon{
+      margin-top: 46.875px;
+      width: 88.90625px;
+      height: 88.90625px;
+    }
+    .hiLoPlayButton {
+      font-size: 46.875px !important;
+      padding: 6.5625px 18.75px!important;
+      margin: 14.0625px 0 0 -9.375px;
+    }
+    .mobileFeatures{
+      display: none;
+    }
+
+    .desktopFeatures{
+      display: flex;
+      font-size: 56.25px !important;
+      width: 24.8046875vw;
+      padding-left: 75px !important;
+      margin-bottom: 28.125px;
+    }
+    .rightSideDesktopFeatures{
+      display: block;
+    }
+    .hiLoPricesContainer {
+      margin-bottom: 37.5px;
+      margin-right: 0px;
+    }
+    .buyButton{
+      display:none !important
+    }
+  }
+@media screen and (min-width: 2560px) and (max-width: 2570px) and (min-height: 1440px) and (max-height: 1450px) {
+        .chatContainer{
+          height: 43.5vh !important;
+      }
+}
+  
+@media screen and (min-width: 2048px) and (max-width: 2058px),
+       screen and (min-height: 1536px) and (max-height: 1546px) {
+        .chatContainer{
+          width: 26.5vw;
+          height: 48.5vh !important;
+          background-color: #e3e3e3ab !important;
+          border: #fff solid 5px;
+          padding: 5px;
+          border-radius: 20px;
+          position: relative;
+          overflow-x: hidden;
+          overflow-y: auto;
+          margin-left: 10px;
+          top: 10px;
+        }
+        .chatForm{
+          margin-top: auto;
+          padding: 0 25px 0 5px;
+          width: 380px;
+          align-items: center;
+          font-size: 100px;
+          justify-content: center;
+        }
+        .chatForm > div > Button {
+          border-radius: 50% !important;
+          height: 70px;
+          font-size: 50px;
+          width: 90px;
+          margin-bottom: 0;
+          margin-left: 10px;
+          margin-right: -18px;
+          z-index: 1005 !important;
+        }
+        .chatMessageContainer{
+          height: 10px !important;
+        }
+        .chatIcon{
+          display: flex;
+          align-items: flex-end;
+          justify-content: end;
+          width: 22.5vw !important;
+          top: 5px;
+        }
+        .mobileLandscapeView{
+          font-size: 50px !important;
+          margin: 0px;
+          margin-top: 10px !important;
+        }
+      
+        .mobileLandscapeView>span{
+          font-size: 50px !important;
+        }
+        .priceButton{
+          font-size: 45px !important;
+          margin: 5px !important;
+          padding: 5px 11px !important;
+        }
+        .purchaseCardsStyle {
+          margin: 0 20px;
+          font-size: 50px;
+          font-weight: bold;
+        }
+        .purchaseButton{
+          font-size: 53px !important;
+          padding: 10px 20px 10px 20px !important;
+          margin-bottom: -2px !important;
+        }
+        .collectButton {
+          font-size: 45px !important;
+          padding: 0px 20px  !important;
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+        }
+        .balance {
+          color: #333;
+          font-size: 45px;
+          font-weight: bold;
+        }
+        .profileAvatar {
+          overflow: hidden;
+          margin: 0 15px;
+          cursor: pointer;
+        }
+        .icon{
+          margin-top: 50px;
+          width: 65px;
+          height: 65px;
+        }
+        .hiLoPlayButton {
+          font-size: 45px !important;
+          padding: 4px 15px!important;
+          margin: 10px 0 0 -8px;
+        }
+        .mobileFeatures{
+          display: none;
+        }
+      
+        .desktopFeatures{
+          display: flex;
+          font-size: 55px !important;
+          width: 24.5vw;
+          padding-left: 60px !important;
+          margin-bottom: 10px !important;
+        }
+        .rightSideDesktopFeatures{
+          display: block;
+        }
+        .hiLoPricesContainer {
+          margin-bottom: 40px;
+          margin-right: 0px;
+        }
+        .buyButton{
+          display: none !important;
+        }
+       }
+@media screen and (max-width: 916px) and (max-height: 412px){
+
+  .chatContainer{
+    width: 26.5vw;
+    height: 53vh !important;
+    background-color: #e3e3e3ab !important;
+    border: #fff solid 5px;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 10px;
+    top: 10px;
+  }
+
+  .chatForm > div > Button {
+    border-radius: 50% !important;
+    height: 35px;
+    width: 45px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: -18px;
+    z-index: 1005 !important;
+  }
+  .chatMessageContainer{
+    height: 10px !important;
+  }
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 25vw !important;
+    top: 5px;
+  }
+  .mobileLandscapeView{
+    font-size: 11.5px !important;
+    margin: 0px;
+    margin-top: -2px !important;
+  }
+
+  .mobileLandscapeView>span{
+    font-size: 10px !important;
+  }
+  .priceButton{
+    font-size: 10px !important;
+    margin-top: 5px !important;
+  }
+  .purchaseCardsStyle {
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .purchaseButton{
+    font-size: 17px !important;
+    padding: 5px 17px 5px 17px !important;
+    margin-bottom: -2px !important;
+  }
+  .collectButton {
+    font-size: 18px !important;
+    padding: 0px 4px  !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .balance {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .profileAvatar {
+    overflow: hidden;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .icon{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .hiLoPlayButton {
+    font-size: 16px !important;
+    padding: 4px 9px!important;
+    margin: 10px 0 0 -8px;
+  }
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+    font-size: 20px !important;
+    width: 24.5vw;
+    padding-left: 60px !important;
+    margin-bottom: -2px !important;
+  }
+  .rightSideDesktopFeatures{
+    display: block;
+  }
+  .hiLoPricesContainer {
+    margin-bottom: 40px;
+  }
+  .buyButton{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 896px) and (max-height: 415px) {
+  .chatContainer {
+    width: 28.1vw;
+    height: 47.8vh !important;
+    background-color: #e3e3e3ab !important;
+    border: #fff solid 5.31px;
+    padding: 5.31px;
+    border-radius: 21.23px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 10.61px;
+    top: 10.61px;
+  }
+ 
+  .chatForm > div > Button {
+    border-radius: 53.07% !important;
+    height: 37.27px;
+    width: 47.83px;
+    margin-bottom: 0;
+    margin-left: 10.61px;
+    margin-right: -19.16px;
+    z-index: 1005 !important;
+  }
+  .chatMessageContainer {
+    height: 11.06px !important;
+  }
+  .chatIcon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 25.43% !important;
+    top: 4.25px;
+  }
+  .chatInnerContainer {
+    height: 53.04px !important;
+  }
+
+  .mobileLandscapeView {
+    font-size: 4.24vh !important;
+    margin: 0px;
+    margin-top: 0.23vh !important;
+  }
+  .mobileLandscapeView > span {
+    font-size: 4.24vh !important;
+  }
+  .priceButton {
+    font-size: 10.61px !important;
+  }
+  .purchaseCardsStyle {
+    margin: 0 5.61px;
+    font-size: 21.22px;
+    font-weight: bold;
+  }
+  .purchaseButton {
+    font-size: 15.92px !important;
+    padding: 5.31px 18.43px !important;
+  }
+  .collectButton {
+    font-size: 15.92px !important;
+    padding: 0px 4.24px !important;
+    margin-left: 10.61px !important;
+    margin-right: 10.61px !important;
+  }
+  .balance {
+    color: #333;
+    font-size: 15.92px;
+    font-weight: bold;
+  }
+  .profileAvatar {
+    overflow: hidden;
+    margin: 0 5.61px;
+    cursor: pointer;
+  }
+  .icon {
+    margin-top: 3.18px;
+    width: 26.52px;
+    height: 26.52px;
+  }
+  .hiLoPlayButton {
+    font-size: 12.73px !important;
+    padding: 0.56px 4.24px !important;
+    margin: 8.48px 0 0 -8.48px;
+  }
+  .mobileFeatures {
+    display: none;
+  }
+
+  .desktopFeatures {
+    display: flex;
+    font-size: 19.02px !important;
+    margin: 0 !important;
+  }
+  .rightSideDesktopFeatures {
+    display: block;
+  }
+  .hiLoPricesContainer {
+    margin-bottom: 23.42px;
+  }
+  .buyButton {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 874px) and (orientation: landscape){
+  .chatContainer{
+    height: 52vh !important;
+  }
+  .mobileLandscapeView{
+    font-size: 16px !important;
+    margin: 0px;
+    margin-top: 0px !important;
+  }
+  .mobileLandscapeView>span{
+    font-size: 16px !important;
+  }
+  .chatIcon{
+    width: 24% !important;
+  }
+}
+@media only screen and (max-width: 844px) and (max-height: 390px){
+
+  .chatContainer{
+    width: 26.5vw;
+    height: 45vh !important;
+    background-color: #e3e3e3ab !important;
+    border: #fff solid 5px;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 10px;
+    top: 10px;
+  }
+ 
+  .chatForm > div > Button {
+    border-radius: 50% !important;
+    height: 35px;
+    width: 45px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: -18px;
+    z-index: 1005 !important;
+  }
+  .chatMessageContainer{
+    height: 10px !important;
+  }
+  .chatIcon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 24% !important;
+    top: 4px;
+  }
+  .chatInnerContainer{
+    height: 50px !important;
+  }
+
+  .mobileLandscapeView{
+    font-size: 4vh !important;
+    margin: 0px;
+    margin-top:0.2vh !important;
+  }
+  .mobileLandscapeView>span{
+    font-size: 4vh !important;
+  }
+  .priceButton{
+    font-size: 10px !important;
+  }
+  .purchaseCardsStyle {
+    margin: 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .purchaseButton{
+    font-size: 15px !important;
+    padding: 5px 17px 5px 17px !important;
+  }
+  .collectButton {
+    font-size: 15px !important;
+    padding: 0px 4px  !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .balance {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .profileAvatar {
+    overflow: hidden;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .icon{
+    margin-top: 3px;
+    width: 25px;
+    height: 25px;
+  }
+  .hiLoPlayButton {
+    font-size: 12px !important;
+    padding: 0.5px 4px!important;
+    margin: 8px 0 0 -8px;
+  }
+  .mobileFeatures{
+    display: none;
+  }
+
+  .desktopFeatures{
+    display: flex;
+    font-size: 18px !important;
+    margin: 0 !important;
+  }
+  .rightSideDesktopFeatures{
+    display: block;
+  }
+  .hiLoPricesContainer {
+    margin-bottom: 22px;
+  }
+  .buyButton{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 800px) and (max-height: 330px) {
+  .chatContainer {
+    width: 22vw;
+    height: 52vh !important;
+    background-color: #e3e3e3ab !important;
+    border: #fff solid 4px;
+    padding: 4px;
+    border-radius: 16px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 8px;
+    top: 8px;
+  }
+
+  .chatForm > div > Button {
+    border-radius: 50% !important;
+    height: 28px;
+    width: 36px;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-right: -14.4px;
+    z-index: 1005 !important;
+  }
+
+  .chatMessageContainer {
+    height: 7.47px !important;
+  }
+
+  .chatIcon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 19.2% !important;
+    top: 3.2px;
+  }
+
+  .chatInnerContainer {
+    height: 40px !important;
+  }
+
+  .mobileLandscapeView {
+    font-size: 3.2vh !important;
+    margin: 0;
+    margin-top: 0.16vh !important;
+  }
+
+  .mobileLandscapeView > span {
+    font-size: 3.2vh !important;
+  }
+
+  .priceButton {
+    font-size: 8px !important;
+  }
+
+  .purchaseCardsStyle {
+    margin: 0 4px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .purchaseButton {
+    font-size: 12px !important;
+    padding: 4px 13.6px 4px 13.6px !important;
+  }
+
+  .collectButton {
+    font-size: 12px !important;
+    padding: 0px 3.2px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+  }
+
+  .balance {
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .profileAvatar {
+    overflow: hidden;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+
+  .icon {
+    margin-top: 2.4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .hiLoPlayButton {
+    font-size: 9.6px !important;
+    padding: 0.4px 3.2px !important;
+    margin: 6.4px 0 0 -6.4px;
+  }
+
+  .mobileFeatures {
+    display: none;
+  }
+
+  .desktopFeatures {
+    display: flex;
+    font-size: 14.4px !important;
+    margin: 0 !important;
+  }
+
+  .rightSideDesktopFeatures {
+    display: block;
+  }
+
+  .hiLoPricesContainer {
+    margin-bottom: 17.6px;
+  }
+
+  .buyButton {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 751px) and (min-width: 700px) and (max-height: 335px){
+  .backToGame{
+    font-size: 3vw;
+  }
+  .chatContainer{
+    width: 100%;
+    height: 100% !important;
+    background-color: transparent!important;
+    border: none;
+    margin-top: 1vh;
+  }
+  .chatForm > div > Button {
+    height: 45px;
+    width: 45px;
+  }
+  .chatPlaceHolderContainer{
+    width: 86vw;
+  }
+  .playersCount {
+    margin-left: auto;
+    margin-right:20px
+  }
+  .chatMessagesContainer{
+    height: 10rem !important;
+  }
+}
+@media only screen and (max-width: 740px) and (max-height: 360px) {
+  .chatContainer {
+    height: 57vh !important;
+  }
+}
+@media only screen and (max-width: 740px) and (max-height: 330px) {
+
+  .chatContainer {
+    width: 32.5vw;
+    height: 58vh !important;
+   
+  }
+ 
+  .chatForm > div > Button {
+    border-radius: 50% !important;
+    height: 28px;
+    width: 36px;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-right: -14px;
+    z-index: 1005 !important;
+  }
+  
+  .chatMessageContainer {
+    height: 6px !important;
+  }
+  
+  .chatIcon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 26% !important;
+    top: 3px;
+  }
+  
+  .chatInnerContainer {
+    height: 40px !important;
+  }
+
+  .mobileLandscapeView {
+    font-size: 3.5vh !important;
+    margin: 0px;
+    margin-top: 0.1vh !important;
+  }
+  
+  .mobileLandscapeView > span {
+    font-size: 3.5vh !important;
+  }
+  
+  .priceButton {
+    font-size: 10px !important;
+  }
+  
+  .purchaseCardsStyle {
+    margin: 0 4px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .purchaseButton {
+    font-size: 13px !important;
+    padding: 4px 15px !important;
+  }
+  
+  .collectButton {
+    font-size: 13px !important;
+    padding: 0px 3px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+  }
+  
+  .balance {
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .profileAvatar {
+    overflow: hidden;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    margin-top: 2px;
+    width: 23px;
+    height: 23px;
+  }
+  
+  .hiLoPlayButton {
+    font-size: 11px !important;
+    padding: 0.5px 3px!important;
+    margin: 6px 0 0 -6px;
+  }
+  
+  .mobileFeatures {
+    display: none;
+  }
+
+  .desktopFeatures {
+    display: flex;
+    font-size: 16px !important;
+    margin: 0 !important;
+  }
+  
+  .rightSideDesktopFeatures {
+    display: block;
+  }
+  
+  .hiLoPricesContainer {
+    margin-bottom: 18px;
+  }
+  
+  .buyButton {
+    display: none !important;
+  }
+}
+
+// @media only screen and (max-width: 750px) and (orientation: landscape){
+//   .chatContainer{
+//       height: 49vh !important; /* use relative value in vh unit */
+//   }
+//   .mobileLandscapeView{
+//     font-size: 12px !important;
+//     margin: 0px;
+//     margin-top: -1px !important;
+//   }
+
+//   .mobileLandscapeView>span{
+//     font-size: 12px !important;
+//   }
+//   .purchaseButton{
+//     font-size: 16px !important;
+//     padding: 5px 17px 5px 17px !important;
+//     margin-bottom: -2px !important;
+//   }
+// }

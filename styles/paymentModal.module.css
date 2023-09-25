@@ -1,0 +1,46 @@
+.container {
+  position: absolute;
+  background: linear-gradient(#404dae, rgba(135, 126, 205));
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 300px;
+  z-index: 3;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+.payBtn {
+  margin: auto !important;
+  display: block !important;
+  color: #40e0d0;
+  font-size: 25px !important;
+  margin: 50px auto !important;
+  padding-top: 12px;
+}
+.closeBtn{
+  transform: translate(16px,-6px);
+  font-size: 20px;
+}
+.closeBtn:hover{
+  color:white;
+}
+.container button {
+  background-color: #404dae;
+  display: block;
+  color: #40e0d0;
+  margin: 100px auto;
+}
+.container button:hover {
+  color: #40e0d0;
+  background-color: #7244e9;
+}
+.switchBox {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switchElement {
+  padding: 0 20px;
+}

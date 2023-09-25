@@ -1,0 +1,6 @@
+.container{
+cursor: pointer;
+}
+.container span{
+word-wrap: normal;
+}

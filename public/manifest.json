@@ -1,0 +1,13 @@
+{
+
+  "name": "Bingo 75",
+  "short_name": "Bingo 75",
+  "start_url": "/",
+  "scope": "/",
+  "dir": "rtl",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#3B1103",
+  "background_color": "#3B1103",
+  "description": "Bingo 75"
+}

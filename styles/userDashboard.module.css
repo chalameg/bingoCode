@@ -1,0 +1,47 @@
+.container{
+  position:absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size:30px;
+  padding: 25vh 0 25vh 0;
+background: #F7E5D790;
+  top:10vh;
+  width:100vw;
+  z-index:6;
+}
+.containerWrapper{
+  position: fixed; 
+  z-index: 5; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color:#00000090;
+}
+
+.container svg{
+  cursor: pointer;
+}
+
+.container button:nth-child(2) p{
+  font-size:16px;
+}
+
+.x{
+  color: red;
+}
+.v{
+  color:green;
+}
+h5{
+  cursor: pointer;
+}
+.promptContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height:8vh;
+}

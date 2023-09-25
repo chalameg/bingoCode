@@ -1,0 +1,8 @@
+.container{
+    position:relative;
+    margin: 0 auto;
+    padding: 4vh 2vw 0vh 4vw;
+    overflow-y: scroll;
+    max-height: 40vh;
+    height: fit-content;
+}

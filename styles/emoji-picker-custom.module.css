@@ -1,0 +1,18 @@
+.EmojiPickerReact{
+  --epr-emoji-size: 5px !important;
+  --epr-emoji-gap: 8px;
+  --epr-hover-bg-color: rgba(0, 0, 0, 0.1);
+  --epr-bg-color: #f5f5f5;
+  --epr-text-color: #333333;
+  position: fixed !important;
+  bottom:70px !important;
+  margin-left: 20px;
+
+}
+  
+  /* Override dark mode styles */
+  .EmojiPickerReact.epr-dark-theme {
+    --epr-bg-color: #333333;
+    --epr-text-color: #ffffff;
+  }
+  

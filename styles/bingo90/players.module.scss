@@ -1,0 +1,717 @@
+.leftContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+  padding: 10px 5px 5px 5px;
+  -webkit-padding-before: 10px;
+}
+
+.rightContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.playersContainer {
+  width: 200px;
+  height: 100%;
+}
+
+.top5Title {
+  display: none;
+  font-size: 36px;
+  color: #ffffff;
+
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 14%;
+  z-index: 2000;
+
+  .starIcon{
+    height: 36px;
+    width: 44px;
+  }
+}
+
+// fire animation
+$fireColor: rgb(255, 80, 0);
+$fireColorT: rgba(255, 80, 0, 0);
+$dur: 1s;
+$blur: 0.02em;
+$fireRad: 3em;
+$parts: 50;
+$partSize: 3em;
+
+.fire {
+  font-size: 24px;
+  filter: blur($blur);
+  -webkit-filter: blur($blur);
+  margin: -0.25rem auto 0 -0.8rem;
+  position: absolute;
+  width: 6rem;
+  height: 8.15rem;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  // background-color: #E94714;
+  border-radius: 20px;
+}
+.particle {
+  animation: rise $dur ease-in infinite;
+  background-image: radial-gradient($fireColor 20%, $fireColorT 70%);
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 0;
+  position: absolute;
+  bottom: -0.75rem;
+  width: $partSize;
+  height: $partSize;
+  // spread particles out in time and x-position to get desired effect
+  @for $p from 1 through $parts {
+    &:nth-of-type(#{$p}) {
+      animation-delay: $dur * random();
+      left: calc((100% - #{$partSize}) * #{($p - 1) / $parts});
+    }
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10em) scale(0);
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+ 
+  .playersContainer {
+    position: relative;
+    width: 500px;
+    padding: 0 3rem;
+    margin-top: 0;
+  }
+
+  .jackpotWinCt {
+    margin-top: 4px;
+    font-family: "Poppins";
+    font-weight: bolder;
+  }
+
+  .top5Title {
+    display: block;
+    font-size: 75px;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 40%;
+    margin-bottom: 40px;
+    z-index: 2000;
+  }
+
+  .fire {
+    width: 13rem;
+    height: 19.5rem;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) and (max-height: 1280px){
+  .playersContainer{
+    padding: 0 3rem;
+  }
+  .fire {
+    width: 13rem;
+    height: 18.5rem;
+  }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) {
+
+  .playersContainer {
+    position: relative;
+    width: 410px;
+    padding:0 3rem;
+  }
+
+  .jackpotWinCt {
+    margin-top: 4px;
+    font-family: "Poppins";
+    font-weight: bolder;
+  }
+
+  .top5Title {
+    display: block;
+    font-size: 41px;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 26%;
+    z-index: 2000;
+  }
+
+  .fire {
+    width: 11rem;
+    height: 16rem;
+  }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) and (max-height: 910px) {
+  .top5Title{
+    margin-top: -10px;
+  }
+  .playersContainer {
+    padding: 0 3rem;
+  }
+
+  .fire {
+    height: 14.5rem;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+
+  .playersContainer {
+    position: relative;
+    width: 320px;
+    padding: 0 1.7rem;
+  }
+
+  .top5Title {
+    display: block;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 26%;
+    z-index: 2000;
+  }
+
+  .fire {
+    width: 9.6rem;
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) and (max-height: 757px) {
+  .top5Title{
+    padding-right: 20%;
+  }
+  .playersContainer {
+    width: 310px;
+    padding: 0 2rem;
+  }
+  .fire {
+    height: 11.8rem;
+  }
+}
+
+@media screen and (max-width: 1536px) and (min-width: 1441px) {
+  .top5Title{
+    padding-right: 20%;
+    .starIcon{
+      height: 36px;
+      width: 44px;
+    }
+  }
+  .playersContainer {
+    position: relative;
+    width: 300px;
+    padding: 0 2rem;
+  }
+
+  .fire {
+    width: 9.4rem;
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 1536px) and (min-width: 1441px) and (max-height: 750px) {
+  .top5Title{
+    margin-top: -10px;
+  }
+  .playersContainer {
+    width: 300px;
+  }
+
+  .fire {
+    height: 11.6rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) {
+
+  .playersContainer {
+    position: relative;
+    width: 240px;
+    padding: 0 1rem;
+  }
+
+  .top5Title {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 14%;
+    z-index: 2000;
+    .starIcon{
+      height: 36px;
+      width: 44px;
+    }
+  }
+
+  
+
+  .fire {
+    width: 9.1rem;
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) and (max-height:756px) {
+  .fire {
+    height: 12rem;
+  }
+
+  .playersContainer{
+    padding:0 1rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) and (max-height:740px) {
+  .top5Title{
+    margin-top: -15px;
+  }
+}
+
+@media screen and (max-width: 1367px) and (min-width: 900px) {
+  .fire {
+    height: 12.3rem;
+  }
+
+  .top5Title {
+    font-size: 34px;
+  }
+
+  .playersContainer{
+    padding:0 1.1rem;
+    margin-top: 0;
+  }
+
+  .fire {
+    width: 8.5rem;
+    height: 11.8rem;
+  }
+}
+
+@media only screen and (max-width: 1367px) and (min-width: 900px) and (min-height: 949px){
+  .top5Title {
+    font-size: 34px;
+    margin-top: 10px;
+  }
+
+  .playersContainer{
+    padding:0 1.1rem;
+  }
+
+  .fire {
+    width: 8.5rem;
+    height: 11.8rem;
+  }
+}
+
+@media only screen and (max-width: 1367px) and (min-width: 900px) and (min-height: 1020px){
+
+  .top5Title{
+    margin-top: 20px;
+  }
+
+  .fire{
+    height: 12rem;
+  }
+
+}
+
+@media screen and (max-width: 1367px) and (min-width: 900px) and (max-height: 650px) {
+  .top5Title {
+    font-size: 28px;
+    margin-top: -10px;
+  }
+
+  .fire {
+    height: 10.2rem;
+  }
+
+  .playersContainer{
+    padding:0 1rem;
+    margin-top: 0;
+  }
+}
+
+// desktop and tablet landscape
+@media screen and (max-width: 1280px) and (min-width: 900px) {
+ 
+  .playersContainer {
+    position: relative;
+    width: 262px;
+    padding: 0 1.5rem;
+  }
+
+  .top5Title {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20%;
+    z-index: 2000;
+    .starIcon{
+      height: 36px;
+      width: 44px;
+    }
+  }
+
+  .fire {
+    width: 8.2rem;
+    height: 10.4rem;
+  }
+
+}
+
+// tablet landscape
+@media screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 632px) {
+  .top5Title{
+    margin-top: -13px;
+  }
+
+  .playersContainer {
+    margin-top: -5px;
+  }
+  .fire {
+    height: 9.3rem;
+  }
+}
+
+// 1280x605 desktop
+@media screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 610px) {
+  .playersContainer {
+    margin-top: -10px;
+  }
+  .fire {
+    height: 9rem;
+  }
+}
+
+// tablets landscape
+@media screen and (max-width: 1194px) and (min-width: 900px) {
+
+  .playersContainer {
+    position: relative;
+    width: 220px;
+    padding: 0 .5rem;
+
+  }
+
+  .top5Title {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20%;
+    z-index: 2000;
+    .starIcon{
+      height: 36px;
+      width: 44px;
+    }
+  }
+
+  .fire {
+    width: 8rem;
+    height: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 1194px) and (min-width: 900px) and (max-height: 660px){
+  .fire {
+    width: 8rem;
+    height: 10.25rem;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 900px) {
+
+  .playersContainer {
+    position: relative;
+    width: 180px;
+    padding: 0 .3rem;
+  }
+
+  .top5Title {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 16%;
+    z-index: 2000;
+    .starIcon{
+      height: 36px;
+      width: 44px;
+    }
+  }
+
+  .fire {
+    width: 7.2rem;
+    height: 9.5rem;
+  }
+
+}
+
+@media screen and (max-width: 1080px) and (min-width: 900px) and (max-height: 640px){
+  .playersContainer{
+    margin-top: -5px;
+  }
+  .fire {
+    width: 7.2rem;
+    height: 9rem;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px) {
+
+  .playersContainer {
+    position: relative;
+    width: 180px;
+    padding: 0 .8rem;
+  }
+
+  .top5Title {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 13%;
+    z-index: 2000;
+    .starIcon{
+      height: 36px;
+      width: 44px;
+    }
+  }
+
+  .fire {
+    width: 7rem;
+    height: 9.2rem;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px) and (max-height: 610px){
+
+  .fire {
+    width: 7rem;
+    height: 9rem;
+  }
+
+}
+
+@media screen and (max-width: 965px) and (min-width: 900px) {
+
+  .playersContainer {
+    position: relative;
+    width: 180px;
+    padding: 0 1.3rem;
+    margin-top: 10px;
+  }
+
+  .top5Title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 30px;
+  }
+
+  .fire {
+    width: 6.2rem;
+    height: 9.4rem;
+  }
+
+}
+
+@media screen and (max-width: 965px) and (min-width: 900px) and (max-height: 480px){
+
+  .playersContainer {
+    position: relative;
+    width: 180px;
+    padding: 0 1rem;
+    margin-top: -10px;
+  }
+
+  .top5Title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .fire {
+    width: 5.5rem;
+    height: 7.2rem;
+  }
+
+}
+
+
+// mobiles and tablets vertical
+@media only screen and (max-width: 1024px)  and (min-height: 1168px){
+  .playersContainer {
+    width: 22vw;
+    height: 100%;
+    justify-content: start;
+    margin-top: 0;
+  }
+
+  .fire {
+    width: 9rem;
+    height: 13rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .top5Title{
+    padding-right: 0;
+  }
+  .playersContainer {
+    width: 22vw;
+    height: 100%;
+    justify-content: start;
+  }
+
+  .fire {
+    width: 9rem;
+    height: 13rem;
+  }
+}
+
+@media only screen and (max-width: 834px) and (max-height: 1021px) {
+  .playersContainer {
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 820px) {
+  .playersContainer {
+    width: 22vw;
+    height: 100%;
+    justify-content: start;
+  }
+
+  .fire {
+    width: 8.6rem;
+    height: 12.3rem;
+  }
+}
+
+@media only screen and (max-width: 810px) and (max-height: 925px) {
+  .playersContainer {
+    margin-top: 0;
+  }
+
+  .fire {
+    height: 11.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .playersContainer {
+    margin: 0 0 0 0;
+  }
+
+  .fire {
+    width: 8rem;
+    height: 11rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 540px) and (max-height: 876px) {
+  .playersContainer {
+    margin-top: -2px;
+  }
+
+  .fire {
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .playersContainer {
+    margin: 0 10px 0 0;
+  }
+
+  .fire {
+    width: 7rem;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 751px) and (min-width: 540px) and (max-height: 335px) {
+  .playersContainer {
+    margin-top: 10px;
+    margin-left: -75vh;
+    height: 56vh;
+  }
+  .fire {
+    width: 6rem;
+    height: 7.9rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .playersContainer {
+    width: 22vw;
+    position: relative;
+    left: -5px;
+    top: -6px;
+    margin-top: 15px;
+  }
+
+  .fire {
+    width: 6rem;
+    height: 8.15rem;
+  }
+
+  .top5Title{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .playersContainer {
+    width: 24vw;
+  }
+}
+
+@media only screen and (max-width: 360px) and (max-height: 650px) {
+  .fire{
+    width: 6rem;
+    height: 7.7rem;
+  }
+}
+
+@media only screen and (max-width: 360px) and (max-height: 630px) {
+  .playersContainer{
+    margin-top: 5px;
+  }
+  .fire{
+    width: 5.5rem;
+    height: 7.5rem;
+  }
+}
+

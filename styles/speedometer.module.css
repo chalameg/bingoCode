@@ -1,0 +1,640 @@
+.speedometer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.speedometer .lines {
+  z-index: 999;
+  width: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  height: 10px;
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(var(--rot)) translateY(-38px);
+}
+
+.drowned {
+  z-index: 999;
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(var(--rot)) translateY(-38px);
+}
+
+@media only screen and (min-width: 390px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 10px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-42px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 1px;
+    height: 25px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-40px);
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 20px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 2px;
+    height: 35px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 20px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 2px;
+    height: 35px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-height: 770px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 15px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-62px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 1px;
+    height: 28px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-62px);
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 1000px){
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 15px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-82px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 1px;
+    height: 28px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-82px);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 20px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 2px;
+    height: 35px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 20px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 2px;
+    height: 35px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-78px);
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 20px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-98px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 2px;
+    height: 35px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-98px);
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 30px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-98px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 2px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(var(--rot)) translateY(-98px);
+  }
+}
+
+@media screen and (min-width: 5120px) and (max-width: 5130px),
+       screen and (min-height: 2880px) and (max-height: 2890px) {
+        .speedometer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .speedometer .lines {
+          z-index: 999;
+          width: 10px;
+          margin-left: 9px;
+          margin-right: 9px;
+          border: none;
+          height: 60px;
+          background: black;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(-280px);
+        }
+      
+        .drowned {
+          z-index: 999;
+          width: 10px;
+          height: 80px;
+          background: black;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(280px);
+        }
+       }
+@media screen and (min-width: 3840px) and (max-width: 3850px),
+       screen and (min-height: 2160px) and (max-height: 2170px) {
+        .speedometer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+        }
+        
+        .speedometer .lines {
+          z-index: 999;
+          width: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
+          border: none;
+          height: 30px;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(-200px);
+        }
+        
+        .drowned {
+          z-index: 999;
+          width: 5px;
+          height: 65px;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(-200px);
+        }
+        
+       }
+@media screen and (min-width: 2732px) and (max-width: 2742px),
+       screen and (min-height: 2048px) and (max-height: 2058px) {
+        .speedometer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+        }
+        
+        .speedometer .lines {
+          z-index: 999;
+          width: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
+          border: none;
+          height: 30px;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(-155px);
+        }
+        
+        .drowned {
+          z-index: 999;
+          width: 5px;
+          height: 65px;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(-155px);
+        }
+       }
+@media screen and (min-width: 2560px) and (max-width: 2570px),
+       screen and (min-height: 1440px) and (max-height: 1610px) {
+        .speedometer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+        }
+        
+        .speedometer .lines {
+          z-index: 999;
+          width: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
+          border: none;
+          height: 30px;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(-150px);
+        }
+        
+        .drowned {
+          z-index: 999;
+          width: 5px;
+          height: 65px;
+          position: absolute;
+          border-radius: 3px;
+          transform: rotate(var(--rot)) translateY(-150px);
+        }
+        
+       }
+@media screen and (max-width: 916px) and (max-height: 412px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 1.2px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: none;
+    height: 8px;
+    background: black;
+    position: absolute;
+    border-radius: 2px;
+    transform: rotate(var(--rot)) translateY(-30px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 1.2px;
+    height: 15px;
+    background: black;
+    position: absolute;
+    border-radius: 2px;
+    transform: rotate(var(--rot)) translateY(-30px);
+  }
+}
+@media only screen and (max-width: 896px) and (max-height: 415px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 1.27px;
+    margin-left: 5.31px;
+    margin-right: 5.31px;
+    border: none;
+    height: 8.67px;
+    background: black;
+    position: absolute;
+    border-radius: 1px;
+    transform: rotate(var(--rot)) translateY(-39px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 1.27px;
+    height: 19.15px;
+    background: black;
+    position: absolute;
+    border-radius: 1px;
+    transform: rotate(var(--rot)) translateY(-39px);
+  }
+}
+@media only screen and (max-width: 844px) and (max-height: 390px){
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 1.2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    height: 8px;
+    background: black;
+    position: absolute;
+    border-radius: 1px;
+    transform: rotate(var(--rot)) translateY(-32.5px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 1.2px;
+    height: 18px;
+    background: black;
+    position: absolute;
+    border-radius: 1px;
+    transform: rotate(var(--rot)) translateY(-32.5px);
+  }
+}
+@media only screen and (max-width: 800px) and (max-height: 330px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 0.96px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: none;
+    height: 6.4px;
+    background: black;
+    position: absolute;
+    border-radius: 0.8px;
+    transform: rotate(var(--rot)) translateY(-27px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 0.96px;
+    height: 14.4px;
+    background: black;
+    position: absolute;
+    border-radius: 0.8px;
+    transform: rotate(var(--rot)) translateY(-27px);
+  }
+}
+@media only screen and (max-width: 740px) and (max-height: 330px) {
+  .speedometer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speedometer .lines {
+    z-index: 999;
+    width: 1px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: none;
+    height: 6px;
+    background: black;
+    position: absolute;
+    border-radius: 1px;
+    transform: rotate(var(--rot)) translateY(-28px);
+  }
+
+  .drowned {
+    z-index: 999;
+    width: 1px;
+    height: 12px;
+    background: black;
+    position: absolute;
+    border-radius: 1px;
+    transform: rotate(var(--rot)) translateY(-28px);
+  }
+}
+

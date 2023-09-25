@@ -1,0 +1,889 @@
+@import "colors";
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  height: auto;
+  padding: 0 1vw 0 0;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ballIcon {
+  width: 100px;
+  margin-top: 6vh;
+}
+
+.creditControl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creditControl>div {
+  width: 30px;
+  height: 30px;
+  padding: 5px 3px 6px 3px;
+  font-size: 24px;
+}
+
+.coin {
+  width: 1.1rem;
+}
+
+.coinRight {
+  width: 2em;
+  height: 1.5em;
+}
+
+.collectButton:hover,
+.playButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  color: rgb(25, 197, 25);
+}
+
+.collectButton:active,
+.playButton:active {
+  box-shadow: rgba(78, 78, 78, 0.25) 0px 1px 0px,
+    inset rgba(255, 255, 255, 0.03) 0px 20px 0px,
+    inset rgba(0, 0, 0, 0.15) 0px -20px 20px,
+    inset rgba(255, 255, 255, 0.05) 0px 20px 20px;
+}
+
+
+.collectButton {
+  font-size: 1.5rem !important;
+  background-color: $mainColor !important;
+  width: 120px !important;
+}
+
+.HighLowLeftContainerTitles {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightContainer {
+  display: flex;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.value {
+  font-size: 28px;
+  display: flex;
+  margin: 0 4px;
+  align-items: center;
+  font-weight: bold;
+  color: $white;
+}
+
+.value>button {
+  min-width: 130px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 0;
+  }
+
+  .value>button {
+    min-width: 80px !important;
+    margin: 3px;
+    padding: 10px 10px;
+  }
+}
+
+.label {
+  position: relative;
+}
+
+.upDownButton {
+  width: min-content;
+  min-width: 40px;
+}
+
+.radioButton {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.fakeButton {
+  z-index: 2;
+  border-radius: 55px;
+  margin: 0 10px;
+  padding: 0 28px;
+  cursor: pointer;
+  width: 10rem !important;
+  max-width: 10rem !important;
+  min-width: 10rem !important;
+  height: 51px;
+  min-width: 120px;
+  font-size: 24px;
+  justify-content: center !important;
+  position: relative;
+  transition: all 0.35s;
+  align-items: center;
+  font-family: "Poppins";
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  line-height: 1.75 !important;
+  white-space: nowrap;
+}
+
+
+.inputData:checked+.fakeButton {
+  transform: scale(0.9);
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+
+  box-shadow: rgb(0 0 0 / 70%) 0px 5px 15px,
+    inset rgb(0 0 0 / 15%) 0px -10px 20px !important;
+  cursor: default !important;
+}
+
+.inputData[type="radio"]:disabled+.fakeButton {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.disabled.fakeButton {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.dimButton {
+  font-family: "Poppins" !important;
+  display: flex;
+  justify-content: center;
+  color: #fff !important;
+  background: #273fa3 !important;
+  box-shadow: unset !important;
+}
+
+.lightButton {
+  font-family: "Poppins" !important;
+  display: flex;
+  justify-content: center;
+  color: #000 !important;
+  background: #F6D223 !important;
+  box-shadow: unset !important;
+}
+
+.dimButton:hover {
+  background: #273fa3 !important;
+  box-shadow: unset !important;
+}
+
+.dimButton:active {
+  background: #273fa3 !important;
+}
+
+.lightButton:hover {
+  background: #F6D223 !important;
+  box-shadow: unset !important;
+}
+
+.lightButton:active {
+  background: #F6D223 !important;
+}
+
+.disabled.lightButton {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.disabled.dimButton {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.scaledDownHiloPurchase {
+  max-height: 140px;
+}
+
+.scaledDownBingo90Button {
+  color: #fff !important;
+  background: linear-gradient(102.27deg,
+      #fe7f37 14.74%,
+      #ff4b4b 89.43%) !important;
+  box-shadow: 1px 1px 13px rgba(255, 110, 73, 0.5) !important;
+  align-self: center;
+  border-radius: 27px !important;
+  border: none !important;
+  font-family: RalewayBold !important;
+  font-size: 0.7rem !important;
+  padding: 5px 15px !important;
+  font-style: normal !important;
+  letter-spacing: 0px !important;
+  margin-top: 15px;
+  z-index: 1000;
+  margin-bottom: 15px !important;
+  box-sizing: border-box;
+}
+
+.arrowContent {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.centeredColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.playButton {
+  margin: 6px 0 !important;
+  font-size: 0.8em !important;
+  line-height: 1.75;
+  background: #252e68;
+  color: white !important;
+  width: 150px !important;
+  height: 70px !important;
+  justify-content: center;
+  display: flex;
+}
+
+.creditValue {
+  margin: 0 !important;
+  font-size: 32px;
+}
+
+.buttonContainer {
+  padding: 0 !important;
+}
+
+.highlowcontainer {
+  // height: 14vh;
+  width: 100%;
+  height: fit-content !important;
+  padding: 0 !important;
+}
+
+.hiloTitle {
+  color: #ffffff;
+  font-family: 'RalewayBold';
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiloTitle>div {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  font-variant: small-caps;
+  padding-bottom: 5px;
+}
+
+.hiloTitle>span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+  .fakeButton {
+    min-height: 59px !important;
+    min-width: 159px;
+    font-size: 37px;
+    padding: 0 33px;
+  }
+
+  .fakeButton>span>* {
+    height: 33px;
+  }
+
+  .highlowcontainer {
+    padding: 0 20px;
+    height: 34vh;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: .2rem;
+  }
+
+  .value {
+    font-size: 41px;
+  }
+
+  .coin {
+    height: 50px;
+    width: 50px;
+  }
+
+  .hiloTitle {
+    padding-bottom: 16px;
+  }
+
+  .hiloTitle>div {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hiloTitle>span {
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  .scaledDownHiloPurchase {
+    max-height: 160px;
+  }
+}
+
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) {
+  .fakeButton {
+    min-height: 59px !important;
+    min-width: 159px;
+    font-size: 37px;
+    padding: 0 33px;
+  }
+
+  .fakeButton>span>* {
+    height: 33px;
+  }
+
+  .highlowcontainer {
+    padding: 0 20px;
+    height: 34vh;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: .2rem;
+  }
+
+  .value {
+    font-size: 41px;
+  }
+
+  .coin {
+    height: 50px;
+    width: 50px;
+  }
+
+  .hiloTitle {
+    padding-bottom: 16px;
+  }
+
+  .hiloTitle>div {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hiloTitle>span {
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  .scaledDownHiloPurchase {
+    max-height: 115px;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px) {
+  .fakeButton {
+    min-height: 54px !important;
+    min-width: 150px;
+    font-size: 32px;
+    padding: 0 28px;
+  }
+
+  .fakeButton>span>* {
+    height: 28px;
+  }
+
+  .highlowcontainer {
+    height: 34vh;
+    padding: 0 30px;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: .2rem;
+  }
+
+  .value {
+    font-size: 36px;
+  }
+
+  .coin {
+    height: 45px;
+    width: 45px;
+  }
+
+  .scaledDownHiloPurchase {
+    max-height: 115px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) {
+  .fakeButton {
+    min-height: 54px !important;
+    min-width: 150px;
+    font-size: 32px;
+    padding: 0 28px;
+  }
+
+  .fakeButton>span>* {
+    height: 28px;
+  }
+
+  .highlowcontainer {
+    height: 30vh;
+    padding: 0 5px;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: .2rem;
+  }
+
+  .value {
+    font-size: 36px;
+  }
+
+  .coin {
+    height: 45px;
+    width: 45px;
+  }
+
+  .scaledDownHiloPurchase {
+    max-height: 95px;
+  }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 900px) and (max-height: 755px) {
+  .fakeButton {
+    min-height: 40px !important;
+    min-width: 150px;
+    font-size: 30px;
+    padding: 0 28px;
+  }
+
+  .fakeButton>span>* {
+    height: 26px;
+  }
+
+  .highlowcontainer {
+    height: 35vh;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .value {
+    font-size: 36px;
+  }
+
+  .coin {
+    height: 45px;
+    width: 45px;
+  }
+
+  .hiloTitle {
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width: 1367px) and (min-width: 900px) {
+  .fakeButton {
+    min-height: 54px !important;
+    min-width: 144px;
+    font-size: 29px;
+    padding: 0 26px;
+  }
+
+  .fakeButton>span>* {
+    height: 24px;
+  }
+
+  .highlowcontainer {
+    height: 33vh;
+    padding: 0 5px;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: .1rem;
+  }
+
+  .value {
+    font-size: 33px;
+  }
+
+  .coin {
+    height: 43px;
+    width: 43px;
+  }
+
+  .hiloTitle {
+    padding-bottom: 5px;
+  }
+
+  .hiloTitle>div {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .hiloTitle>span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 1367px) and (min-width: 900px) and (max-height: 650px) {
+  .fakeButton {
+    min-height: 40px !important;
+    min-width: 150px;
+    font-size: 27px;
+    padding: 0 28px;
+  }
+
+  .fakeButton>span>* {
+    height: 26px;
+  }
+
+  .highlowcontainer {
+    height: 36vh;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .value {
+    font-size: 30px;
+  }
+
+  .coin {
+    height: 43px;
+    width: 43px;
+  }
+
+  .hiloTitle {
+    padding: 2px;
+  }
+
+  .hiloTitle>div {
+    font-size: 27px;
+    line-height: 27px;
+  }
+
+  .hiloTitle>span {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 900px) {
+  .fakeButton {
+    min-height: 53px !important;
+    min-width: 142px;
+    font-size: 28px;
+    padding: 0 25px;
+  }
+
+  .fakeButton>span>* {
+    height: 23px;
+  }
+
+  .highlowcontainer {
+    height: 33vh;
+    padding: 0 5px;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: .1rem;
+  }
+
+  .value {
+    font-size: 31px;
+  }
+
+  .coin {
+    height: 42px;
+    width: 42px;
+  }
+
+  .hiloTitle {
+    padding-bottom: 5px;
+  }
+
+  .hiloTitle>div {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .hiloTitle>span {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 900px) and (max-height: 610px) {
+  .fakeButton {
+    min-height: 40px !important;
+    min-width: 150px;
+    font-size: 27px;
+    padding: 0 28px;
+  }
+
+  .fakeButton>span>* {
+    height: 26px;
+  }
+
+  .highlowcontainer {
+    height: 36vh;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .value {
+    font-size: 30px;
+  }
+
+  .coin {
+    height: 43px;
+    width: 43px;
+  }
+
+  .hiloTitle {
+    padding: 2px;
+  }
+
+  .hiloTitle>div {
+    font-size: 27px;
+    line-height: 27px;
+  }
+
+  .hiloTitle>span {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .fakeButton {
+    height: 40px;
+    font-size: 34px;
+    width: 90px;
+    min-width: 60px;
+    padding-top: 5px;
+    padding: 0 34px;
+  }
+
+  .fakeButton>span>* {
+    height: 18px;
+  }
+
+  .playButton {
+    height: 22px !important;
+  }
+
+  .upDownButton {
+    width: 22px;
+  }
+
+  .collectButton {
+    font-size: 10px !important;
+  }
+
+  .leftContainer {
+    padding-top: 0 !important;
+  }
+
+  .creditValue {
+    font-size: 32px !important;
+  }
+
+
+  .creditControl>div {
+    width: 18px;
+    height: 18px;
+    padding: 5px 3px 6px 3px;
+    font-size: 25px;
+  }
+
+  .highlowcontainer {
+    // height: 32vh !important;
+  }
+
+  .value {
+    font-size: 2.2em;
+  }
+
+  .coin {
+    width: 2.2rem;
+  }
+
+  .buttonContainer {
+    padding: 0;
+  }
+
+  .buttonContainer>div {
+    flex-direction: column !important;
+    gap: .2rem;
+  }
+
+  .hiloTitle>div {
+    margin-bottom: -10px;
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fakeButton {
+    height: 40px;
+    font-size: 32px;
+    width: 6rem !important;
+    min-width: 6rem !important;
+    max-width: 6rem !important;
+    padding-top: 5px;
+    padding: 0 32px;
+  }
+
+  .fakeButton>span>* {
+    height: 18px;
+  }
+
+  .playButton {
+    height: 20px !important;
+  }
+
+  .upDownButton {
+    width: 20px;
+  }
+
+  .collectButton {
+    font-size: 10px !important;
+  }
+
+  .leftContainer {
+    padding-top: 0 !important;
+  }
+
+  .creditValue {
+    font-size: 28px !important;
+  }
+
+
+  .creditControl>div {
+    width: 18px;
+    height: 18px;
+    padding: 5px 3px 6px 3px;
+    font-size: 20px;
+  }
+
+  .highlowcontainer {
+    height: 12vh;
+  }
+
+  .value {
+    font-size: 2em;
+  }
+
+  .coin {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 751px) and (min-width: 540px) and (max-height: 335px) {
+  .fakeButton {
+    font-size: 20px;
+  }
+
+  .value {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .fakeButton {
+    height: 40px;
+    font-size: 24px;
+    width: 60px;
+    min-width: 60px;
+    padding-top: 5px;
+    padding: 0 26px;
+  }
+
+  .fakeButton>span>* {
+    height: 18px;
+  }
+
+  .playButton {
+    height: 20px !important;
+  }
+
+  .upDownButton {
+    width: 20px;
+  }
+
+  .collectButton {
+    font-size: 10px !important;
+  }
+
+  .leftContainer {
+    padding-top: 0 !important;
+  }
+
+  .creditValue {
+    font-size: 28px !important;
+  }
+
+
+  .creditControl>div {
+    width: 18px;
+    height: 18px;
+    padding: 5px 3px 6px 3px;
+    font-size: 20px;
+  }
+
+  .highlowcontainer {
+    // height: 24vh !important;
+  }
+
+  .value {
+    font-size: 1.6em;
+  }
+
+  .coin {
+    width: 1.5rem;
+  }
+}

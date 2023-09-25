@@ -1,0 +1,169 @@
+.container {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.backBtn {
+  background-color: #404dae;
+  left: 50px;
+  position: absolute !important;
+  width: 100px !important;
+  height: 65px !important;
+  border-radius: 35px !important;
+  font-size: 24px !important;
+  margin: 0 !important;
+}
+.getCoinsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.getCoinsTitle {
+  margin: 0 auto;
+  color: #404dae;
+  font-size: 40px;
+  letter-spacing: 4px;
+  padding-bottom: 20px;
+}
+
+.getCoinsMiddle {
+  display: flex;
+  flex-direction: row;
+}
+.buyOptionTitle {
+  color: #404dae;
+}
+.innerBuyOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#404dae, rgba(135, 126, 205));
+  border-radius: 40px;
+  color: white;
+  font-size: 30px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  min-width: 70%;
+}
+.buyOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+.buyOption img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.buyOption h2 {
+  margin: 0;
+  font-size: 28px !important;
+}
+.buyOption button {
+  background-color: #404dae;
+  color: white;
+  width: 180px !important;
+  height: min-content !important;
+  padding: 6px 0 6px 0;
+}
+.buyOption button h2 {
+  /* color:white; */
+  /* font-family: "LuckiestGuy"; */
+  font-size: 30px;
+}
+
+.getCoinsBottom {
+  margin: 10px auto 0 auto;
+}
+.getCoinsBottom img {
+  width: 150px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  .backBtn {
+    background-color: #404dae;
+    left: 40px;
+    position: absolute !important;
+    font-size: 8px !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 35px !important;
+  }
+
+  .getCoinsTitle {
+    margin: 0 auto;
+    color: #404dae;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding-bottom: 4px;
+  }
+
+  .getCoinsMiddle {
+    display: flex;
+    flex-direction: row;
+  }
+  .buyOptionTitle {
+    color: #404dae;
+  }
+  .innerBuyOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#404dae, rgba(135, 126, 205));
+    border-radius: 40px;
+    color: white;
+    font-size: 18px !important;
+    padding: 0 10px !important;
+    margin-bottom: 0px !important;
+  }
+  .buyOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0 10px;
+  }
+  .buyOption img {
+    width: 80px !important;
+    height: 80px;
+  }
+  .buyOption h2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .buyOption button {
+    background-color: #404dae;
+    width: 80px !important;
+    height: 24px !important;
+    margin-top: 4px !important;
+  }
+  .buyOption button h2 {
+    color: white;
+    font-size: 18px !important;
+  }
+
+  .getCoinsBottom {
+    margin: 10px auto 0 auto;
+  }
+  .getCoinsBottom img {
+    width: 50px !important;
+    height: 100%;
+  }
+}
+@media screen and (max-device-width: 991px) {
+  .buyOption h2 {
+    font-size: 14px !important;
+  }
+  .buyOption img {
+    height: 30px !important;
+  }
+  .getCoinsTitle {
+    font-size: 18px;
+  }
+}

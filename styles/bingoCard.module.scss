@@ -1,0 +1,1796 @@
+@import "colors";
+.bingoCard {
+  width: min-content;
+  height: min-content;
+  // border: 2px black solid;
+  text-transform: uppercase;
+  background-color: rgb(252, 248, 236);
+  min-height: 240px;
+  /*margin: 0 5px;*/
+  min-width: 255px;
+  font-family: "LuckiestGuy";
+}
+
+.bingoCardMini {
+  width: min-content;
+  height: min-content;
+  // border: 2px black solid;
+  text-transform: uppercase;
+  margin: 0 20px 0 0;
+}
+
+.bingoCardWin {
+  font-size: 8px !important;
+  width: min-content;
+  height: min-content;
+  // border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  min-height: 110px;
+  min-width: 110px;
+  font-family: "LuckiestGuy";
+} 
+
+.numbers {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.numbers.hasNumbers {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content;
+}
+
+.bingoCardWin .numbers.hasNumbers {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content;
+}
+
+.numbers .square:not(.hasNumbers) {
+  padding: 0.93em;
+}
+
+.bingoCardWin .numbers .square:not(.hasNumbers) {
+  padding: 4px;
+}
+
+.numbers .square {
+  padding: 20px;
+  border: 1px rgb(122, 80, 80) solid;
+  position: relative;
+}
+
+.numbers > .square::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.numbers .square .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.contentText {
+  justify-content: center;
+  align-items: center;
+}
+
+.stump {
+  background-color: #7244e9;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.stumpTopSectionBingoWinCard {
+  background-color: #7244e9;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: black !important;
+}
+
+.cardStump {
+  background-color: #4e76ee; //#902610;
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.cardStumpTopSection {
+  background-color: #4e76ee; //#902610;
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: rgb(3, 3, 3) !important;
+}
+
+.stump span {
+  /*position: absolute;*/
+  /*top: 8px;*/
+}
+
+.free {
+  font-size: 0.6em;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  border: 1px black solid;
+  padding-top: 0.35em;
+  font-family: "LuckiestGuy";
+  & > div {
+    text-align: center;
+    font-size: 1.1em !important;
+  }
+  & > div:first-of-type {
+    color: $letterBColor;
+  }
+  & > div:nth-of-type(2) {
+    color: $letterIColor;
+  }
+  & > div:nth-of-type(3) {
+    color: $letterNColor;
+  }
+  & > div:nth-of-type(4) {
+    color: $letterGColor;
+  }
+  & > div:last-of-type {
+    color: $letterOColor;
+  }
+}
+.loader {
+  width: 161px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader p {
+  text-align: center;
+}
+
+.newNum {
+  animation: pulse 1.5s;
+  animation-iteration-count: 3;
+  background-color: rgb(246, 210, 35); //#8d01ee;
+}
+
+.cardsGameBingoCardsNumbers {
+}
+
+.cardsGameBingoCard {
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 2160px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 44px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 40px;
+    color: black;
+    align-items: center;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 1em;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 12px;
+    font-size: 25px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square .content{
+    padding-top: 4px;
+  }
+
+  .bingoCardWin {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.9vw;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 6px;
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 40px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 40px;
+    color: black;
+    align-items: center;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square .content{
+    padding-top: 3px;
+  }
+
+  .bingoCardWin {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.7vw;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 6px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 36px !important;
+    margin-top: -8px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 30px;
+    color: black;
+    align-items: center;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square .content{
+    padding-top: 3px;
+  }
+
+  .bingoCardWin {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.7vw;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 8px;
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 30px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 28px;
+    color: black;
+    align-items: center;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.85em;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 4px;
+    font-size: 15px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square .content{
+    padding-top: 3px;
+  }
+
+  .bingoCardWin {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.7vw;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 6px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 28px !important;
+    margin-top: -12px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    font-size: 26px;
+    color: black;
+    align-items: center;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.85em;
+  }
+
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4px;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 4px;
+    font-size: 14px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+
+  .bingoCardWin .numbers .square .content{
+    padding-top: 3px;
+  }
+
+  .bingoCardWin {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.7vw;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 6px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-height: 1000px){
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 42px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+  }
+
+  .numbers .square {
+    padding: 8px;
+    font-size: 42px;
+    color: black;
+    align-items: center;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 4px;
+    font-size: 20px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+  
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 1.1vw;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 4px;
+    font-size: 42px;
+  }
+}
+
+//for portrait
+@media screen and (max-width: 1024px) and (max-height:770px) and (min-height:765px){
+  .free {
+    font-size: 12px !important;
+  }
+
+  .stump {
+    font-size: 12px !important;
+  }
+
+  .title > div {
+    font-size: 24px !important;
+    margin-top: -8px;
+    margin-bottom: -4px;
+  }
+
+  .numbers .square {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 15px;
+  }
+
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+  }
+
+  .bingoCardMini {
+    margin: 0 5px 0 0;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 1em;
+  }
+
+  .loader {
+    height: 180px;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+  .square .content span {
+    margin-top: 6px;
+    font-size: 26px;
+  }
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 2px;
+    font-size: 6px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 6px !important;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .free {
+    font-size: 8px !important;
+  }
+
+  .stump {
+    font-size: 8px !important;
+  }
+
+  .stump span {
+    top: 4px;
+  }
+
+  .title > div {
+    font-size: 28px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+  }
+
+  .numbers .square {
+    padding: 6px;
+    font-size: 38px;
+    color: black;
+    align-items: center;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .bingoCardWin .numbers .square {
+    padding: 4px;
+    font-size: 20px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+  }
+  
+  .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .bingoCardMini .free {
+    font-size: 5px;
+  }
+
+  .bingoCardMini .stump {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .title > div {
+    font-size: 5px !important;
+  }
+
+  .bingoCardMini .numbers .square {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 1.3vw;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 100%;
+  }
+
+  .loader p {
+    font-size: 10px !important;
+  }
+
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+
+
+  .cardsGameBingoCard {
+    width: 100% !important;
+  }
+
+  .square .content span {
+    margin-top: 4px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .stump span {
+    top: 4px;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 1vw;
+  }
+
+  .numbers .square {
+    font-size: 36px;
+    color: black;
+    align-items: center;
+  }
+
+  .title > div {
+    // margin-top: -4px;
+    font-size: 36px !important;
+  }
+
+  .bingoCard {
+    margin-top: -6px;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.9em;
+  }
+
+  .numbers .square .content {
+    margin-top: 0px;
+    font-size: 8px;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 8px !important;
+  }
+
+  .square .content span {
+    margin-top: 5px;
+    font-size: 36px;
+  }
+
+}
+
+@media screen and (min-width: 375px) {
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 8px;
+    font-size: 10px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width:550px) {
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 6px;
+    font-size: 10px !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+ 
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (max-width: 820px) {
+
+  .bingoCardWin .square .content span {
+    margin-top: 4px !important;
+    font-size: 8px !important;
+    margin-bottom: 2px !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 6px !important;
+    margin-bottom: 2px !important;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 480px) {
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 6px !important;
+    margin-bottom: 2px !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cardStump span {
+    // top: 8px;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 1vw;
+  }
+
+  .numbers .square {
+    font-size: 20px;
+    color: black;
+    align-items: center;
+  }
+
+  .title > div {
+    font-size: 20px !important;
+    margin-top: -2px !important;
+    margin-bottom: -4px;
+  }
+
+  .bingoCard {
+    margin-top: -6px;
+  }
+
+  .numbers .square:not(.hasNumbers) {
+    padding: 0.7em;
+  }
+
+ 
+  //numbers font-size and position
+  .square .content span {
+    margin-top: 6px;
+    font-size: 24px;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.7vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.9vw;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .bingoCardWin .title > div {
+    font-size: 15px !important;
+  }
+
+  .bingoCardWin {
+    min-height: unset;
+    min-width: unset;
+    width: 70% !important;
+  }
+
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 8px !important;
+  }
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.9vw;
+  }
+}
+
+@media screen and (min-width: 5120px) and (max-width: 5130px),
+screen and (min-height: 2880px) and (max-height: 2890px) {
+    .free {
+    font-size: 16.03px !important;
+    }
+    .stump {
+    font-size: 16.03px !important;
+    }
+    .stump span {
+    top: 5.41px;
+    }
+    .title > div {
+    font-size: 122.2px !important;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    }
+    .numbers .square {
+    font-size: 83.58px;
+    color: black;
+    align-items: center;
+    }
+    .numbers .square:not(.hasNumbers) {
+    padding: 2vw;
+    }
+    .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 37.09px;
+    }
+    .bingoCardWin .numbers .square {
+    padding: 23.6px; 
+    font-size: 94.5px;
+    color: rgb(0, 0, 0) !important;
+    align-items: center;
+    }
+    .bingoCardWin .numbers .square .content{
+    padding-top: 11.07px;
+    }
+    .bingoCardWin{
+    padding-right: 3.37vw;
+    padding-left: -2.57vw;
+    margin-top: 6.27%; 
+    margin-bottom: -4.95%; 
+    }
+    .bingoCardWin .square .content span {
+    margin-top: 2.73%;
+    font-size: 3.98vw;
+    }
+    .bingoCard {
+    min-height: unset;
+    min-width: unset;
+    width: 100%;
+    }
+    .bingoCardMini .free {
+    font-size: 12.95px;
+    }
+    .bingoCardMini .stump {
+    font-size: 12.95px !important;
+    }
+    .bingoCardMini .numbers .square {
+    padding: 10.68px; 
+    font-size: 21.17px; 
+    }
+    .bingoCardMini .title > div {
+    font-size: 14.81px !important;
+    }
+    .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.85vw;
+    }
+    .loader {
+    width: 187.5px;
+    height: 100%;
+    }
+
+    .cardsGameBingoCardsNumbers {
+      grid-template-columns: 20% 20% 20% 20% 20% !important;
+    }
+
+    .square .content span {
+      font-size: 120px;
+    }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 3850px),
+screen and (min-height: 2160px) and (max-height: 2170px) {
+    .free {
+    font-size: 12.48px !important; 
+    }
+    .stump {
+    font-size: 12.48px !important; /* proportional increase of 29.23% */
+    }
+    .stump span {
+      top: 4.85px; /* proportional increase of 11.54% */
+    }
+
+    .title > div {
+      font-size: 95.58px !important; /* proportional increase of 27.89% */
+      margin-top: 0px; /* proportional decrease of 27.24% */
+      margin-bottom: 0px; /* proportional decrease of 24.42% */
+    }
+
+    .numbers .square {
+      font-size: 65.12px; /* proportional increase of 28.51% */
+      color: black;
+      align-items: center;
+    }
+
+    .numbers .square:not(.hasNumbers) {
+      padding: 1.8.5vw; /* proportional increase of 2.5% */
+    }
+
+    .bingoCardWin .numbers .square:not(.hasNumbers) {
+      padding: 29.79px; /* proportional increase of 29.23% */
+    }
+
+    .bingoCardWin .numbers .square {
+      padding: 18.96px; /* proportional increase of 29.23% */
+      font-size: 75.02px; /* proportional increase of 27.35% */
+      color: rgb(0, 0, 0) !important;
+      align-items: center;
+    }
+
+    .bingoCardWin .numbers .square .content{
+      padding-top: 7.36px; /* proportional increase of 48.08% */
+    }
+
+    .bingoCardWin{
+      padding-right: 2.66vw; /* proportional increase of 26.38% */
+      padding-left: -1.98vw; /* proportional decrease of 18.31% */
+      margin-top: 5.04%; /* proportional increase of 24.42% */
+      margin-bottom: -3.96%; /* proportional decrease of 24.42% */
+      }
+      .bingoCardWin .square .content span {
+      margin-top: 1.68%; /* proportional increase of 156.25% */
+      font-size: 2.48vw; /* proportional increase of 50.78% */
+      }
+
+    .bingoCard {
+      min-height: unset;
+      min-width: unset;
+      width: 100%;
+    }
+
+    .bingoCardMini .free {
+      font-size: 8.83px; /* proportional increase of 50.78% */
+    }
+
+    .bingoCardMini .stump {
+      font-size: 8.83px !important; /* proportional increase of 50.78% */
+    }
+
+    .bingoCardMini .numbers .square {
+      padding: 6.87px; /* proportional increase of 50.78% */
+      font-size: 13.61px; /* proportional increase of 50.78% */
+    }
+
+    .bingoCardMini .title > div {
+      font-size: 9.59px !important;
+    }
+    .bingoCardMini .numbers .square:not(.hasNumbers) {
+      padding: 0.75vw;
+    }
+    .loader {
+      width: 150px;
+      height: 100%;
+    }
+
+    .cardsGameBingoCardsNumbers {
+      grid-template-columns: 20% 20% 20% 20% 20% !important;
+    }
+
+    .square .content span {
+      font-size: 85px;
+    }
+}
+
+
+@media screen and (min-width: 2732px) and (max-width: 2742px),
+screen and (min-height: 2048px) and (max-height: 2058px) {
+    .free {
+    font-size: 9.68px !important; /* proportional increase of 21.5% */
+    }
+    .stump {
+      font-size: 9.68px !important; /* proportional increase of 21.5% */
+    }
+
+    .stump span {
+      top: 4.41px; /* proportional increase of 10.25% */
+    }
+
+    .title > div {
+      font-size: 73.8px !important; /* proportional increase of 22.72% */
+      margin-top: -15.31px; /* proportional decrease of 21.97% */
+      margin-bottom: -4.84px; /* proportional decrease of 20.81% */
+    }
+
+    .numbers .square {
+      font-size: 49.72px; /* proportional increase of 22.92% */
+      color: black;
+      align-items: center;
+    }
+
+    .numbers .square:not(.hasNumbers) {
+      padding: 1.63vw; /* proportional increase of 2.5% */
+    }
+
+    .bingoCardWin .numbers .square:not(.hasNumbers) {
+      padding: 24.6px; /* proportional increase of 23% */
+    }
+
+    .bingoCardWin .numbers .square {
+      padding: 14.83px; /* proportional increase of 23.66% */
+      font-size: 61.22px; /* proportional increase of 22.44% */
+      color: rgb(0, 0, 0) !important;
+      align-items: center;
+    }
+
+    .bingoCardWin .numbers .square .content{
+      padding-top: 5.63px; /* proportional increase of 36.8% */
+    }
+
+    .bingoCardWin{
+      padding-right: 2.19vw; /* proportional increase of 21.67% */
+      padding-left: -1.46vw; /* proportional decrease of 17.22% */
+      margin-top: 4.2%; /* proportional increase of 20% */
+      margin-bottom: -3.25%; /* proportional decrease of 20% */
+      }
+      .bingoCardWin .square .content span {
+      margin-top: 1.2%; /* proportional increase of 140% */
+      font-size: 1.76vw; /* proportional increase of 35.4% */
+      }
+
+    .bingoCard {
+      min-height: unset;
+      min-width: unset;
+      width: 100%;
+    }
+
+    .bingoCardMini .free {
+      font-size: 6.55px; /* proportional increase of 35.4% */
+    }
+
+    .bingoCardMini .stump {
+      font-size: 6.55px !important; /* proportional increase of 35.4% */
+    }
+
+    .bingoCardMini .numbers .square {
+      padding: 5.1px; /* proportional increase of 35.4% */
+      font-size: 10.1px; /* proportional increase of 35.4% */
+    }
+
+    .bingoCardMini .title > div {
+      font-size: 7px !important;
+    }
+
+    .bingoCardMini .numbers .square:not(.hasNumbers) {
+      padding: 1vw;
+    }
+
+    .loader {
+      width: 100px;
+      height: 100%;
+    }
+
+    .loader p {
+      font-size: 13px !important;
+    }
+
+    .cardsGameBingoCardsNumbers {
+      grid-template-columns: 20% 20% 20% 20% 20% !important;
+    }
+
+    .cardsGameBingoCard {
+      width: 100% !important;
+    }
+
+    .square .content span {
+      margin-top: 8px;
+      font-size: 55px;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 2570px),
+screen and (min-height: 1440px) and (max-height: 1610px) {
+    .free {
+        font-size: 9.08203125px !important;
+    }
+    .stump {
+        font-size: 9.08203125px !important;
+    }
+    .stump span {
+        top: 4.140625px;
+    }
+    .title > div {
+        font-size: 69.296875px !important;
+        margin-top: -14.375px;
+        margin-bottom: -4.546875px;
+    }
+    .numbers .square {
+        font-size: 47px;
+        color: black;
+        align-items: center;
+    }
+    .numbers .square:not(.hasNumbers) {
+        padding: 2vw;
+    }
+    .bingoCardWin .numbers .square:not(.hasNumbers) {
+        padding: 29.109375px;
+    }
+    .bingoCardWin .numbers .square {
+        padding: 14px;
+        font-size: 57.4609375px;
+        color: rgb(0, 0, 0) !important;
+        align-items: center;
+    }
+    .bingoCardWin .numbers .square .content{
+        padding-top:5.29296875px
+    }
+    .bingoCardWin{
+      padding-right:2.05859375vw;
+      padding-left:-1.37109375vw;
+      margin-top:3.9453125%;
+      margin-bottom:-3.0546875%;
+      }
+      .bingoCardWin.square.content span{
+      margin-top:1.125%;
+      font-size:1.65234375vw;
+      }
+      .bingoCard{
+      min-height:unset;
+      min-width:unset;
+      width:100%;
+      }
+      .bingoCardMini.free{
+      font-size:6.15234375px;
+      }
+      .bingoCardMini .stump {
+        font-size: 6.1328125px !important;
+      }
+  
+      .bingoCardMini .numbers .square {
+        padding: 4.78515625px;
+        font-size: 9.47265625px;
+      }
+  
+      .bingoCardMini .title > div {
+        font-size: 6.5625px !important;
+      }
+  
+      .bingoCardMini .numbers .square:not(.hasNumbers) {
+        padding: 0.9375vw;
+      }
+  
+      .loader {
+        width: 93.75px;
+        height: 100%;
+      }
+  
+      .loader p {
+        font-size: 12.1875px !important;
+      }
+  
+      .cardsGameBingoCardsNumbers {
+        grid-template-columns: 20% 20% 20% 20% 20% !important;
+      }
+  
+      .cardsGameBingoCard {
+        width: 100% !important;
+      }
+  
+      .square .content span {
+        margin-top:7.5px;
+        font-size:51.5625px
+      }
+  }
+@media screen and (min-width: 2048px) and (max-width: 2058px),
+       screen and (min-height: 1536px) and (max-height: 1546px) {
+        .free {
+          font-size: 8px !important;
+        }
+      
+        .stump {
+          font-size: 8px !important;
+        }
+      
+        .stump span {
+          top: 4px;
+        }
+      
+        .title > div {
+          font-size: 44px !important;
+          margin-top: -12px;
+          margin-bottom: -4px;
+        }
+      
+        .numbers .square {
+          font-size: 40px;
+          color: black;
+          align-items: center;
+        }
+      
+        .numbers .square:not(.hasNumbers) {
+          padding: 1em;
+        }
+      
+        .bingoCardWin .numbers .square:not(.hasNumbers) {
+          padding: 17px;
+        }
+      
+        .bingoCardWin .numbers .square {
+          padding: 12px;
+          font-size: 50px;
+          color: rgb(0, 0, 0) !important;
+          align-items: center;
+        }
+      
+        .bingoCardWin .numbers .square .content{
+          padding-top: 4px;
+        }
+
+        .bingoCardWin{
+          padding-right: 1.8vw;
+          padding-left: -1.2vw;
+          margin-top: 3.5%;
+          margin-bottom: -2.7%;
+          }
+          .bingoCardWin .square .content span {
+          margin-top: 0.5%;
+          font-size: 1.5vw !important;
+          }
+      
+        .bingoCard {
+          min-height: unset;
+          min-width: unset;
+          width: 100%;
+        }
+      
+        .bingoCardMini .free {
+          font-size: 5px;
+        }
+      
+        .bingoCardMini .stump {
+          font-size: 5px !important;
+        }
+      
+        .bingoCardMini .numbers .square {
+          padding: 10px;
+          font-size: 10px;
+        }
+      
+        .bingoCardMini .title > div {
+          font-size: 5px !important;
+        }
+      
+        .bingoCardMini .numbers .square:not(.hasNumbers) {
+          padding: 1.2vw;
+        }
+        
+        .loader {
+          width: 80px;
+          height: 100%;
+        }
+      
+        .loader p {
+          font-size: 10px !important;
+        }
+      
+        .cardsGameBingoCardsNumbers {
+          grid-template-columns: 20% 20% 20% 20% 20% !important;
+        }
+      
+        .cardsGameBingoCard {
+          width: 100% !important;
+        }
+      
+        .square .content span {
+          margin-top: 6px;
+          font-size: 44px;
+        }
+       }
+
+@media screen and (max-width: 916px) and (max-height: 412px){
+  .bingoCardWin{
+    padding-right: 1.5vw !important;
+    padding-left: -1vw;
+    margin-top: 4%;
+    margin-bottom: -2.42%;
+  }
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4.5px;
+  }
+  .bingoCardWin .square .content span {
+    margin-top: 0.48% !important;
+    font-size: 1.2vw !important;
+  }
+  .title > div {
+    font-size: 1.68vw !important;
+    height: 3.62%;
+  }
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: 20% 20% 20% 20% 20% !important;
+  }
+  .numbers .square:not(.hasNumbers) {
+    padding: 47.12%;
+  }
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.5vw;
+  }
+  .content span {
+    margin-top: 0.24% !important;
+    font-size: 2.5vw !important;
+  }  
+}
+@media only screen and (max-width: 896px) and (max-height: 415px) {
+  .bingoCardWin{
+    padding-right: 15px !important;
+    padding-left: -10px;
+    margin-top: 13px;
+    margin-bottom: -10px;
+  }
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4.5px;
+  }
+  .bingoCardWin .square .content span {
+    margin-top: 2.1px !important;
+    font-size: 9.54px !important;
+  }
+  .title > div {
+    // margin-top: -4px;
+    font-size: 15.92px !important;
+    height: 15.92px;
+  }
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+  .numbers .square:not(.hasNumbers) {
+    padding: 10.61px;
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.63vw;
+  }
+  .content span {
+    margin-top: 4.25px !important;
+    font-size: 15.92px !important;
+  }
+}
+@media only screen and (max-width: 844px) and (max-height: 390px){
+  .bingoCardWin{
+    padding-right: 15px !important;
+    padding-left: -10px;
+    margin-top: 13px;
+    margin-bottom: -10px;
+  }
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 4.5px;
+  }
+  .bingoCardWin .square .content span {
+    margin-top: 2px !important;
+    font-size: 9px !important;
+  }
+  .title > div {
+    // margin-top: -4px;
+    font-size:15px !important;
+    height: 15px;
+  }
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+  .numbers .square:not(.hasNumbers) {
+    padding: 10px
+  }
+
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.6vw;
+  }
+  .content span {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+  }
+  
+}
+@media only screen and (max-width: 800px) and (max-height: 330px) {
+  .bingoCardWin {
+    padding-right: 13.33px !important;
+    padding-left: -8.89px;
+    margin-top: 11.33px;
+    margin-bottom: -8.89px;
+  }
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 3.56px;
+  }
+  .bingoCardWin .square .content span {
+    margin-top: 1.78px !important;
+    font-size: 7.11px !important;
+  }
+  .title > div {
+    font-size: 14px !important;
+    height: 14px;
+  }
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+  .numbers .square:not(.hasNumbers) {
+    padding: 12px;
+  }
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.4vw;
+  }
+  .content span {
+    margin-top: 3.56px !important;
+    font-size: 13.33px !important;
+  }
+}
+@media only screen and (max-width: 740px) and (max-height: 330px) {
+  .bingoCardWin {
+    padding-right: 11px !important;
+    padding-left: -7px;
+    margin-top: 9px;
+    margin-bottom: -7px;
+  }
+  
+  .bingoCardWin .numbers .square:not(.hasNumbers) {
+    padding: 3.3px;
+  }
+  
+  .bingoCardWin .square .content span {
+    margin-top: 1px !important;
+    font-size: 7.5px !important;
+  }
+  
+  .title > div {
+    font-size: 13px !important;
+    height: 13px;
+  }
+  
+  .cardsGameBingoCardsNumbers {
+    grid-template-columns: auto auto auto auto auto !important;
+  }
+  
+  .numbers .square:not(.hasNumbers) {
+    padding: 8.8px;
+  }
+  
+  .bingoCardMini .numbers .square:not(.hasNumbers) {
+    padding: 0.5vw;
+  }
+  
+  .content span {
+    margin-top: 3px !important;
+    font-size: 13px !important;
+  }
+}
+

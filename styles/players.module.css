@@ -1,0 +1,1616 @@
+.leftContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    padding: 10px 5px 5px 5px;
+    -webkit-padding-before: 10px;
+}
+
+.rightContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.centerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.playersContainer {
+    width: 200px;
+    height: 100%;
+}
+
+.jackpotMessageContainerStyle {
+    margin-bottom: 5px;
+    font-size: 1vw;
+    display: flex;
+    flex-flow: column;
+}
+
+@media screen and (max-width: 2160px) {
+    
+    .currentNumbers{
+        position: relative;
+        left: 70%;
+        bottom: 240px;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: -130px;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: -170px;
+
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 60%;
+        left: 85px;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        margin-top:4px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 40px;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 34px;
+        width: 34px;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    
+    .currentNumbers{
+        position: relative;
+        left: 70%;
+        bottom: 240px;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: -120px;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: -120px;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 67%;
+        left: 45px;
+        font-size: 28px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        margin-top:4px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 35px;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 26px;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 32px;
+        width: 32px;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 28px;
+        width: 28px;
+    }
+}
+@media screen and (max-width: 1536px) {
+    
+    .currentNumbers{
+        position: relative;
+        left: 70%;
+        bottom: 240px;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: -90px;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: -70px;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 67%;
+        left: 45px;
+        font-size: 28px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        margin-top:4px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 35px;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 26px;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 32px;
+        width: 32px;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 28px;
+        width: 28px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    
+    .currentNumbers{
+        position: relative;
+        left: 73%;
+        bottom: 200px;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: -80px;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: -40px;
+
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 76%;
+        left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        margin-top:4px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 32px;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 30px;
+        width: 30px;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 26px;
+        width: 26px;
+    }
+}
+@media screen and (max-width: 1336px) {
+    
+    .currentNumbers{
+        position: relative;
+        left: 73%;
+        bottom: 200px;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: -80px;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: -20px;
+
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 76%;
+        left: 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        margin-top:4px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 32px;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 30px;
+        width: 30px;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 26px;
+        width: 26px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    
+    .currentNumbers{
+        position: relative;
+        left: 68%;
+        bottom: 185px;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: -80px;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: 0;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 74%;
+        left: -20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        margin-top:4px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 30px;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 22px;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 28px;
+        width: 28px;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .credits {
+        font-size: 16px;
+    }
+
+    .leftContainer {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .rightContainer {
+        justify-content: flex-end;
+        padding: 0 !important;
+    }
+
+    .playersContainer {
+        width: 22vw;
+        position: relative;
+        left: 0;
+        height: 100%;
+    }
+
+    .currentNumbers{
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: 2vw;
+        bottom: 6px;
+    }
+
+    .mobileFeatures{
+        display: none;
+    }
+
+    .jackpotMessageContainerStyle {
+        visibility: hidden;
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: none;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        position: absolute;
+        top: 44px;
+        z-index: 1004;
+        font-size: 20px !important;
+        left: -70px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        position: absolute;
+        top: 50px;
+        z-index: 1004;
+        font-size: 20px;
+        left: 25px;
+    }
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 14px;
+        width: 14px;
+    }
+
+}
+
+/* for portrait */
+@media screen and (max-width: 1024px) and (max-height: 770px) and (min-height:765px){
+    
+    .currentNumbers{
+        position: relative;
+        left: 68%;
+        bottom: 185px;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: 0;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: -30px;
+        width: 23vw;
+        height: 110%;
+    }
+
+    .mobileFeatures{
+        display: block;
+    }
+
+    .jackpotMessageContainerStyle {
+        visibility: visible;
+        left: 200px;
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: block;
+        left: 140px;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 15%;
+        left: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        position: relative;
+        top:50px;
+        left: 60px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 27px;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+        top: 70px;
+        left: 55px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 22px;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+        top: 110px;
+        left: 60px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 28px;
+        width: 28px;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .playersContainer {
+        width: 22vw;
+        position: relative;
+        left: 0;
+        height: 100%;
+    }
+
+    .currentNumbers{
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: 2vw;
+        bottom: 6px;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: auto;
+        left: auto;
+        visibility: hidden;
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: none;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        position: absolute;
+        top: 14.5em;
+        z-index: 1004;
+        font-size: 18px !important;
+        left: -60px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        position: absolute;
+        top: 14.9em;
+        z-index: 1004;
+        font-size: 18px;
+        left: 25px;
+    }
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 14px;
+        width: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .playersContainer {
+        width: 22vw;
+        position: relative;
+        left: 0;
+    }
+
+    .currentNumbers{
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: 2vw;
+        bottom: 6px;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: auto;
+        left: auto;
+        visibility: hidden;
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: none;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        position: absolute;
+        top: 235px;
+        z-index: 1004;
+        font-size: 18px !important;
+        left: -60px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        position: absolute;
+        top: 241px;
+        z-index: 1004;
+        font-size: 18px;
+        left: 25px;
+    }
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 14px;
+        width: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .playersContainer {
+        width: 22vw;
+        position: relative;
+        left: 0;
+    }
+
+    .currentNumbers{
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .centerContainer{
+        position: relative;
+        left: 2vw;
+        bottom: 6px;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: auto;
+        left: auto;
+        visibility: hidden;
+        font-size: 5vw;
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: none;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        position: absolute;
+        top: 142px;
+        z-index: 1004;
+        font-size: 15px !important;
+        left: -50px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        position: absolute;
+        top: 148px;
+        z-index: 1004;
+        font-size: 15px;
+        left: 25px;
+    }
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 14px;
+        width: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 393px) {
+
+    .playersContainer {
+        width: 24vw;
+        /* top: -25px; */
+    }
+    /* .jackpotMessageContainerStyle .jackpot{
+        top: 155px;
+    }
+    .jackpotMessageContainerStyle .jackpotCoins{
+        top: 161px;
+    } */
+
+}
+
+@media screen and (min-width: 5120px) and (max-width: 5130px),
+screen and (min-height: 2880px) and (max-height: 2890px) {
+        .currentNumbers {
+        position: relative;
+        left: 69%;
+        bottom: 700px; 
+        }
+        .centerContainer {
+        position: relative;
+        left: 1vw; 
+        }
+        .playersContainer {
+        position: relative;
+        left: -100px; 
+        width: 30vw; 
+        height: 150%;
+        }
+        .mobileFeatures {
+        display: block;
+        }
+        .jackpotMessageContainerStyle {
+        position: relative;
+        top: 37%; 
+        left: 270px; 
+        font-size: 150px;
+        font-weight: 700;
+        color: #000;
+        background-color: transparent;
+        font-family: LuckiestGuy;
+        align-items: center;
+        }
+        .jackpotMessageContainerStyle .messageTitle {
+        display: block;
+        font-size: 150px; 
+        }
+        .jackpotWinCt {
+        position: relative;
+        /* top: 180px; */
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 100px;
+        margin-top: 2px;
+        }
+        .jackpotMessageContainerStyle .jackpot {
+        font-size: 110px !important;
+        color: #FF6E40;
+        font-weight: bolder;
+        margin: -5px 0;
+        top: 95px;
+        left: -20px;
+        right: 0;
+        }
+        .jackpotMessageContainerStyle .jackpotCoins {
+        font-size: 150px;
+        color: black;
+        font-weight: bold;
+        font-family: "Poppins";
+        top: 160px; 
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 12px !important;
+        }
+        .jackpotMessageContainerStyle .jackpotCoins img {
+        height: 160px;
+        width: 160px;
+        }
+        .jackpotMessageContainerStyle .jackpot img {
+        height: 140px;
+        width: 140px;
+        }
+}
+@media screen and (min-width: 3840px) and (max-width: 3850px),
+screen and (min-height: 2160px) and (max-height: 2170px) {
+        .currentNumbers {
+        position: relative;
+        left: 69%;
+        bottom: 440px;
+        }
+        .centerContainer {
+        position: relative;
+        left: 0.6vw;
+        }
+        .playersContainer {
+        position: relative;
+        left: -50px;
+        width: 25vw;
+        height: 140%;
+        }
+        .mobileFeatures {
+        display: block;
+        }
+        .jackpotMessageContainerStyle {
+        position: relative;
+        top: 42%;
+        left: 150px;
+        font-size: 100px;
+        font-weight: 700;
+        color: #000;
+        background-color: transparent;
+        font-family: LuckiestGuy;
+        align-items: center;
+        }
+        .jackpotMessageContainerStyle .messageTitle {
+        display: block;
+        font-size: 100px;
+        }
+        .jackpotWinCt {
+        position: relative;
+        /* top: 180px; */
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 80px;
+        margin-top: 2px;
+        }
+        .jackpotMessageContainerStyle .jackpot {
+        font-size: 100px !important;
+        color: #FF6E40;
+        font-weight: bolder;
+        margin: -10px 0;
+        top: 70px;
+        left: -10px;
+        right: 0;
+        }
+        .jackpotMessageContainerStyle .jackpotCoins {
+        font-size: 100px;
+        color: black;
+        font-weight: bold;
+        font-family: "Poppins";
+        top: 140px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 13px !important;
+        }
+        .jackpotMessageContainerStyle .jackpotCoins img {
+        height: 120px;
+        width: 120px;
+        }
+        .jackpotMessageContainerStyle .jackpot img {
+        height: 120px;
+        width: 120px;
+        }
+}
+@media screen and (min-width: 2732px) and (max-width: 2742px),
+screen and (min-height: 2048px) and (max-height: 2058px) {
+        .currentNumbers {
+        position: relative;
+        left:62%;
+        bottom: 250px;
+        }
+        .centerContainer{
+        position: relative;
+        left: 0.4vw;
+        /* bottom: 6px; */
+        }
+        .playersContainer {
+        position: relative;
+        left: -40px;
+        width: 23vw;
+        height: 130%;
+        }
+        .mobileFeatures {
+            display: block;
+        }
+
+        .jackpotMessageContainerStyle {
+            position: relative;
+            top: 50%;
+            left: 115px;
+            font-size: 70px;
+            font-weight: 700;
+            color: #000;
+            background-color: transparent;
+            font-family: LuckiestGuy;
+            align-items: center;
+        }
+
+        .jackpotMessageContainerStyle .messageTitle {
+            display: block;
+            font-size: 70px;
+            /* margin-top: 40px !important; */
+        }
+
+        .jackpotWinCt {
+            position: relative;
+            top: 140px;
+            font-family: "Poppins"; 
+            font-weight: bolder;
+            font-size: 55px;
+            margin-top: 2px;
+        }
+
+        .jackpotMessageContainerStyle .jackpot {
+            font-size: 70px !important;
+            color: #FF6E40;
+            font-weight: bolder; 
+            margin: -20px 0;
+            left: -10px;
+            right: 0;
+            /* margin: 0 auto; */
+        }
+
+        .jackpotMessageContainerStyle .jackpotCoins {
+            font-size: 70px;
+            color: black;
+            font-weight: bold;
+            font-family: "Poppins";
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 100px !important;
+        }
+
+        .jackpotMessageContainerStyle .jackpotCoins img {
+            height: 90px;
+            width: 90px;
+        }
+        .jackpotMessageContainerStyle .jackpot img {
+            height: 80px;
+            width: 80px;
+        }
+}
+@media screen and (min-width: 2560px) and (max-width: 2570px),
+       screen and (min-height: 1440px) and (max-height: 1610px) {
+        .currentNumbers {
+            position: relative;
+            left:60%;
+            bottom: 300.375px;
+        }
+        .centerContainer{
+            position: relative;
+            left: 0.375vw;
+        }
+        .playersContainer {
+            position: relative;
+            left: -37.5px;
+            width: 21.5625vw;
+            height: 121.875%;
+        }
+        .mobileFeatures {
+            display: block;
+        }
+
+        .jackpotMessageContainerStyle {
+            position: relative;
+            top: 50%;
+            left: 107.8125px;
+            font-size: 65px;
+            font-weight: 700;
+            color: #000;
+            background-color: transparent;
+            font-family: LuckiestGuy;
+            align-items: center;
+        }
+
+        .jackpotMessageContainerStyle .messageTitle {
+            display:block;
+            font-size:65.625px;
+        }
+
+        .jackpotWinCt {
+            position:relative;
+            top:131.25px;
+            left:12px;
+            font-family:"Poppins"; 
+            font-weight:bolder;
+            font-size:51.5625px;
+            /* margin-top:1.875px; */
+        }
+
+        .jackpotMessageContainerStyle .jackpot {
+            font-size:65.625px !important;
+            color:#FF6E40;
+            font-weight:bolder; 
+            margin:-15.75px 0;
+            left:-9.375px;
+            right:0;
+        }
+
+        .jackpotMessageContainerStyle .jackpotCoins {
+          font-size: 65.625px;
+          color: black;
+          font-weight:bold;
+          font-family:"Poppins";
+          left: 12px;
+          right:0;
+          margin:0 auto;
+          margin-top:93.75px !important
+        }
+
+        .jackpotMessageContainerStyle .jackpotCoins img {
+          height:
+          84.375px;width:
+          84.375px
+        }
+        
+        .jackpotMessageContainerStyle .jackpot img {
+          height:
+          75px;width:
+          75px
+        }
+}
+@media screen and (min-width: 2048px) and (max-width: 2058px),
+       screen and (min-height: 1536px) and (max-height: 1546px) {
+    .currentNumbers {
+        position: relative;
+        left: 60%;
+        bottom: 250px;
+    }
+    .centerContainer{
+        position: relative;
+        left: 0.4vw;
+        /* bottom: 6px; */
+    }
+    .playersContainer {
+        position: relative;
+        left: -40px;
+        width: 23vw;
+        height: 130%;
+    }
+
+    .mobileFeatures {
+        display: block;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 50%;
+        left: 110px;
+        font-size: 50px;
+        font-weight: 700;
+        color: #000;
+        background-color: transparent;
+        font-family: LuckiestGuy;
+        align-items: center;
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle {
+        display: block;
+        font-size: 50px;
+        /* margin-top: 40px !important; */
+    }
+
+    /* .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+    } */
+
+    /* .jackpotMessageContainerStyle {
+        position: relative;
+        top: 15%;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    } */
+
+    .jackpotWinCt {
+        position: relative;
+        top: 150px;
+        font-family: "Poppins"; 
+        font-weight: bolder;
+        font-size: 35px;
+        margin-top: -7px;
+    }
+
+    .jackpotMessageContainerStyle .jackpot {
+        font-size: 40px !important;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: -10px 0;
+        top: 60px;
+        left: -10px;
+        right: 0;
+        /* margin: 0 auto; */
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        font-family: "Poppins";
+        top: 120px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 13px !important;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img {
+        height: 60px;
+        width: 60px;
+    }
+    .jackpotMessageContainerStyle .jackpot img {
+        height: 60px;
+        width: 60px;
+    }
+}
+@media screen and (max-width: 916px) and (max-height: 412px) {
+    .currentNumbers {
+        position: relative;
+        left: 79%;
+        bottom: 139px;
+    }
+    
+    .playersContainer {
+        position: relative;
+        left: -40px;
+        width: 23vw;
+        height: 130%;
+    }
+
+    .mobileFeatures {
+        display: block;
+    }
+
+    .jackpotMessageContainerStyle {
+        visibility: visible;
+        left: 75px;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle {
+        display: block;
+        font-size: 20px;
+        margin-top: 40px !important;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 15%;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt {
+        position: relative;
+        top: 50px;
+        font-family: "Poppins"; 
+        font-weight: bolder;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .jackpotMessageContainerStyle .jackpot {
+        font-size: 20px !important;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 10px 0;
+        top: 75px;
+        left: -2px;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        font-family: "Poppins";
+        top: 110px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -15px !important;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img {
+        height: 27px;
+        width: 27px;
+    }
+    .jackpotMessageContainerStyle .jackpot img {
+        height: 25px;
+        width: 25px;
+    }
+}
+@media only screen and (max-width: 896px) and (max-height: 415px) {
+    .currentNumbers{
+        position: relative;
+        left: 95.77%;
+        bottom: 37.65vh;
+    }
+    
+    .playersContainer {
+        position: relative;
+        left: -31.83px;
+        width: 24.43vw;
+        height: 32.99vh;
+    }
+
+    .mobileFeatures{
+        display: block;
+    }
+
+    .jackpotMessageContainerStyle {
+        visibility: visible;
+        /* left: 212.22px; */
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: block;
+        left: 143px;
+        font-size: 4.5vh;
+        margin-top: 8vh !important;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+        /* top: 32.14px;
+        left: 42.44px;
+        font-size: 19.29px;
+        margin-top: -133.13px !important; */
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 15.98%;
+        left: 10.61px;
+        font-size: 5.4506vh;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        position: relative;
+        top: 13.0367vh;
+        left: 63.66px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+        font-size: 3.9823vh;
+        /* margin-top: 10px */
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 4.8193vh !important;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 2.5763vh 0;
+        top: 16vh;
+        left: 57.95px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 4.8193vh;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+        top: 26vh;
+        left: 68.65px;
+        margin-top: -1.5797vh !important;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 6.5264vh;
+        width: 3.0273vw;
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 6.1167vh;
+        width: 2.8332vw;
+    }
+}
+@media only screen and (max-width: 844px) and (max-height: 390px){
+    .currentNumbers{
+        position: relative;
+        left: 90%;
+        bottom: 35.64vh;
+    }
+    
+    .playersContainer {
+        position: relative;
+        left: -30px;
+        width: 23vw;
+        height: 31vh;
+    }
+
+    .mobileFeatures{
+        display: block;
+    }
+
+    .jackpotMessageContainerStyle {
+        visibility: visible;
+        /* left: 200px; */
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: block;
+        left: 123px;
+        font-size: 3.8462vh;
+        margin-top: 10.2564vh !important;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+        /* top: 30px;
+        left: 40px;
+        font-size: 18px;
+        margin-top: -125px !important; */
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 15%;
+        left: 10px;
+        font-size: 5.1282vh;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        position: relative;
+        top:12.8205vh;
+        left: 60px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+        font-size: 3.8462vh;
+        /* margin-top: 10px */
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 4.6154vh !important;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 2.5641vh 0;
+        top: 17.9487vh;
+        left: 55px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 4.6154vh;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+        top: 28.2051vh;
+        left: 65px;
+        margin-top: -1.5385vh !important;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 6.4103vh;
+        width: 2.9644vw
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 5.8974vh;
+        width: 2.7251vw;
+    }
+}
+@media only screen and (max-width: 800px) and (max-height: 330px){
+    .currentNumbers{
+        position: relative;
+        left: 90%;
+        bottom: 35.64vh;
+    }
+    
+    .playersContainer {
+        position: relative;
+        left: -30px;
+        width: 23vw;
+        height: 31vh;
+    }
+
+    .mobileFeatures{
+        display: block;
+    }
+
+    .jackpotMessageContainerStyle {
+        visibility: visible;
+        /* left: 200px; */
+    }
+    
+    .jackpotMessageContainerStyle .messageTitle{
+        display: block;
+        left: 135px;
+        font-size: 4vh;
+        margin-top: 10.2564vh !important;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+        /* top: 30px;
+        left: 40px;
+        font-size: 18px;
+        margin-top: -125px !important; */
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 27%;
+        left: 10px;
+        font-size: 5.1282vh;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt{
+        position: relative;
+        top:12.8205vh;
+        left: 60px;
+        font-family:"Poppins"; 
+        font-weight:bolder;
+        font-size: 3.8462vh;
+        /* margin-top: 10px */
+    }
+
+    .jackpotMessageContainerStyle .jackpot{
+        font-size: 4.6154vh !important;
+        color: #FF6E40;
+        font-weight: bolder; 
+        margin: 2.5641vh 0;
+        top: 17.9487vh;
+        left: 55px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins{
+        font-size: 4.6154vh;
+        color: black;
+        font-weight: bold;
+        font-family:"Poppins";
+        top: 28.2051vh;
+        left: 65px;
+        margin-top: -1.5385vh !important;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img{
+        height: 6.4103vh;
+        width: 2.9644vw
+    }
+    .jackpotMessageContainerStyle .jackpot img{
+        height: 5.8974vh;
+        width: 2.7251vw;
+    }
+}
+@media only screen and (max-width: 740px) and (max-height: 330px) {
+    .currentNumbers {
+        position: relative;
+        left: 92%;
+        bottom: 35vh;
+    }
+
+    .playersContainer {
+        position: relative;
+        left: -30px;
+        width: 21.4vw;
+        height: 31vh;
+    }
+
+    .mobileFeatures {
+        display: block;
+    }
+
+    .jackpotMessageContainerStyle {
+        visibility: visible;
+    }
+
+    .jackpotMessageContainerStyle .messageTitle {
+        display: block;
+        left: 115px;
+        font-size: 3.76vh;
+        margin-top: 9.87vh !important;
+    }
+
+    .jackpotMessageContainerStyle div {
+        visibility: visible;
+        position: absolute;
+    }
+
+    .jackpotMessageContainerStyle {
+        position: relative;
+        top: 13.64%;
+        left: 7px;
+        font-size: 4.96vh;
+        font-weight: bold;
+        color: black;
+        background-color: transparent;
+        font-family: "LuckiestGuy";
+        align-items: center;
+    }
+
+    .jackpotWinCt {
+        position: relative;
+        top: 11.42vh;
+        left: 52px;
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 3.76vh;
+    }
+
+    .jackpotMessageContainerStyle .jackpot {
+        font-size: 4.46vh !important;
+        color: #FF6E40;
+        font-weight: bolder;
+        margin: 2.38vh 0;
+        top: 16.84vh;
+        left: 48px;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins {
+        font-size: 4.46vh;
+        color: black;
+        font-weight: bold;
+        font-family: "Poppins";
+        top: 27.15vh;
+        left: 58px;
+        margin-top: -1.41vh !important;
+    }
+
+    .jackpotMessageContainerStyle .jackpotCoins img {
+        height: 6.07vh;
+        width: 2.82vw;
+    }
+
+    .jackpotMessageContainerStyle .jackpot img {
+        height: 5.72vh;
+        width: 2.64vw;
+    }
+}
+

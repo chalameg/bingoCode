@@ -1,0 +1,1902 @@
+@import "colors";
+
+$topScreenBorderWidth: 7px;
+$bottomScreenBorderWidth: 12px;
+.app {
+  min-height: 100%;
+  min-height: -webkit-fill-available; //for ios bottom bar
+}
+
+
+// 1240
+// 740
+// 540
+// 340
+
+.topSection {
+  overflow: hidden;
+  min-height: 345px;
+  position: relative;
+  background-color: $homeBackgroundColor;
+}
+
+.sound{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  height: 33px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 33px;
+}
+
+
+.womanAvatar {
+  position: absolute;
+  bottom: 0;
+  width: 219px;
+  max-width: 250px;
+  height: 110%;
+  z-index: 1003;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.exitDoor {
+  background-image: url(/static/images/door.png);
+  height: 90px;
+  position: absolute;
+  bottom: -20px;
+  width: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1002;
+  transform: scale(3);
+  left: calc(15% - 150px);
+  transform-origin: bottom;
+}
+
+.boardContainer {
+  border-radius: 3px;
+  width: 86%;
+  margin-left: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 250px;
+  padding: 5px 15px;
+  position: relative;
+  background-image: linear-gradient(180deg, $secondaryColor, $white);
+  border: $topScreenBorderWidth solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+                  180deg,
+                  $topGradientDark 33%,
+                  $topGradientLight 66%,
+                  $topGradientDark
+  );
+}
+
+
+.boardContainerCornerClip {
+  position: absolute;
+  width: 95px;
+  height: 90px;
+  bottom: -$topScreenBorderWidth;
+  //bottom: 0;
+  //bottom: -$topScreenBorderWidth;
+  left: -$topScreenBorderWidth;
+  //left: 0;
+  background-color: $homeBackgroundColor;
+  border-top: $topScreenBorderWidth solid;
+  border-right: $topScreenBorderWidth solid;
+  border-bottom: none;
+  border-left: none;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+                  330deg,
+                  $topGradientDark 0%,
+                  $topGradientLight 100%
+  );
+  display: none;
+}
+
+.boardContainerCornerClipIOS {
+  bottom: -$topScreenBorderWidth;
+  left: -$topScreenBorderWidth * 2;
+  //border-top: none;
+  //border-bottom: none;
+
+  border-image-slice: 1;
+
+  border-width: $topScreenBorderWidth;
+  border-image: linear-gradient(
+                  330deg,
+                  $topGradientDark 0%,
+                  $topGradientLight 100%
+  ) 1 1 0 0 repeat;
+}
+
+.crowdContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1004;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  height: 120px;
+}
+
+.bottomSection {
+  overflow: hidden;
+  background-color: $bottomScreenBackgroundColor;
+  // z-index: 1010;
+}
+
+.tabletView {
+  z-index: 1003;
+  border-width: 12px 12px 12px 12px ;
+  border-radius: $bottomScreenBorderWidth;
+  border-style: solid;
+  background-image: linear-gradient(180deg, $secondaryColor, $white);
+  border-image-source: linear-gradient(
+                  180deg,
+                  $bottomGradientDark 33%,
+                  $bottomGradientLight 66%,
+                  $bottomGradientDark
+  );
+  position: relative;
+  border-image-slice: 1;
+  box-shadow: 1px 1px 10px #333 inset, -1px -1px 10px #333 inset;
+  // padding: 0 0 10px 0;
+}
+
+.tabletCamera {
+  position: absolute;
+  top: -6px;
+  color: white;
+}
+
+.cameraBar {
+  color: white;
+  position: absolute;
+  top: calc(50% - $bottomScreenBorderWidth);
+  left: -0.9 * $bottomScreenBorderWidth;
+  z-index: 1005;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tabletTopBar {
+  width: 100%;
+  padding: 5px 5px 0;
+  font-size: 16px;
+}
+
+.mobileFeatures { 
+  
+}
+
+.mobileFeature {
+  margin: 0 5px;
+}
+
+.time {
+  font-weight: bold;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.mainTitle {
+  margin-top: -20px;
+  text-transform: uppercase;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.heading1 {
+  font-size: 46px;
+  line-height: 46px;
+}
+
+.separator {
+  height: 3px;
+  background-color: $mainColorDark;
+  width: 100px;
+}
+
+.vertical {
+  transform: rotate(90deg);
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px 0;
+}
+
+
+.footerContainer {
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+  bottom: 0;
+  font-weight:600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  // padding: 0 15%;
+}
+
+
+.footerLink>a>span{
+  font-size: 18px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0001;
+}
+
+.loader {
+  color: $mainColor;
+}
+
+.soundControl {
+  position: absolute;
+  left: 5px;
+  width: 24px;
+  height: 24px;
+  padding:3px;
+  top: 5px;
+  // border: 2px solid white;
+  border-radius: 45px;
+  z-index: 1005;
+  background-color: transparent;
+  color: #fff;
+}
+
+@media screen and (max-width: 2160px) {
+  .topSection{
+    height: 660px !important;
+  }
+
+  .boardContainer {
+    width: 84%;
+    height: 520px;
+    z-index: 1001;
+  }
+
+  .womanAvatar {
+    width: 370px !important;
+    height: 120%;
+    max-width: 400px;
+    z-index: 1003;
+    bottom: -60px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 120px);
+    bottom: 70px;
+    height: 110px;
+    width: 120px;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 34%;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 90%;
+    right:25px;
+    z-index: 1005 !important;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 48px;
+    width: 48px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .topSection{
+    height: 460px !important;
+  }
+
+  .boardContainer {
+    width: 84%;
+    height: 350px;
+    z-index: 1001;
+  }
+
+  .womanAvatar {
+    width: 320px !important;
+    height: 115%;
+    max-width: 400px;
+    z-index: 1003;
+    bottom: -40px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 160px);
+    bottom: 40px;
+    height: 125px;
+    width: 120px;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 34%;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 90%;
+    right:25px;
+    z-index: 1005 !important;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 48px;
+    width: 48px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .topSection{
+    height: 390px !important;
+  }
+
+  .boardContainer {
+    width: 84%;
+    height: 320px;
+    z-index: 1001;
+  }
+
+  .womanAvatar {
+    width: 280px !important;
+    height: 110%;
+    max-width: 400px;
+    z-index: 1003;
+    bottom: -20px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 160px);
+    bottom: 40px;
+    height: 125px;
+    width: 120px;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 34%;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 90%;
+    right:25px;
+    z-index: 1005 !important;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 48px;
+    width: 48px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .topSection{
+    height: 320px !important;
+  }
+
+  .boardContainer {
+    width: 84%;
+    height: 273px;
+    z-index: 1001;
+  }
+
+  .womanAvatar {
+    width: 25% !important;
+    height: 110%;
+    z-index: 1003;
+    bottom: -10px;
+    max-width: 250px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 60px);
+    bottom: 30px;
+    height: 90px;
+    width: 150px;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 34%;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 88%;
+    right:20px;
+    z-index: 1005 !important;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 45px;
+    width: 45px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .topSection{
+    height: 440px !important;
+  }
+
+  .boardContainer {
+    width: 84%;
+    height: 330px;
+    z-index: 1001;
+  }
+
+  .womanAvatar {
+    width: 25% !important;
+    height: 110%;
+    z-index: 1003;
+    bottom: -30px;
+    max-width: 250px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 60px);
+    bottom: 30px;
+    height: 90px;
+    width: 150px;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 34%;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 90%;
+    right:20px;
+    z-index: 1005 !important;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 45px;
+    width: 45px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .topSection{
+    height: 320px !important;
+  }
+
+  .boardContainer {
+    width: 83%;
+    height: 273px;
+    z-index: 1001;
+  }
+
+  .womanAvatar {
+    width: 23% !important;
+    height: 110%;
+    z-index: 1003;
+    max-width: 230px;
+    bottom: -30px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 60px);
+    bottom: 30px;
+    height: 90px;
+    width: 150px;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 34%;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 88%;
+    right:20px;
+    z-index: 1005 !important;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 45px;
+    width: 45px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1240px){
+  .womanAvatar {
+    width: 20%;
+  }
+  .exitDoor {
+    transform: scale(2);
+    left: calc(20% - 100px);
+    bottom: 30px;
+  }
+
+  .tabletView{
+    border-width: 12px 12px 12px 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-height:1000px) {
+  .topSection {
+    min-height: 293px;
+    height: 50vw !important;
+  }
+  .boardContainerCornerClip {
+    display: block;
+    width: 8em;
+    height: 5.2em;
+  }
+  .womanAvatar {
+    width: 120px;
+    height: calc(25% + 220px);
+    bottom: -30px;
+    left: -15px;
+  }
+  .exitDoor {
+    height: 110px;
+    width: 110px;
+    left: 40px;
+    transform: scale(1.4);
+  }
+  .cameraBar {
+    top: -1 * $bottomScreenBorderWidth;
+    left: 50%;
+  }
+  .boardContainer {
+    width: 100%;
+    position: relative;
+    height: 70%;
+  }
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 33%;
+  }
+
+  .soundControl{
+    left: 15px;
+    top: 93%;
+    height: 34px;
+    width: 34px;
+    z-index: 1005;
+  }
+
+  .playersCountLocation{
+    top: 94%;
+    right:20px;
+    font-size: 28px;
+  }
+
+  .playersCountLocation img{
+    height: 24px;
+    width: 24px;
+  }
+
+  .playersIcon{
+    height: 32px;
+    width: 32px;
+    color: #fff;
+  }
+} 
+
+//for portrait
+@media screen and (max-width: 1024px) and (max-height: 770px) {
+  .topSection{
+    min-height: 220px;
+    height: 320px !important;
+  }
+
+  .boardContainer {
+    width: 82%;
+    height: 235px;
+    z-index: 1001;
+  }
+
+  .boardContainerCornerClip {
+    display: none;
+  }
+
+  .womanAvatar {
+    width: 20% !important;
+    height: 110%;
+    z-index: 1003;
+    max-width: 230px;
+    bottom: -20px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 60px);
+    bottom: 30px;
+    height: 90px;
+    width: 150px;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 34%;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 86.5%;
+    right:20px;
+    z-index: 1005 !important;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 45px;
+    width: 45px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 30px;
+    width: 30px;
+  }
+  .soundControl{
+    top: 5px;
+    height: 54px;
+    width: 54px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .topSection {
+    min-height: 293px;
+    height: 55vw !important;
+  }
+  .boardContainerCornerClip {
+    display: block;
+    width: 7.6em;
+    height: 4.8em;
+  }
+  .womanAvatar {
+    width: 150px;
+    height: calc(25% + 140px);
+    bottom: 0;
+    left: -15px;
+  }
+  .exitDoor {
+    height: 110px;
+    width: 110px;
+    left: 40px;
+    transform: scale(1.4);
+  }
+  .cameraBar {
+    top: -1 * $bottomScreenBorderWidth;
+    left: 50%;
+  }
+  .boardContainer {
+    width: 100%;
+    position: relative;
+    height: 73%;
+  }
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 30%;
+  }
+
+  .soundControl{
+    left: 10px;
+    top: 86%;
+    height: 28px;
+    width: 28px;
+    z-index: 1005;
+  }
+
+  .playersCountLocation{
+    top: 89%;
+    right:20px;
+    font-size: 24px;
+  }
+
+  .playersCountLocation img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .playersIcon{
+    height: 30px;
+    width: 30px;
+    color: #fff;
+  }
+} 
+
+@media screen and (max-width: 834px) {
+  .footerContainer {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .topSection {
+    min-height: 293px;
+    height: 54vw;
+  }
+  .boardContainerCornerClip {
+    display: block;
+    width: 7em;
+    height: 5.5em;
+  }
+
+  .womanAvatar {
+    position: absolute;
+    width: 100px;
+    left: -25px;
+    height: 62%;
+    bottom: 0;
+  }
+  .exitDoor {
+    height: 132px;
+    bottom: 0;
+    width: 5.5em;
+    left: 20px;
+    transform: scale(1.4);
+  }
+  .cameraBar {
+    top: -1 * $bottomScreenBorderWidth;
+    left: 50%;
+  }
+  .boardContainer {
+    width: 100%;
+    position: relative;
+    height: 73.4%;
+  }
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 30%;
+  }
+  .soundControl{
+    left: 10px;
+    top: 91.5%;
+    height: 28px;
+    width: 28px;
+    z-index: 1005;
+  }
+
+  .playersCountLocation{
+    top: 93%;
+    right:20px;
+    font-size: 24px;
+  }
+
+  .playersCountLocation img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .playersIcon{
+    height: 30px;
+    width: 30px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .topSection {
+    min-height: 293px;
+    height: 54vw;
+  }
+  .boardContainerCornerClip {
+    display: block;
+    width: 7em;
+    height: 5em;
+  }
+  .womanAvatar {
+    position: absolute;
+    width: 150px;
+    left: -15px;
+    height: 62%;
+    bottom: 0 ;
+  }
+  .exitDoor {
+    height: 128px;
+    bottom: 0;
+    width: 5.5em;
+    left: 25px;
+    transform: scale(1.4);
+  }
+  .cameraBar {
+    top: -1 * $bottomScreenBorderWidth;
+    left: 50%;
+  }
+  .boardContainer {
+    width: 100%;
+    position: relative;
+    height: 73.4%;
+  }
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 30%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .footerContainer {
+    gap: 15px;
+  }
+
+  .topSection {
+    min-height: 293px;
+    height: 54vw;
+  }
+
+  .boardContainerCornerClip {
+    display: block;
+    width: 7em;
+    height: 105px;
+  }
+
+  .womanAvatar {
+    width: 180px;
+    height: calc(25% + 140px);
+    bottom: 0;
+    left: 0;
+  }
+  .exitDoor {
+    height: 118px;
+    bottom: -10px;
+    width: 90px;
+    left: 25px;
+    transform: scale(1.4);
+  }
+  
+  .cameraBar {
+    top: -1 * $bottomScreenBorderWidth;
+    left: 50%;
+  }
+  .boardContainer {
+    width: 100%;
+    position: relative;
+    height: 73%;
+  }
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 29%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .topSection {
+    min-height: 253px;
+    height: 54vw;
+  }
+
+  .womanAvatar {
+    width: 180px;
+    height: calc(25% + 90px);
+    bottom: 0;
+    left: 0;
+  }
+  
+  .exitDoor {
+    height: 90px;
+    bottom: -10px;
+    width: 70px;
+    left: 0;
+    z-index: 1002;
+    transform: scale(1.4);
+  }
+
+  .crowdContainer {
+    height: 75px;
+  }
+  .boardContainer {
+    height: calc(100% - 63px);
+  }
+  .boardContainerCornerClip {
+    height: 85px;
+    width: 95px;
+  }
+  .footerContainer {
+    flex-direction: row;
+    font-size: 12px;
+    padding: 0 !important;
+    gap: 10px !important;
+    // padding: 0 5%;
+  }
+  .heading1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  // .footerLink {
+  //   margin-bottom: 10px;
+  // }
+  .footerLink>a>span{
+    font-size: small;
+  }
+
+  .soundControl{
+    left: 10px;
+    top: 86%;
+    height: 28px;
+    width: 28px;
+    z-index: 1005;
+  }
+
+  .playersCountLocation{
+    top: 88%;
+    right:20px;
+    font-size: 24px;
+  }
+
+  .playersCountLocation img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .playersIcon{
+    height: 30px;
+    width: 30px;
+    color: #fff;
+  }
+}
+
+// @media screen and (max-width: 394px) and (max-height:874px) {
+//   .topSection {
+//     min-height: 33vh;
+//     height: 39.42vh;
+//   }
+
+//   .womanAvatar {
+//     width: 130.74px;
+//     height: calc(1vh + 146.57px);
+//     bottom: 0;
+//     left: 0;
+//   }
+  
+//   .exitDoor {
+//     height: 73.32px;
+//     bottom: -8.77px;
+//     width: 56.15px;
+//     left: 25px;
+//     z-index: 1002;
+//     transform: scale(1.4);
+//   }
+
+//   .crowdContainer {
+//     height:6vh;
+//   }
+//   .boardContainer {
+//     height: calc(100% - 6vh);
+//   }
+//   .boardContainerCornerClip {
+//     height: 11vh;
+//     width: 11.5vh;
+//   }
+//   .footerContainer {
+//     flex-direction: row;
+//     font-size: 3.47vh;
+//     padding: 0 5%;
+//   }
+//   .heading1 {
+//     font-size: 10vh;
+//     line-height: 10vh;
+//   }
+//   .footerLink {
+//     margin-bottom: 2.71vh;
+//   }
+//   .footerLink>a>span{
+//     font-size: small;
+//   }
+
+//   .soundControl{
+//     left: 2.42vh;
+//     top: 86%;
+//     height: 3.94vh;
+//     width: 3.94vh;
+//     z-index: 1005;
+//   }
+
+//   .playersCountLocation{
+//     top: 85%;
+//     right:4vh;
+//     font-size: 3vh;
+//   }
+
+//   .playersCountLocation img{
+//     height: 3.47vh;
+//     width: 3.47vh;
+//   }
+
+//   .playersIcon{
+//     height: 5.47vh;
+//     width: 5.47vh;
+//     color: #fff;
+//   }
+// }
+
+@media screen and (max-width: 340px) {
+  .topSection {
+    min-height: 250px;
+  }
+  .boardContainer {
+    height: calc(100% - 50px);
+  }
+  .womanAvatar {
+    bottom: -40px;
+  }
+  .time {
+    font-size: 14px;
+  }
+  .exitDoor {
+    bottom: 10px;
+    left: 20px;
+    transform: scale(1);
+  }
+  .crowdContainer {
+    height: 54px;
+  }
+  .footerContainer {
+  }
+}
+
+@media screen and (width: 2560px) and (max-height: 1440px) {
+  .footerLink>a>span{
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 7680px) and (max-width: 7690px),
+       screen and (min-height: 4320px) and (max-height: 4330px) {
+
+       }
+@media screen and (min-width: 5120px) and (max-width: 5130px),
+       screen and (min-height: 2880px) and (max-height: 2890px) {
+        .tabletView {
+          width: 100%;
+          border-radius: 0;
+          border-width: 2% 0 2% 0;
+          box-shadow: 0.07% 0.07% 0.14% #333 inset, -0.07% -0.07% 0.14% #333 inset;
+      }
+      
+      .topSection {
+          min-height: 5%;
+          height: 16%;
+      }
+      
+      .boardContainer {
+          width: 85%;
+          height: 1300px;
+          z-index: 1001;
+          padding-top: 0;
+          border-width: 0.4em !important;
+      }
+      
+      .womanAvatar {
+          width: 16%;
+          height: 120%;
+          max-width: 16%;
+          z-index: 1003;
+          bottom: -4%;
+      }
+      
+      .exitDoor {
+          transform: scale(1);
+          left: 1.5%;
+          bottom: 4%;
+          height: 70%;
+          width: 30%;
+          
+      }
+    
+      .crowdContainer {
+          background-size: auto 100%;
+          height: 45%;
+          z-index: 1004;
+      }
+      
+      .playersCountLocation {
+          position: absolute;
+          top: 80%;
+          right: 1%;
+          z-index: 1005 !important;
+          font-size: 4vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+      }
+      
+      .playersIcon {
+          margin-left: 1.8%;
+          height: 60% !important;
+          width: 60% !important;
+          color: #fff;
+      }
+      
+      .playersCountLocation img {
+          height: 100%;
+          width: 100%;
+      }
+      
+      .soundControl {
+          top: 0.15%;
+          height: 0.5%;
+          width: 0.5%;
+      }
+}
+@media screen and (min-width: 3830px) and (max-width: 3850px),
+screen and (min-height: 2150px) and (max-height: 2170px) {
+
+    .tabletView {
+    width: 100%;
+    border-radius: 0;
+    border-width: 2% 0 2% 0 ;
+    box-shadow: 0.07% 0.07% 0.14% #333 inset, -0.07% -0.07% 0.14% #333 inset;
+    }
+
+    .topSection {
+    min-height: 4%;
+    height: 14%;
+    }
+
+    .boardContainer {
+    width: 85%;
+    height: 920px;
+    z-index: 1001;
+    padding-top: 0;
+    border-width: 0.4em !important;
+    }
+
+    .womanAvatar {
+    width: 15.5%;
+    height: 115%;
+    max-width: 15.5%;
+    z-index: 1003;
+    bottom: -3.5%;
+    }
+
+    .exitDoor {
+    transform: scale(8);
+    left: 5.5%;
+    bottom: 2.5%;
+    height: 8%;
+    width: 8%;
+    }
+
+    .crowdContainer {
+    background-size: auto 100%;
+    height: 40%;
+    z-index: 1004;
+    }
+
+    .playersCountLocation {
+    position: absolute;
+    top: 84%;
+    right: 1.2%;
+    z-index: 1005 !important;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    }
+
+    .playersIcon {
+    margin-left: 1.8%;
+    height: 38% !important;
+    width: 38% !important;
+    color: #fff;
+    }
+
+    .playersCountLocation img {
+    height: 100%;
+    width: 100%;
+    }
+
+    .soundControl {
+    top: 0.12%;
+    height: 0.4%;
+    width: 0.4%;
+    }
+}
+@media screen and (min-width: 2732px) and (max-width: 2742px),
+       screen and (min-height: 2048px) and (max-height: 2058px) {
+  .tabletView {
+    width: 100%;
+    border-radius: 0;
+    border-width: 1.7% 0 1.7% 0 ;
+    box-shadow: 0.05% 0.05% 0.1% #333 inset, -0.05% -0.05% 0.1% #333 inset;
+  }
+  
+  .topSection {
+    min-height: 4%;
+    height: 12.2%;
+  }
+  
+  .boardContainer {
+    width: 81.25%;
+    height: 700px;
+    z-index: 1001;
+    padding-top: 0;
+    border-width: 0.5em !important;
+  }
+  
+  .womanAvatar {
+    width: 17.6%;
+    height: 114%;
+    max-width: 18.6%;
+    z-index: 1003;
+    bottom: -2.93%;
+  }
+
+  .exitDoor {
+    transform: scale(7.33);
+    left:26.5%;
+    bottom: 2.2%;
+    height: 8.38%;
+    width: 7.3%;
+  }
+  
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 35.4%;
+    z-index: 1004;
+  }
+  
+  .playersCountLocation {
+    position: absolute;
+    top: 85%;
+    right: 1.1%;
+    z-index: 1005 !important;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon {
+    margin-left: 1.65%;
+    height: 34.4% !important;
+    width: 34.4% !important;
+    color: #fff;
+  }
+  
+  .playersCountLocation img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .soundControl {
+    top: 0.11%;
+    height: 0.38%;
+    width: 0.38%;
+  }
+}
+@media  screen and (min-width: 2560px) and (max-width: 2570px),
+        screen and (min-height: 1440px) and (max-height: 1610px) {
+               .tabletView {
+                 width: 100%;
+                 border-radius: 0;
+                 border-width: 1% 0 1% 0;
+                 box-shadow: 0.035% 0.035% 0.07% #333 inset, -0.035% -0.035% 0.07% #333 inset;
+             }
+             
+             .topSection {
+                 min-height: 2.5%;
+                 height: 8%;
+             }
+             
+             .boardContainer {
+                 width: 81.5%;
+                 height: 650px;
+                 z-index: 1001;
+                 padding-top: 0;
+                 border-width: 0.2em !important;
+             }
+             
+             .womanAvatar {
+              width: 16%;
+              height: 115%;
+              max-width: 19%;
+              z-index: 1003;
+              bottom: -2.93%;
+            }
+             
+            .exitDoor {
+              transform: scale(7.33);
+              left:26.5%;
+              bottom: 2.2%;
+              height: 8.38%;
+              width: 7.3%;
+            }
+            .crowdContainer {
+              background-size: auto 100%;
+              height: 35.4%;
+              z-index: 1004;
+            }
+             
+             .playersCountLocation {
+                 position: absolute;
+                 top: 85%;
+                 right: 1%;
+                 z-index: 1005 !important;
+                 font-size: 2vw;
+                 display:flex;
+                 align-items:center;
+                 justify-content:center;
+                 color:#fff;
+             }
+             
+             .playersIcon {
+                 margin-left:0.9%;
+                 height:30% !important;
+                 width:30% !important;
+                 color:#fff;
+             }
+             
+             .playersCountLocation img {
+               height:100%;
+               width:100%;
+             }
+             
+             .soundControl {
+               top:.075%;
+               height:.25%;
+               width:.25%
+             }
+}
+@media screen and (min-width: 2048px) and (max-width: 2058px),
+       screen and (min-height: 1536px) and (max-height: 1546px) {
+  .tabletView {
+    width: 100%;
+    border-radius: 0;
+    border-width: 1.7% 0 1.7% 0 ;
+    box-shadow: 0.05% 0.05% 0.1% #333 inset, -0.05% -0.05% 0.1% #333 inset;
+  }
+  
+  .topSection {
+    min-height: 4%;
+    height: 9.2%;
+  }
+  
+  .boardContainer {
+    width: 81.25%;
+    height: 68.75%;
+    z-index: 1001;
+    padding-top: 0;
+    border-width: 0.2% 0.2% 0.2% 0.2% !important;
+  }
+  
+  .womanAvatar {
+    width: 440px !important;
+    height: 122%;
+    max-width: 550px;
+    z-index: 1003;
+    bottom: -60px;
+  }
+
+  .exitDoor {
+    transform: scale(2);
+    left: calc(15% - 150px);
+    bottom: 45px;
+    height: 190px;
+    width: 200px;
+  }
+  
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 35.4%;
+    z-index: 1004;
+  }
+  
+  .playersCountLocation {
+    position: absolute;
+    top: 83%;
+    right: 1.1%;
+    z-index: 1005 !important;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon {
+    margin-left: 1.65%;
+    height: 34.4% !important;
+    width: 34.4% !important;
+    color: #fff;
+  }
+  
+  // .playersCountLocation img {
+  //   height: 160%;
+  //   width: 160%;
+  // }
+  
+  .soundControl {
+    top: 0.3%;
+    height: 2.6%;
+    width: 2.6%;
+  }
+}
+
+@media screen and (max-width: 916px) and (max-height: 412px)  {
+
+  .tabletView {
+    width: 100%;
+    border-radius: 0px;
+    border-width: 3.7px 4px 3.7px 4px ;
+    box-shadow: 1.1px 1.1px 2.2px #333 inset, -1.1px -1.1px 2.2px #333 inset;
+    }
+    .topSection{
+    min-height: 66px;
+    height: 125px !important;
+    }
+    
+    .boardContainer {
+    width: 85.8%;
+    height: 75%;
+    z-index: 1001;
+    padding-top: 0;
+    border-width: 4.2px 4.2px 4.2px 4.2px !important;
+    }
+    
+    .boardContainerCornerClip {
+    display: none;
+    }
+    
+    .womanAvatar {
+    width: 110px !important;
+    height: calc(26.3% + 100px);
+    z-index: 1003;
+    max-width: 240px;
+    bottom: 15px;
+    left: 2.1px;
+    }
+    
+    .exitDoor {
+    transform: scale(1.27);
+    left: 57px;
+    bottom: 0;
+    height: 82.6px;
+    width: 6.4em;
+    }
+    
+    .crowdContainer {
+    background-size: auto 100%;
+    height: 32%;
+    z-index: 1004;
+    }
+    
+    .playersCountLocation{
+    position: absolute;
+    top: 83%;
+    right:22.1px;
+    z-index: 1005 !important;
+    font-size: 19.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    }
+    
+    .playersIcon{
+    height: 26.5px;
+    width: 26.5px;
+    color: #fff;
+    }
+    
+    .playersCountLocation img{
+    height: 21.2px;
+    width: 21.2px;
+    }
+    .soundControl{
+    top: 5.9px;
+    height: 57.4px;
+    width: 57.4px;
+    }
+}
+@media only screen and (max-width: 896px) and (max-height: 415px) {
+  .tabletView {
+      width: 100%;
+      border-radius: 0px;
+      border-width: 0.9527vh 1.0868vh 0.9527vh 1.0868vh;
+      box-shadow: 1px 1px 2px #333 inset, -1px -1px 2px #333 inset;
+  }
+  .topSection {
+      min-height: 65.72px;
+      height: 39.87vh !important;
+  }
+  .boardContainer {
+      width: 88.83%;
+      height: 78.82%;
+      z-index: 1001;
+      padding-top: 0;
+      border-width: 1.0868vh 1.0868vh 1.0868vh 1.0866vh !important;
+  }
+  .boardContainerCornerClip {
+      display: none;
+  }
+  .womanAvatar {
+      width: 119.89px !important;
+      height: calc(25.61% + 37.47vh);
+      z-index: 1003;
+      max-width: 37.61vw;
+      bottom: 0px;
+      left: 2px;
+  }
+  .exitDoor {
+      transform: scale(1.49);
+      left: 56.5px;
+      bottom: 0;
+      height: 82.15px;
+      width: 6.31em;
+  }
+  .crowdContainer {
+      background-size: auto 100%;
+      height: 12.77vh;
+      z-index: 1004;
+  }
+  .playersCountLocation {
+      position: absolute;
+      top: 83.3%;
+      right: 22.8px;
+      z-index: 1005 !important;
+      font-size: 19.12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+  }
+  .playersIcon {
+      height: 26.52px;
+      width: 26.52px;
+      color: #fff;
+  }
+  .playersCountLocation img {
+      height: 21.22px;
+      width: 21.22px;
+  }
+  .soundControl {
+      top: 5.33px;
+      height: 57.35px;
+      width: 57.35px;
+  }
+}
+@media only screen and (max-width: 844px) and (max-height: 390px) {
+
+  .tabletView {
+    width: 100%;
+    border-radius: 0px;
+    border-width:  0.8974vh 1.0256vh 0.8974vh 1.0256vh  ;
+    box-shadow: 1px 1px 2px #333 inset, -1px -1px 2px #333 inset;
+  }
+  .topSection{
+    min-height: 62px;
+    height: 37vh !important;
+  }
+
+  .boardContainer {
+    width: 83.5%;
+    height: 75%;
+    z-index: 1001;
+    padding-top: 0;
+    border-width:  1.0256vh  1.0256vh  1.0256vh  1.0255vh !important;
+  }
+
+  .boardContainerCornerClip {
+    display: none;
+  }
+
+  .womanAvatar {
+    width: 113px !important;
+    height: calc(25% + 33vh);
+    z-index: 1003;
+    max-width: 35vw;
+    bottom: 0px;
+    left: 2px;
+  }
+
+  .exitDoor {
+    transform: scale(1.4);
+    left: 50px;
+    bottom: 0;
+    height: 70px;
+    width: 5.5em;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 12vh;
+    z-index: 1004;
+  }
+
+  .playersCountLocation{
+    position: absolute;
+    top: 81%;
+    right:20px;
+    z-index: 1005 !important;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon{
+    height: 25px;
+    width: 25px;
+    color: #fff;
+  }
+
+  .playersCountLocation img{
+    height: 20px;
+    width: 20px;
+  }
+  .soundControl{
+    top: 5px;
+    height: 54px;
+    width: 54px;
+  }
+}
+@media only screen and (max-width: 800px) and (max-height: 330px) {
+  .tabletView {
+    width: 100%;
+    border-radius: 0px;
+    border-width: 0.9944vh 1.144vh 0.9944vh 1.144vh;
+    box-shadow: 1px 1px 2px #333 inset, -1px -1px 2px #333 inset;
+  }
+  .topSection {
+    min-height: 54px;
+    height: 37vh !important;
+  }
+  .boardContainer {
+    width: 86%;
+    height: 75%;
+    z-index: 1001;
+    padding-top: 0;
+    border-width: 1.144vh 1.144vh 1.144vh 1.1439vh !important;
+  }
+  .boardContainerCornerClip {
+    display: none;
+  }
+  .womanAvatar {
+    width: 70px !important;
+    height: calc(25% + 33vh);
+    z-index: 1003;
+    max-width: 35vw;
+    bottom: -5px;
+    left: 2px;
+  }
+  .exitDoor {
+    transform: scale(1.2);
+    left: 45px;
+    bottom: 0;
+    height: 62px;
+    width: 4.84em;
+  }
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 12.5vh;
+    z-index: 1004;
+  }
+  .playersCountLocation {
+    position: absolute;
+    top: 78%;
+    right: 18px;
+    z-index: 1005 !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .playersIcon {
+    height: 21px;
+    width: 21px;
+    color: #fff;
+  }
+  .playersCountLocation img {
+    height: 16px;
+    width: 16px;
+  }
+  .soundControl {
+    top: 0px;
+    left: -1px;
+    height: 25px !important;
+    width: 25px !important;
+  }
+}
+@media only screen and (max-width: 740px) and (max-height: 330px) {
+
+  .tabletView {
+    width: 100%;
+    border-radius: 0px;
+    border-width: 0.7229vh 0.8243vh 0.7229vh 0.8243vh;
+    box-shadow: 1px 1px 2px #333 inset, -1px -1px 2px #333 inset;
+  }
+  .topSection {
+    min-height: 51px;
+    height: 36vh !important;
+  }
+
+  .boardContainer {
+    width: 84.5%;
+    height: 76.5%;
+    z-index: 1001;
+    padding-top: 0;
+    border-width: 1.0256vh 1.0256vh 1.0256vh 1.0255vh !important;
+  }
+
+  .boardContainerCornerClip {
+    display: none;
+  }
+
+  .womanAvatar {
+    width: 76px !important;
+    height: calc(25% + 24.75vh);
+    z-index: 1003;
+    max-width: 31vw;
+    bottom: 10px;
+    left: 2px;
+  }
+
+  .exitDoor {
+    transform: scale(1.2);
+    left: 42px;
+    bottom: 0;
+    height: 58px;
+    width: 4.5em;
+  }
+
+  .crowdContainer {
+    background-size: auto 100%;
+    height: 11.5vh;
+    z-index: 1004;
+  }
+
+  .playersCountLocation {
+    position: absolute;
+    top: 77%;
+    right: 16px;
+    z-index: 1005 !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .playersIcon {
+    height: 22px;
+    width: 22px;
+    color: #fff;
+  }
+
+  .playersCountLocation img {
+    height: 18px;
+    width: 18px;
+  }
+  
+  .soundControl {
+    top: 4px;
+    height: 46px;
+    width: 46px;
+  }
+}
+
