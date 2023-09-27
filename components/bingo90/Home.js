@@ -19,6 +19,29 @@ import DraggableDialog from "./UI/DraggableDialog";
 import { IoClose } from "react-icons/io5";
 import TabletActionButtons from "./TabletActionButtons";
 
+class CustomAudio {
+  constructor(src) {
+    this.audio = new Audio(src);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    this.audio.muted = isSafari;
+  }
+
+  play() {
+    this.audio.play();
+  }
+
+  pause() {
+    this.audio.pause();
+  }
+  addEventListener(eventType, callback) {
+    this.audio.addEventListener(eventType, callback);
+  }
+
+  removeEventListener(eventType, callback) {
+    this.audio.removeEventListener(eventType, callback);
+  }
+}
+
 function Home() {
   const { setCrowdAudio, setCrowdWinAudio, setCrowdInBetweenAudio, userData } =
     useContext(AppContext);
@@ -116,7 +139,7 @@ function Home() {
   const [crowdBingo90Audio] = useState(
     typeof Audio !== "undefined" &&
       !gameStart.current &&
-      new Audio(
+      new CustomAudio(
         "/sounds/crowds/crowdbingo90" +
           (Math.floor(Math.random() * 3) + 1) +
           ".wav"
@@ -126,7 +149,7 @@ function Home() {
   const [crowdbingo90WinAudio] = useState(
     typeof Audio !== "undefined" &&
       !gameStart.current &&
-      new Audio(
+      new CustomAudio(
         "/sounds/crowds/crowdbingo90win" +
           (Math.floor(Math.random() * 5) + 1) +
           ".wav"
@@ -136,7 +159,7 @@ function Home() {
   const [crowdbingo90InBetweenAudio] = useState(
     typeof Audio !== "undefined" &&
       !gameStart.current &&
-      new Audio(
+      new CustomAudio(
         "/sounds/crowds/crowdbingo90InBetween" +
           (Math.floor(Math.random() * 3) + 1) +
           ".wav"
@@ -177,7 +200,7 @@ function Home() {
     }
 
     crowdBingo90Sound &&
-      crowdBingo90Sound.addEventListener(
+      crowdBingo90Sound?.addEventListener(
         "ended",
         () => {
           setCrowdAudio(null);
@@ -242,7 +265,7 @@ function Home() {
       ? typeof Audio !== "undefined" &&
         number &&
         gameStart.current &&
-        new Audio("/sounds/numbers/bingo90/spanish" + number + ".mp3")
+        new CustomAudio("/sounds/numbers/bingo90/spanish" + number + ".mp3")
       : undefined;
 
     const ISSERVER = typeof window === "undefined";
@@ -388,7 +411,7 @@ function Home() {
               const flag = localStorage.getItem("soundEnabled");
               const iWinAudio =
                 typeof Audio !== "undefined" && flag
-                  ? new Audio("/sounds/crowds/ChachingBingo.mp3")
+                  ? new CustomAudio("/sounds/crowds/ChachingBingo.mp3")
                   : undefined;
               iWinAudio && (iWinAudio.volume = 0.1);
               const ISSERVER = typeof window === "undefined";
@@ -402,7 +425,7 @@ function Home() {
             if (jsonData.win.prize_name === "1 Line") {
               const winAudio =
                 typeof Audio !== "undefined"
-                  ? new Audio(
+                  ? new CustomAudio(
                       "/sounds/vocals/bingo90/line" +
                         (Math.floor(Math.random() * 2) + 1) +
                         ".mp3"
@@ -418,7 +441,7 @@ function Home() {
             } else if (jsonData.win.prize_name === "2 Lines") {
               const winAudio =
                 typeof Audio !== "undefined"
-                  ? new Audio("/sounds/vocals/bingo90/congrats.mp3")
+                  ? new CustomAudio("/sounds/vocals/bingo90/congrats.mp3")
                   : undefined;
               const ISSERVER = typeof window === "undefined";
               if (!ISSERVER) {
@@ -431,7 +454,7 @@ function Home() {
               winDelay += 10;
               const winAudio =
                 typeof Audio !== "undefined"
-                  ? new Audio("/sounds/vocals/bingo90/bingo.mp3")
+                  ? new CustomAudio("/sounds/vocals/bingo90/bingo.mp3")
                   : undefined;
               const ISSERVER = typeof window === "undefined";
               if (!ISSERVER) {
@@ -546,7 +569,7 @@ function Home() {
     const flag = localStorage.getItem("soundEnabled");
 
     var audio =
-      typeof Audio !== "undefined" && flag ? new Audio(audioFile) : undefined;
+      typeof Audio !== "undefined" && flag ? new CustomAudio(audioFile) : undefined;
 
     const ISSERVER = typeof window === "undefined";
     if (!ISSERVER) {
@@ -655,7 +678,7 @@ function Home() {
     if (coinClient?.readyState === 1) {
       const audio =
         typeof Audio !== "undefined"
-          ? new Audio("/sounds/buttons/collect.mp3")
+          ? new CustomAudio("/sounds/buttons/collect.mp3")
           : undefined;
 
       const ISSERVER = typeof window === "undefined";
